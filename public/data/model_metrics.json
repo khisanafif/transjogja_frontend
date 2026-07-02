@@ -1,0 +1,12 @@
+{
+  "best_params": {
+    "bin_size": 3,
+    "K": 1.0,
+    "min_bin_n": 3
+  },
+  "val_mae_min": 0.11730378890392422,
+  "val_rmse_min": 0.9577730216645365,
+  "segments_total": 29442,
+  "segments_unique": 519,
+  "val_rows_usable": 5912
+}

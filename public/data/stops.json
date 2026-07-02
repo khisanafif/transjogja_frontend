@@ -1,0 +1,1913 @@
+[
+  {
+    "stop_id": "HT_001",
+    "stop_name": "AM Sangaji - A",
+    "lat": -7.775812,
+    "lon": 110.367982,
+    "name": "AM Sangaji - A"
+  },
+  {
+    "stop_id": "HT_002",
+    "stop_name": "APMD - A",
+    "lat": -7.791068,
+    "lon": 110.393349,
+    "name": "APMD - A"
+  },
+  {
+    "stop_id": "HT_003",
+    "stop_name": "Ambarukmo - A",
+    "lat": -7.783292,
+    "lon": 110.401786,
+    "name": "Ambarukmo - A"
+  },
+  {
+    "stop_id": "HT_004",
+    "stop_name": "Among Rogo - A",
+    "lat": -7.79846,
+    "lon": 110.384818,
+    "name": "Among Rogo - A"
+  },
+  {
+    "stop_id": "HT_005",
+    "stop_name": "Atakrib Jl. Magelang",
+    "lat": -7.756425,
+    "lon": 110.362072,
+    "name": "Atakrib Jl. Magelang"
+  },
+  {
+    "stop_id": "HT_006",
+    "stop_name": "BKD - A",
+    "lat": -7.782465,
+    "lon": 110.356194,
+    "name": "BKD - A"
+  },
+  {
+    "stop_id": "HT_007",
+    "stop_name": "BKPM",
+    "lat": -7.800372,
+    "lon": 110.40235,
+    "name": "BKPM"
+  },
+  {
+    "stop_id": "HT_008",
+    "stop_name": "BPD Gamping",
+    "lat": -7.801615,
+    "lon": 110.318669,
+    "name": "BPD Gamping"
+  },
+  {
+    "stop_id": "HT_009",
+    "stop_name": "BRI Bantul",
+    "lat": -7.88199,
+    "lon": 110.332318,
+    "name": "BRI Bantul"
+  },
+  {
+    "stop_id": "HT_010",
+    "stop_name": "Babarsari - A",
+    "lat": -7.77397,
+    "lon": 110.412218,
+    "name": "Babarsari - A"
+  },
+  {
+    "stop_id": "HT_011",
+    "stop_name": "Badran",
+    "lat": -7.788092,
+    "lon": 110.357905,
+    "name": "Badran"
+  },
+  {
+    "stop_id": "HT_012",
+    "stop_name": "Bandara Adisujtipto",
+    "lat": -7.784497,
+    "lon": 110.435712,
+    "name": "Bandara Adisujtipto"
+  },
+  {
+    "stop_id": "HT_013",
+    "stop_name": "Banguntapan - A",
+    "lat": -7.807797,
+    "lon": 110.402165,
+    "name": "Banguntapan - A"
+  },
+  {
+    "stop_id": "HT_014",
+    "stop_name": "Basen",
+    "lat": -7.819092,
+    "lon": 110.395105,
+    "name": "Basen"
+  },
+  {
+    "stop_id": "HT_015",
+    "stop_name": "Bayeman - A",
+    "lat": -7.800346,
+    "lon": 110.337185,
+    "name": "Bayeman - A"
+  },
+  {
+    "stop_id": "HT_016",
+    "stop_name": "Bhayangkara",
+    "lat": -7.799309,
+    "lon": 110.362097,
+    "name": "Bhayangkara"
+  },
+  {
+    "stop_id": "HT_017",
+    "stop_name": "Binamarga",
+    "lat": -7.774443,
+    "lon": 110.430699,
+    "name": "Binamarga"
+  },
+  {
+    "stop_id": "HT_018",
+    "stop_name": "Biologi UGM",
+    "lat": -7.765289,
+    "lon": 110.376905,
+    "name": "Biologi UGM"
+  },
+  {
+    "stop_id": "HT_019",
+    "stop_name": "Blok O",
+    "lat": -7.797242,
+    "lon": 110.409909,
+    "name": "Blok O"
+  },
+  {
+    "stop_id": "HT_020",
+    "stop_name": "Borobudur Plaza",
+    "lat": -7.778838,
+    "lon": 110.362029,
+    "name": "Borobudur Plaza"
+  },
+  {
+    "stop_id": "HT_021",
+    "stop_name": "Boulevard UII",
+    "lat": -7.687506,
+    "lon": 110.417273,
+    "name": "Boulevard UII"
+  },
+  {
+    "stop_id": "HT_022",
+    "stop_name": "Budi Mulia Dua - A",
+    "lat": -7.74294,
+    "lon": 110.434193,
+    "name": "Budi Mulia Dua - A"
+  },
+  {
+    "stop_id": "HT_023",
+    "stop_name": "Bulog",
+    "lat": -7.784968,
+    "lon": 110.374708,
+    "name": "Bulog"
+  },
+  {
+    "stop_id": "HT_024",
+    "stop_name": "Cik Di Tiro",
+    "lat": -7.782357,
+    "lon": 110.375104,
+    "name": "Cik Di Tiro"
+  },
+  {
+    "stop_id": "HT_025",
+    "stop_name": "Daytrans Jl. Magelang",
+    "lat": -7.756415,
+    "lon": 110.361995,
+    "name": "Daytrans Jl. Magelang"
+  },
+  {
+    "stop_id": "HT_026",
+    "stop_name": "De Britto",
+    "lat": -7.783094,
+    "lon": 110.393893,
+    "name": "De Britto"
+  },
+  {
+    "stop_id": "HT_027",
+    "stop_name": "Demak Ijo - A",
+    "lat": -7.776496,
+    "lon": 110.332008,
+    "name": "Demak Ijo - A"
+  },
+  {
+    "stop_id": "HT_028",
+    "stop_name": "Demangan",
+    "lat": -7.783048,
+    "lon": 110.388672,
+    "name": "Demangan"
+  },
+  {
+    "stop_id": "HT_029",
+    "stop_name": "Dentes Godean",
+    "lat": -7.779783,
+    "lon": 110.34374,
+    "name": "Dentes Godean"
+  },
+  {
+    "stop_id": "HT_030",
+    "stop_name": "Diklat PU",
+    "lat": -7.819036,
+    "lon": 110.395116,
+    "name": "Diklat PU"
+  },
+  {
+    "stop_id": "HT_031",
+    "stop_name": "Diponegoro",
+    "lat": -7.782886,
+    "lon": 110.362552,
+    "name": "Diponegoro"
+  },
+  {
+    "stop_id": "HT_032",
+    "stop_name": "Dishub DIY - A",
+    "lat": -7.777974,
+    "lon": 110.415027,
+    "name": "Dishub DIY - A"
+  },
+  {
+    "stop_id": "HT_033",
+    "stop_name": "Disnakertrans - A",
+    "lat": -7.769365,
+    "lon": 110.431166,
+    "name": "Disnakertrans - A"
+  },
+  {
+    "stop_id": "HT_034",
+    "stop_name": "Dongkelan - A",
+    "lat": -7.830195,
+    "lon": 110.353801,
+    "name": "Dongkelan - A"
+  },
+  {
+    "stop_id": "HT_035",
+    "stop_name": "Dukuh - A",
+    "lat": -7.821686,
+    "lon": 110.355174,
+    "name": "Dukuh - A"
+  },
+  {
+    "stop_id": "HT_036",
+    "stop_name": "Dusun Kledokan - A",
+    "lat": -7.672637,
+    "lon": 110.417366,
+    "name": "Dusun Kledokan - A"
+  },
+  {
+    "stop_id": "HT_037",
+    "stop_name": "Edotel Kalasan - A",
+    "lat": -7.756754,
+    "lon": 110.482651,
+    "name": "Edotel Kalasan - A"
+  },
+  {
+    "stop_id": "HT_038",
+    "stop_name": "Eks Bioskop Mataram",
+    "lat": -7.79228,
+    "lon": 110.377912,
+    "name": "Eks Bioskop Mataram"
+  },
+  {
+    "stop_id": "HT_039",
+    "stop_name": "Eks Hotel Nataputra",
+    "lat": -7.800884,
+    "lon": 110.348902,
+    "name": "Eks Hotel Nataputra"
+  },
+  {
+    "stop_id": "HT_040",
+    "stop_name": "Eks Menara Kopi - A",
+    "lat": -7.789248,
+    "lon": 110.370131,
+    "name": "Eks Menara Kopi - A"
+  },
+  {
+    "stop_id": "HT_041",
+    "stop_name": "Eks Stasiun Bantul",
+    "lat": -7.887393,
+    "lon": 110.329321,
+    "name": "Eks Stasiun Bantul"
+  },
+  {
+    "stop_id": "HT_042",
+    "stop_name": "FKG UGM - A",
+    "lat": -7.771354,
+    "lon": 110.375119,
+    "name": "FKG UGM - A"
+  },
+  {
+    "stop_id": "HT_043",
+    "stop_name": "Flyover Lempuyangan",
+    "lat": -7.790782,
+    "lon": 110.378018,
+    "name": "Flyover Lempuyangan"
+  },
+  {
+    "stop_id": "HT_044",
+    "stop_name": "Galeria Mall",
+    "lat": -7.782352,
+    "lon": 110.379319,
+    "name": "Galeria Mall"
+  },
+  {
+    "stop_id": "HT_045",
+    "stop_name": "Gambiran - A",
+    "lat": -7.816892,
+    "lon": 110.391045,
+    "name": "Gambiran - A"
+  },
+  {
+    "stop_id": "HT_046",
+    "stop_name": "Gardu PLN - A",
+    "lat": -7.739255,
+    "lon": 110.392461,
+    "name": "Gardu PLN - A"
+  },
+  {
+    "stop_id": "HT_047",
+    "stop_name": "Gedung Wanita",
+    "lat": -7.783187,
+    "lon": 110.39271,
+    "name": "Gedung Wanita"
+  },
+  {
+    "stop_id": "HT_048",
+    "stop_name": "Gembira Loka - A",
+    "lat": -7.802259,
+    "lon": 110.399966,
+    "name": "Gembira Loka - A"
+  },
+  {
+    "stop_id": "HT_049",
+    "stop_name": "Gereja Pugeran - A",
+    "lat": -7.816599,
+    "lon": 110.355899,
+    "name": "Gereja Pugeran - A"
+  },
+  {
+    "stop_id": "HT_050",
+    "stop_name": "Gudang SGM - A",
+    "lat": -7.827155,
+    "lon": 110.389979,
+    "name": "Gudang SGM - A"
+  },
+  {
+    "stop_id": "HT_051",
+    "stop_name": "Hayam Wuruk - A",
+    "lat": -7.795676,
+    "lon": 110.37263,
+    "name": "Hayam Wuruk - A"
+  },
+  {
+    "stop_id": "HT_052",
+    "stop_name": "Hokben Jakal - A",
+    "lat": -7.757759,
+    "lon": 110.381951,
+    "name": "Hokben Jakal - A"
+  },
+  {
+    "stop_id": "HT_053",
+    "stop_name": "Hotel Pramesthi",
+    "lat": -7.82158,
+    "lon": 110.365385,
+    "name": "Hotel Pramesthi"
+  },
+  {
+    "stop_id": "HT_054",
+    "stop_name": "Hotel Utara - A",
+    "lat": -7.780412,
+    "lon": 110.360941,
+    "name": "Hotel Utara - A"
+  },
+  {
+    "stop_id": "HT_055",
+    "stop_name": "Hotel Vidi",
+    "lat": -7.761786,
+    "lon": 110.380208,
+    "name": "Hotel Vidi"
+  },
+  {
+    "stop_id": "HT_056",
+    "stop_name": "Hyundai",
+    "lat": -7.783518,
+    "lon": 110.428348,
+    "name": "Hyundai"
+  },
+  {
+    "stop_id": "HT_057",
+    "stop_name": "Indogrosir",
+    "lat": -7.750821,
+    "lon": 110.362351,
+    "name": "Indogrosir"
+  },
+  {
+    "stop_id": "HT_058",
+    "stop_name": "Indomaret Klajuran - A",
+    "lat": -7.772253,
+    "lon": 110.31175,
+    "name": "Indomaret Klajuran - A"
+  },
+  {
+    "stop_id": "HT_059",
+    "stop_name": "Indomaret Pokoh Sambiroto - A",
+    "lat": -7.735554,
+    "lon": 110.434613,
+    "name": "Indomaret Pokoh Sambiroto - A"
+  },
+  {
+    "stop_id": "HT_060",
+    "stop_name": "Instiper - A",
+    "lat": -7.764459,
+    "lon": 110.423632,
+    "name": "Instiper - A"
+  },
+  {
+    "stop_id": "HT_061",
+    "stop_name": "JEC",
+    "lat": -7.798586,
+    "lon": 110.402922,
+    "name": "JEC"
+  },
+  {
+    "stop_id": "HT_062",
+    "stop_name": "Janti Selatan",
+    "lat": -7.785772,
+    "lon": 110.410482,
+    "name": "Janti Selatan"
+  },
+  {
+    "stop_id": "HT_063",
+    "stop_name": "Janti Utara",
+    "lat": -7.783211,
+    "lon": 110.411672,
+    "name": "Janti Utara"
+  },
+  {
+    "stop_id": "HT_064",
+    "stop_name": "Jayakarta",
+    "lat": -7.783404,
+    "lon": 110.419409,
+    "name": "Jayakarta"
+  },
+  {
+    "stop_id": "HT_065",
+    "stop_name": "Jend. Sudirman - A",
+    "lat": -7.782988,
+    "lon": 110.36955,
+    "name": "Jend. Sudirman - A"
+  },
+  {
+    "stop_id": "HT_066",
+    "stop_name": "Jl. Mataram",
+    "lat": -7.794209,
+    "lon": 110.36806,
+    "name": "Jl. Mataram"
+  },
+  {
+    "stop_id": "HT_067",
+    "stop_name": "Jl. Raya Kabunan - A",
+    "lat": -7.713204,
+    "lon": 110.442836,
+    "name": "Jl. Raya Kabunan - A"
+  },
+  {
+    "stop_id": "HT_068",
+    "stop_name": "Jl. Suroto",
+    "lat": -7.784524,
+    "lon": 110.374671,
+    "name": "Jl. Suroto"
+  },
+  {
+    "stop_id": "HT_069",
+    "stop_name": "Jlagran",
+    "lat": -7.789467,
+    "lon": 110.358868,
+    "name": "Jlagran"
+  },
+  {
+    "stop_id": "HT_070",
+    "stop_name": "Jogja City Mall - A",
+    "lat": -7.753296,
+    "lon": 110.36222,
+    "name": "Jogja City Mall - A"
+  },
+  {
+    "stop_id": "HT_071",
+    "stop_name": "Jogjatronik",
+    "lat": -7.806218,
+    "lon": 110.369302,
+    "name": "Jogjatronik"
+  },
+  {
+    "stop_id": "HT_072",
+    "stop_name": "Jogokariyan - A",
+    "lat": -7.82335,
+    "lon": 110.367736,
+    "name": "Jogokariyan - A"
+  },
+  {
+    "stop_id": "HT_073",
+    "stop_name": "Jokteng Kulon",
+    "lat": -7.813247,
+    "lon": 110.357346,
+    "name": "Jokteng Kulon"
+  },
+  {
+    "stop_id": "HT_074",
+    "stop_name": "Jokteng Wetan",
+    "lat": -7.814656,
+    "lon": 110.367221,
+    "name": "Jokteng Wetan"
+  },
+  {
+    "stop_id": "HT_075",
+    "stop_name": "KHA Dahlan - A",
+    "lat": -7.801281,
+    "lon": 110.360133,
+    "name": "KHA Dahlan - A"
+  },
+  {
+    "stop_id": "HT_076",
+    "stop_name": "KKP Yogyakarta",
+    "lat": -7.782053,
+    "lon": 110.429895,
+    "name": "KKP Yogyakarta"
+  },
+  {
+    "stop_id": "HT_077",
+    "stop_name": "KR - A",
+    "lat": -7.781692,
+    "lon": 110.450503,
+    "name": "KR - A"
+  },
+  {
+    "stop_id": "HT_078",
+    "stop_name": "KUA Depok - A",
+    "lat": -7.755546,
+    "lon": 110.433793,
+    "name": "KUA Depok - A"
+  },
+  {
+    "stop_id": "HT_079",
+    "stop_name": "Kantor Kal. Sidoarum - A",
+    "lat": -7.775581,
+    "lon": 110.325369,
+    "name": "Kantor Kal. Sidoarum - A"
+  },
+  {
+    "stop_id": "HT_080",
+    "stop_name": "Kantor Kal. Sukoharjo - A",
+    "lat": -7.703843,
+    "lon": 110.425108,
+    "name": "Kantor Kal. Sukoharjo - A"
+  },
+  {
+    "stop_id": "HT_081",
+    "stop_name": "Kantor Kal. Wedomartani - A",
+    "lat": -7.7315,
+    "lon": 110.434826,
+    "name": "Kantor Kal. Wedomartani - A"
+  },
+  {
+    "stop_id": "HT_082",
+    "stop_name": "Kantor Kap. Bantul",
+    "lat": -7.883543,
+    "lon": 110.331834,
+    "name": "Kantor Kap. Bantul"
+  },
+  {
+    "stop_id": "HT_083",
+    "stop_name": "Kantor Kap. Godean - A",
+    "lat": -7.769368,
+    "lon": 110.300242,
+    "name": "Kantor Kap. Godean - A"
+  },
+  {
+    "stop_id": "HT_084",
+    "stop_name": "Kantor Kap. Ngaglik",
+    "lat": -7.724102,
+    "lon": 110.401272,
+    "name": "Kantor Kap. Ngaglik"
+  },
+  {
+    "stop_id": "HT_085",
+    "stop_name": "Kantor Kesbangpol - A",
+    "lat": -7.856324,
+    "lon": 110.341402,
+    "name": "Kantor Kesbangpol - A"
+  },
+  {
+    "stop_id": "HT_086",
+    "stop_name": "Kantor Pos Demak Ijo - A",
+    "lat": -7.778029,
+    "lon": 110.335961,
+    "name": "Kantor Pos Demak Ijo - A"
+  },
+  {
+    "stop_id": "HT_087",
+    "stop_name": "Karangjati - A",
+    "lat": -7.764031,
+    "lon": 110.369243,
+    "name": "Karangjati - A"
+  },
+  {
+    "stop_id": "HT_088",
+    "stop_name": "Karangwaru - A",
+    "lat": -7.772261,
+    "lon": 110.361327,
+    "name": "Karangwaru - A"
+  },
+  {
+    "stop_id": "HT_089",
+    "stop_name": "Katamso",
+    "lat": -7.802722,
+    "lon": 110.369215,
+    "name": "Katamso"
+  },
+  {
+    "stop_id": "HT_090",
+    "stop_name": "Kentungan",
+    "lat": -7.756098,
+    "lon": 110.384626,
+    "name": "Kentungan"
+  },
+  {
+    "stop_id": "HT_091",
+    "stop_name": "Kopma UGM",
+    "lat": -7.774326,
+    "lon": 110.375122,
+    "name": "Kopma UGM"
+  },
+  {
+    "stop_id": "HT_092",
+    "stop_name": "Koramil Godean - A",
+    "lat": -7.771013,
+    "lon": 110.306856,
+    "name": "Koramil Godean - A"
+  },
+  {
+    "stop_id": "HT_093",
+    "stop_name": "Kosudgama",
+    "lat": -7.77617,
+    "lon": 110.37861,
+    "name": "Kosudgama"
+  },
+  {
+    "stop_id": "HT_094",
+    "stop_name": "Kotabaru",
+    "lat": -7.78466,
+    "lon": 110.3714,
+    "name": "Kotabaru"
+  },
+  {
+    "stop_id": "HT_095",
+    "stop_name": "Kricak",
+    "lat": -7.774326,
+    "lon": 110.361168,
+    "name": "Kricak"
+  },
+  {
+    "stop_id": "HT_096",
+    "stop_name": "Kridosono",
+    "lat": -7.787321,
+    "lon": 110.375367,
+    "name": "Kridosono"
+  },
+  {
+    "stop_id": "HT_097",
+    "stop_name": "Lap. Karang - A",
+    "lat": -7.822379,
+    "lon": 110.39653,
+    "name": "Lap. Karang - A"
+  },
+  {
+    "stop_id": "HT_098",
+    "stop_name": "Lap. Kasihan - A",
+    "lat": -7.824988,
+    "lon": 110.328143,
+    "name": "Lap. Kasihan - A"
+  },
+  {
+    "stop_id": "HT_099",
+    "stop_name": "Lap. Klidon - A",
+    "lat": -7.704223,
+    "lon": 110.426571,
+    "name": "Lap. Klidon - A"
+  },
+  {
+    "stop_id": "HT_100",
+    "stop_name": "Lapas Wirogunan - A",
+    "lat": -7.803958,
+    "lon": 110.378249,
+    "name": "Lapas Wirogunan - A"
+  },
+  {
+    "stop_id": "HT_101",
+    "stop_name": "Lempuyangan",
+    "lat": -7.790441,
+    "lon": 110.373639,
+    "name": "Lempuyangan"
+  },
+  {
+    "stop_id": "HT_102",
+    "stop_name": "Letjen Suprapto",
+    "lat": -7.790841,
+    "lon": 110.357437,
+    "name": "Letjen Suprapto"
+  },
+  {
+    "stop_id": "HT_103",
+    "stop_name": "Lowanu - A",
+    "lat": -7.81702,
+    "lon": 110.376028,
+    "name": "Lowanu - A"
+  },
+  {
+    "stop_id": "HT_104",
+    "stop_name": "MAN 1",
+    "lat": -7.777133,
+    "lon": 110.373921,
+    "name": "MAN 1"
+  },
+  {
+    "stop_id": "HT_105",
+    "stop_name": "MAN 2 Sleman - A",
+    "lat": -7.75038,
+    "lon": 110.434549,
+    "name": "MAN 2 Sleman - A"
+  },
+  {
+    "stop_id": "HT_106",
+    "stop_name": "MM UGM",
+    "lat": -7.76502,
+    "lon": 110.377002,
+    "name": "MM UGM"
+  },
+  {
+    "stop_id": "HT_107",
+    "stop_name": "MMTC Yogyakarta",
+    "lat": -7.750655,
+    "lon": 110.362263,
+    "name": "MMTC Yogyakarta"
+  },
+  {
+    "stop_id": "HT_108",
+    "stop_name": "Makam Gajah - A",
+    "lat": -7.801959,
+    "lon": 110.387464,
+    "name": "Makam Gajah - A"
+  },
+  {
+    "stop_id": "HT_109",
+    "stop_name": "Makam Prajurit",
+    "lat": -7.807423,
+    "lon": 110.387956,
+    "name": "Makam Prajurit"
+  },
+  {
+    "stop_id": "HT_110",
+    "stop_name": "Malioboro 1",
+    "lat": -7.790849,
+    "lon": 110.366122,
+    "name": "Malioboro 1"
+  },
+  {
+    "stop_id": "HT_111",
+    "stop_name": "Malioboro 2",
+    "lat": -7.795219,
+    "lon": 110.365592,
+    "name": "Malioboro 2"
+  },
+  {
+    "stop_id": "HT_112",
+    "stop_name": "Malioboro 3",
+    "lat": -7.7999,
+    "lon": 110.364998,
+    "name": "Malioboro 3"
+  },
+  {
+    "stop_id": "HT_113",
+    "stop_name": "Manggung",
+    "lat": -7.758049,
+    "lon": 110.386465,
+    "name": "Manggung"
+  },
+  {
+    "stop_id": "HT_114",
+    "stop_name": "Mangkubumi 1",
+    "lat": -7.784763,
+    "lon": 110.366863,
+    "name": "Mangkubumi 1"
+  },
+  {
+    "stop_id": "HT_115",
+    "stop_name": "Mangkubumi 2",
+    "lat": -7.787674,
+    "lon": 110.3665,
+    "name": "Mangkubumi 2"
+  },
+  {
+    "stop_id": "HT_116",
+    "stop_name": "McD",
+    "lat": -7.779392,
+    "lon": 110.34209,
+    "name": "McD"
+  },
+  {
+    "stop_id": "HT_117",
+    "stop_name": "Metro Nogotirto - A",
+    "lat": -7.777692,
+    "lon": 110.334364,
+    "name": "Metro Nogotirto - A"
+  },
+  {
+    "stop_id": "HT_118",
+    "stop_name": "Mirota Godean - A",
+    "lat": -7.781082,
+    "lon": 110.349717,
+    "name": "Mirota Godean - A"
+  },
+  {
+    "stop_id": "HT_119",
+    "stop_name": "Monjali - A",
+    "lat": -7.750564,
+    "lon": 110.367625,
+    "name": "Monjali - A"
+  },
+  {
+    "stop_id": "HT_120",
+    "stop_name": "Mualimin - A",
+    "lat": -7.807875,
+    "lon": 110.350951,
+    "name": "Mualimin - A"
+  },
+  {
+    "stop_id": "HT_121",
+    "stop_name": "Museum Bahari",
+    "lat": -7.800978,
+    "lon": 110.349279,
+    "name": "Museum Bahari"
+  },
+  {
+    "stop_id": "HT_122",
+    "stop_name": "Museum Biologi",
+    "lat": -7.801629,
+    "lon": 110.37415,
+    "name": "Museum Biologi"
+  },
+  {
+    "stop_id": "HT_123",
+    "stop_name": "Museum Perjuangan",
+    "lat": -7.815141,
+    "lon": 110.371858,
+    "name": "Museum Perjuangan"
+  },
+  {
+    "stop_id": "HT_124",
+    "stop_name": "Neutron Godean - A",
+    "lat": -7.771875,
+    "lon": 110.310305,
+    "name": "Neutron Godean - A"
+  },
+  {
+    "stop_id": "HT_125",
+    "stop_name": "Ngabean",
+    "lat": -7.803719,
+    "lon": 110.356236,
+    "name": "Ngabean"
+  },
+  {
+    "stop_id": "HT_126",
+    "stop_name": "Nitikan",
+    "lat": -7.824797,
+    "lon": 110.379983,
+    "name": "Nitikan"
+  },
+  {
+    "stop_id": "HT_127",
+    "stop_name": "Nyutran Tamansiswa",
+    "lat": -7.810933,
+    "lon": 110.376957,
+    "name": "Nyutran Tamansiswa"
+  },
+  {
+    "stop_id": "HT_128",
+    "stop_name": "PKU Gamping",
+    "lat": -7.80188,
+    "lon": 110.31679,
+    "name": "PKU Gamping"
+  },
+  {
+    "stop_id": "HT_129",
+    "stop_name": "Pakualaman",
+    "lat": -7.801649,
+    "lon": 110.375769,
+    "name": "Pakualaman"
+  },
+  {
+    "stop_id": "HT_130",
+    "stop_name": "Pakuwon Mall - A",
+    "lat": -7.758157,
+    "lon": 110.399478,
+    "name": "Pakuwon Mall - A"
+  },
+  {
+    "stop_id": "HT_131",
+    "stop_name": "Pandeyan",
+    "lat": -7.815783,
+    "lon": 110.386402,
+    "name": "Pandeyan"
+  },
+  {
+    "stop_id": "HT_132",
+    "stop_name": "Park and Ride Gamping",
+    "lat": -7.802454,
+    "lon": 110.314878,
+    "name": "Park and Ride Gamping"
+  },
+  {
+    "stop_id": "HT_133",
+    "stop_name": "Pasar Bantul - A",
+    "lat": -7.885246,
+    "lon": 110.331045,
+    "name": "Pasar Bantul - A"
+  },
+  {
+    "stop_id": "HT_134",
+    "stop_name": "Pasar Gamping - A",
+    "lat": -7.800627,
+    "lon": 110.323811,
+    "name": "Pasar Gamping - A"
+  },
+  {
+    "stop_id": "HT_135",
+    "stop_name": "Pasar Giwangan - A",
+    "lat": -7.831511,
+    "lon": 110.390009,
+    "name": "Pasar Giwangan - A"
+  },
+  {
+    "stop_id": "HT_136",
+    "stop_name": "Pasar Jangkang - A",
+    "lat": -7.702111,
+    "lon": 110.447333,
+    "name": "Pasar Jangkang - A"
+  },
+  {
+    "stop_id": "HT_137",
+    "stop_name": "Pasar Kalasan -  B",
+    "lat": -7.769913,
+    "lon": 110.468993,
+    "name": "Pasar Kalasan -  B"
+  },
+  {
+    "stop_id": "HT_138",
+    "stop_name": "Pasar Kalasan - A",
+    "lat": -7.769382,
+    "lon": 110.469632,
+    "name": "Pasar Kalasan - A"
+  },
+  {
+    "stop_id": "HT_139",
+    "stop_name": "Pasar Kolombo - A",
+    "lat": -7.745353,
+    "lon": 110.388874,
+    "name": "Pasar Kolombo - A"
+  },
+  {
+    "stop_id": "HT_140",
+    "stop_name": "Pasar Kranggan Selatan",
+    "lat": -7.782845,
+    "lon": 110.365659,
+    "name": "Pasar Kranggan Selatan"
+  },
+  {
+    "stop_id": "HT_141",
+    "stop_name": "Pasar Legi - A",
+    "lat": -7.809109,
+    "lon": 110.350094,
+    "name": "Pasar Legi - A"
+  },
+  {
+    "stop_id": "HT_142",
+    "stop_name": "Pasar Niten - A",
+    "lat": -7.838792,
+    "lon": 110.350526,
+    "name": "Pasar Niten - A"
+  },
+  {
+    "stop_id": "HT_143",
+    "stop_name": "Pasar Pathuk",
+    "lat": -7.795994,
+    "lon": 110.361866,
+    "name": "Pasar Pathuk"
+  },
+  {
+    "stop_id": "HT_144",
+    "stop_name": "Pasar Pingit - A",
+    "lat": -7.782809,
+    "lon": 110.358762,
+    "name": "Pasar Pingit - A"
+  },
+  {
+    "stop_id": "HT_145",
+    "stop_name": "Pasar Sentul",
+    "lat": -7.801717,
+    "lon": 110.37677,
+    "name": "Pasar Sentul"
+  },
+  {
+    "stop_id": "HT_146",
+    "stop_name": "Pasar Sepeda",
+    "lat": -7.816358,
+    "lon": 110.380364,
+    "name": "Pasar Sepeda"
+  },
+  {
+    "stop_id": "HT_147",
+    "stop_name": "Pasar Serangan - A",
+    "lat": -7.801112,
+    "lon": 110.354235,
+    "name": "Pasar Serangan - A"
+  },
+  {
+    "stop_id": "HT_148",
+    "stop_name": "Pasar Telo - A",
+    "lat": -7.824382,
+    "lon": 110.373324,
+    "name": "Pasar Telo - A"
+  },
+  {
+    "stop_id": "HT_149",
+    "stop_name": "Pasar Tlogorejo - A",
+    "lat": -7.778808,
+    "lon": 110.339471,
+    "name": "Pasar Tlogorejo - A"
+  },
+  {
+    "stop_id": "HT_150",
+    "stop_name": "Pasty - A",
+    "lat": -7.825689,
+    "lon": 110.354483,
+    "name": "Pasty - A"
+  },
+  {
+    "stop_id": "HT_151",
+    "stop_name": "Pegadaian",
+    "lat": -7.822774,
+    "lon": 110.400174,
+    "name": "Pegadaian"
+  },
+  {
+    "stop_id": "HT_152",
+    "stop_name": "Pelem Gurih - A",
+    "lat": -7.799896,
+    "lon": 110.330616,
+    "name": "Pelem Gurih - A"
+  },
+  {
+    "stop_id": "HT_153",
+    "stop_name": "Pilar",
+    "lat": -7.813484,
+    "lon": 110.402084,
+    "name": "Pilar"
+  },
+  {
+    "stop_id": "HT_154",
+    "stop_name": "Plengkung Gading - A",
+    "lat": -7.814171,
+    "lon": 110.363901,
+    "name": "Plengkung Gading - A"
+  },
+  {
+    "stop_id": "HT_155",
+    "stop_name": "Polres Bantul",
+    "lat": -7.889805,
+    "lon": 110.326512,
+    "name": "Polres Bantul"
+  },
+  {
+    "stop_id": "HT_156",
+    "stop_name": "Polsek Depok Timur - A",
+    "lat": -7.762567,
+    "lon": 110.415507,
+    "name": "Polsek Depok Timur - A"
+  },
+  {
+    "stop_id": "HT_157",
+    "stop_name": "Polsek Godean - A",
+    "lat": -7.771561,
+    "lon": 110.30907,
+    "name": "Polsek Godean - A"
+  },
+  {
+    "stop_id": "HT_158",
+    "stop_name": "Poltekkes BSI",
+    "lat": -7.814373,
+    "lon": 110.402114,
+    "name": "Poltekkes BSI"
+  },
+  {
+    "stop_id": "HT_159",
+    "stop_name": "Pramuka",
+    "lat": -7.818518,
+    "lon": 110.387374,
+    "name": "Pramuka"
+  },
+  {
+    "stop_id": "HT_160",
+    "stop_name": "Prayan - A",
+    "lat": -7.763473,
+    "lon": 110.393585,
+    "name": "Prayan - A"
+  },
+  {
+    "stop_id": "HT_161",
+    "stop_name": "Progo",
+    "lat": -7.798033,
+    "lon": 110.369306,
+    "name": "Progo"
+  },
+  {
+    "stop_id": "HT_162",
+    "stop_name": "Pujokusuman",
+    "lat": -7.814821,
+    "lon": 110.37006,
+    "name": "Pujokusuman"
+  },
+  {
+    "stop_id": "HT_163",
+    "stop_name": "Purawisata - A",
+    "lat": -7.80877,
+    "lon": 110.369129,
+    "name": "Purawisata - A"
+  },
+  {
+    "stop_id": "HT_164",
+    "stop_name": "Pusat Kuliner Belut Godean",
+    "lat": -7.767618,
+    "lon": 110.293516,
+    "name": "Pusat Kuliner Belut Godean"
+  },
+  {
+    "stop_id": "HT_165",
+    "stop_name": "Puskesmas Ngaglik - A",
+    "lat": -7.721894,
+    "lon": 110.402556,
+    "name": "Puskesmas Ngaglik - A"
+  },
+  {
+    "stop_id": "HT_166",
+    "stop_name": "Puskesmas Ngemplak - A",
+    "lat": -7.702928,
+    "lon": 110.444678,
+    "name": "Puskesmas Ngemplak - A"
+  },
+  {
+    "stop_id": "HT_167",
+    "stop_name": "RRI Gejayan",
+    "lat": -7.779508,
+    "lon": 110.388322,
+    "name": "RRI Gejayan"
+  },
+  {
+    "stop_id": "HT_168",
+    "stop_name": "RS Bethesda",
+    "lat": -7.783037,
+    "lon": 110.378017,
+    "name": "RS Bethesda"
+  },
+  {
+    "stop_id": "HT_169",
+    "stop_name": "RS Hardjolukito",
+    "lat": -7.797367,
+    "lon": 110.41002,
+    "name": "RS Hardjolukito"
+  },
+  {
+    "stop_id": "HT_170",
+    "stop_name": "RS Hidayatullah",
+    "lat": -7.815604,
+    "lon": 110.387793,
+    "name": "RS Hidayatullah"
+  },
+  {
+    "stop_id": "HT_171",
+    "stop_name": "RS JIH",
+    "lat": -7.758875,
+    "lon": 110.403075,
+    "name": "RS JIH"
+  },
+  {
+    "stop_id": "HT_172",
+    "stop_name": "RS Kemasan - A",
+    "lat": -7.713281,
+    "lon": 110.448042,
+    "name": "RS Kemasan - A"
+  },
+  {
+    "stop_id": "HT_173",
+    "stop_name": "RS Panti Nugroho",
+    "lat": -7.669267,
+    "lon": 110.417594,
+    "name": "RS Panti Nugroho"
+  },
+  {
+    "stop_id": "HT_174",
+    "stop_name": "RS Panti Rapih",
+    "lat": -7.776251,
+    "lon": 110.37822,
+    "name": "RS Panti Rapih"
+  },
+  {
+    "stop_id": "HT_175",
+    "stop_name": "RS Sardjito - A",
+    "lat": -7.767817,
+    "lon": 110.374276,
+    "name": "RS Sardjito - A"
+  },
+  {
+    "stop_id": "HT_176",
+    "stop_name": "RSU Gramedika - A",
+    "lat": -7.70113,
+    "lon": 110.416987,
+    "name": "RSU Gramedika - A"
+  },
+  {
+    "stop_id": "HT_177",
+    "stop_name": "Raminten - A",
+    "lat": -7.675976,
+    "lon": 110.417261,
+    "name": "Raminten - A"
+  },
+  {
+    "stop_id": "HT_178",
+    "stop_name": "Ruba Graha - A",
+    "lat": -7.820883,
+    "lon": 110.361994,
+    "name": "Ruba Graha - A"
+  },
+  {
+    "stop_id": "HT_179",
+    "stop_name": "SDN 1 Demak Ijo - A",
+    "lat": -7.778221,
+    "lon": 110.336809,
+    "name": "SDN 1 Demak Ijo - A"
+  },
+  {
+    "stop_id": "HT_180",
+    "stop_name": "SDN 1 Depok - B",
+    "lat": -7.760914,
+    "lon": 110.432945,
+    "name": "SDN 1 Depok - B"
+  },
+  {
+    "stop_id": "HT_181",
+    "stop_name": "SDN Percobaan 3 Pakem",
+    "lat": -7.668404,
+    "lon": 110.417696,
+    "name": "SDN Percobaan 3 Pakem"
+  },
+  {
+    "stop_id": "HT_182",
+    "stop_name": "SDN Selomulyo - A",
+    "lat": -7.702391,
+    "lon": 110.420716,
+    "name": "SDN Selomulyo - A"
+  },
+  {
+    "stop_id": "HT_183",
+    "stop_name": "SGM Kusumanegara - A",
+    "lat": -7.802084,
+    "lon": 110.393031,
+    "name": "SGM Kusumanegara - A"
+  },
+  {
+    "stop_id": "HT_184",
+    "stop_name": "SMA Muh 3",
+    "lat": -7.80673,
+    "lon": 110.350539,
+    "name": "SMA Muh 3"
+  },
+  {
+    "stop_id": "HT_185",
+    "stop_name": "SMA N 5",
+    "lat": -7.822557,
+    "lon": 110.399158,
+    "name": "SMA N 5"
+  },
+  {
+    "stop_id": "HT_186",
+    "stop_name": "SMAN 1 - A",
+    "lat": -7.799353,
+    "lon": 110.352117,
+    "name": "SMAN 1 - A"
+  },
+  {
+    "stop_id": "HT_187",
+    "stop_name": "SMAN 2 Ngaglik - A",
+    "lat": -7.704858,
+    "lon": 110.43501,
+    "name": "SMAN 2 Ngaglik - A"
+  },
+  {
+    "stop_id": "HT_188",
+    "stop_name": "SMAN 7",
+    "lat": -7.813417,
+    "lon": 110.358131,
+    "name": "SMAN 7"
+  },
+  {
+    "stop_id": "HT_189",
+    "stop_name": "SMK Seni - A",
+    "lat": -7.814457,
+    "lon": 110.34899,
+    "name": "SMK Seni - A"
+  },
+  {
+    "stop_id": "HT_190",
+    "stop_name": "SMKN 1 Depok - Jl. Raya Tajem - A",
+    "lat": -7.765242,
+    "lon": 110.431485,
+    "name": "SMKN 1 Depok - Jl. Raya Tajem - A"
+  },
+  {
+    "stop_id": "HT_191",
+    "stop_name": "SMKN 5 - A",
+    "lat": -7.800357,
+    "lon": 110.395063,
+    "name": "SMKN 5 - A"
+  },
+  {
+    "stop_id": "HT_192",
+    "stop_name": "SMP Kanisius Gayam - A",
+    "lat": -7.795822,
+    "lon": 110.377749,
+    "name": "SMP Kanisius Gayam - A"
+  },
+  {
+    "stop_id": "HT_193",
+    "stop_name": "SMP Muh 3",
+    "lat": -7.802916,
+    "lon": 110.351402,
+    "name": "SMP Muh 3"
+  },
+  {
+    "stop_id": "HT_194",
+    "stop_name": "SMPN 1 - A",
+    "lat": -7.777468,
+    "lon": 110.375811,
+    "name": "SMPN 1 - A"
+  },
+  {
+    "stop_id": "HT_195",
+    "stop_name": "SMPN 11",
+    "lat": -7.792973,
+    "lon": 110.353401,
+    "name": "SMPN 11"
+  },
+  {
+    "stop_id": "HT_196",
+    "stop_name": "SMPN 14",
+    "lat": -7.786576,
+    "lon": 110.359987,
+    "name": "SMPN 14"
+  },
+  {
+    "stop_id": "HT_197",
+    "stop_name": "SMPN 2 Bantul - A",
+    "lat": -7.874332,
+    "lon": 110.335823,
+    "name": "SMPN 2 Bantul - A"
+  },
+  {
+    "stop_id": "HT_198",
+    "stop_name": "SMPN 2 Ngaglik - A",
+    "lat": -7.715823,
+    "lon": 110.40604,
+    "name": "SMPN 2 Ngaglik - A"
+  },
+  {
+    "stop_id": "HT_199",
+    "stop_name": "SMPN 4 Pakem",
+    "lat": -7.669215,
+    "lon": 110.417642,
+    "name": "SMPN 4 Pakem"
+  },
+  {
+    "stop_id": "HT_200",
+    "stop_name": "SMPN 6",
+    "lat": -7.778079,
+    "lon": 110.366993,
+    "name": "SMPN 6"
+  },
+  {
+    "stop_id": "HT_201",
+    "stop_name": "SMPN 9 - A",
+    "lat": -7.819796,
+    "lon": 110.398023,
+    "name": "SMPN 9 - A"
+  },
+  {
+    "stop_id": "HT_202",
+    "stop_name": "SPBU Concat - A",
+    "lat": -7.759985,
+    "lon": 110.394935,
+    "name": "SPBU Concat - A"
+  },
+  {
+    "stop_id": "HT_203",
+    "stop_name": "SPBU Mindi - A",
+    "lat": -7.704862,
+    "lon": 110.431029,
+    "name": "SPBU Mindi - A"
+  },
+  {
+    "stop_id": "HT_204",
+    "stop_name": "SPBU Monjali - A",
+    "lat": -7.760138,
+    "lon": 110.369535,
+    "name": "SPBU Monjali - A"
+  },
+  {
+    "stop_id": "HT_205",
+    "stop_name": "STIE Kerjasama",
+    "lat": -7.816663,
+    "lon": 110.382853,
+    "name": "STIE Kerjasama"
+  },
+  {
+    "stop_id": "HT_206",
+    "stop_name": "STIE YKPN - A",
+    "lat": -7.767023,
+    "lon": 110.410413,
+    "name": "STIE YKPN - A"
+  },
+  {
+    "stop_id": "HT_207",
+    "stop_name": "Sahid J-Walk",
+    "lat": -7.779567,
+    "lon": 110.414697,
+    "name": "Sahid J-Walk"
+  },
+  {
+    "stop_id": "HT_208",
+    "stop_name": "Samirono",
+    "lat": -7.777646,
+    "lon": 110.387512,
+    "name": "Samirono"
+  },
+  {
+    "stop_id": "HT_209",
+    "stop_name": "Samsat",
+    "lat": -7.787165,
+    "lon": 110.359764,
+    "name": "Samsat"
+  },
+  {
+    "stop_id": "HT_210",
+    "stop_name": "Sanata Dharma",
+    "lat": -7.775083,
+    "lon": 110.389249,
+    "name": "Sanata Dharma"
+  },
+  {
+    "stop_id": "HT_211",
+    "stop_name": "Santren",
+    "lat": -7.766374,
+    "lon": 110.391976,
+    "name": "Santren"
+  },
+  {
+    "stop_id": "HT_212",
+    "stop_name": "Selokan Mataram Maguwo",
+    "lat": -7.77096,
+    "lon": 110.431043,
+    "name": "Selokan Mataram Maguwo"
+  },
+  {
+    "stop_id": "HT_213",
+    "stop_name": "Senopati",
+    "lat": -7.801501,
+    "lon": 110.367038,
+    "name": "Senopati"
+  },
+  {
+    "stop_id": "HT_214",
+    "stop_name": "Simpang Babadan - A",
+    "lat": -7.723146,
+    "lon": 110.435469,
+    "name": "Simpang Babadan - A"
+  },
+  {
+    "stop_id": "HT_215",
+    "stop_name": "Simpang Bantulan - A",
+    "lat": -7.774802,
+    "lon": 110.322299,
+    "name": "Simpang Bantulan - A"
+  },
+  {
+    "stop_id": "HT_216",
+    "stop_name": "Simpang Besi Jakal - A",
+    "lat": -7.70021,
+    "lon": 110.415388,
+    "name": "Simpang Besi Jakal - A"
+  },
+  {
+    "stop_id": "HT_217",
+    "stop_name": "Simpang Degolan - A",
+    "lat": -7.684067,
+    "lon": 110.419171,
+    "name": "Simpang Degolan - A"
+  },
+  {
+    "stop_id": "HT_218",
+    "stop_name": "Simpang Diklat DIY - A",
+    "lat": -7.828797,
+    "lon": 110.332504,
+    "name": "Simpang Diklat DIY - A"
+  },
+  {
+    "stop_id": "HT_219",
+    "stop_name": "Simpang Gesikan - A",
+    "lat": -7.773567,
+    "lon": 110.316446,
+    "name": "Simpang Gesikan - A"
+  },
+  {
+    "stop_id": "HT_220",
+    "stop_name": "Simpang Gose - A",
+    "lat": -7.891818,
+    "lon": 110.325388,
+    "name": "Simpang Gose - A"
+  },
+  {
+    "stop_id": "HT_221",
+    "stop_name": "Simpang Kabunan - A",
+    "lat": -7.71859,
+    "lon": 110.438559,
+    "name": "Simpang Kabunan - A"
+  },
+  {
+    "stop_id": "HT_222",
+    "stop_name": "Simpang Kasongan - A",
+    "lat": -7.846332,
+    "lon": 110.344539,
+    "name": "Simpang Kasongan - A"
+  },
+  {
+    "stop_id": "HT_223",
+    "stop_name": "Simpang Kenti - A",
+    "lat": -7.703531,
+    "lon": 110.448079,
+    "name": "Simpang Kenti - A"
+  },
+  {
+    "stop_id": "HT_224",
+    "stop_name": "Simpang Losari - A",
+    "lat": -7.704851,
+    "lon": 110.433006,
+    "name": "Simpang Losari - A"
+  },
+  {
+    "stop_id": "HT_225",
+    "stop_name": "Simpang Mandungan (Iwak Kalen) - A",
+    "lat": -7.770049,
+    "lon": 110.303015,
+    "name": "Simpang Mandungan (Iwak Kalen) - A"
+  },
+  {
+    "stop_id": "HT_226",
+    "stop_name": "Simpang Munggur - A",
+    "lat": -7.77394,
+    "lon": 110.318355,
+    "name": "Simpang Munggur - A"
+  },
+  {
+    "stop_id": "HT_227",
+    "stop_name": "Simpang Palem Raya - A",
+    "lat": -7.730553,
+    "lon": 110.397561,
+    "name": "Simpang Palem Raya - A"
+  },
+  {
+    "stop_id": "HT_228",
+    "stop_name": "Simpang Selomartani - A",
+    "lat": -7.722328,
+    "lon": 110.438107,
+    "name": "Simpang Selomartani - A"
+  },
+  {
+    "stop_id": "HT_229",
+    "stop_name": "Simpang Wojo",
+    "lat": -7.836372,
+    "lon": 110.373776,
+    "name": "Simpang Wojo"
+  },
+  {
+    "stop_id": "HT_230",
+    "stop_name": "Sosrowijayan",
+    "lat": -7.79207,
+    "lon": 110.361618,
+    "name": "Sosrowijayan"
+  },
+  {
+    "stop_id": "HT_231",
+    "stop_name": "Stasiun Yogyakarta",
+    "lat": -7.789651,
+    "lon": 110.361724,
+    "name": "Stasiun Yogyakarta"
+  },
+  {
+    "stop_id": "HT_232",
+    "stop_name": "Stikes Guna Bangsa",
+    "lat": -7.760772,
+    "lon": 110.408957,
+    "name": "Stikes Guna Bangsa"
+  },
+  {
+    "stop_id": "HT_233",
+    "stop_name": "Superindo Jakal - A",
+    "lat": -7.752579,
+    "lon": 110.384644,
+    "name": "Superindo Jakal - A"
+  },
+  {
+    "stop_id": "HT_234",
+    "stop_name": "Superindo Urip Sumoharjo",
+    "lat": -7.783094,
+    "lon": 110.382333,
+    "name": "Superindo Urip Sumoharjo"
+  },
+  {
+    "stop_id": "HT_235",
+    "stop_name": "Suryotomo",
+    "lat": -7.79926,
+    "lon": 110.369312,
+    "name": "Suryotomo"
+  },
+  {
+    "stop_id": "HT_236",
+    "stop_name": "Susteran Novisiat",
+    "lat": -7.76613,
+    "lon": 110.392154,
+    "name": "Susteran Novisiat"
+  },
+  {
+    "stop_id": "HT_237",
+    "stop_name": "TNI AL - A",
+    "lat": -7.792319,
+    "lon": 110.390949,
+    "name": "TNI AL - A"
+  },
+  {
+    "stop_id": "HT_238",
+    "stop_name": "TVRI - A",
+    "lat": -7.765273,
+    "lon": 110.361649,
+    "name": "TVRI - A"
+  },
+  {
+    "stop_id": "HT_239",
+    "stop_name": "Taman Pintar",
+    "lat": -7.801416,
+    "lon": 110.367152,
+    "name": "Taman Pintar"
+  },
+  {
+    "stop_id": "HT_240",
+    "stop_name": "Tamansari",
+    "lat": -7.809838,
+    "lon": 110.356008,
+    "name": "Tamansari"
+  },
+  {
+    "stop_id": "HT_241",
+    "stop_name": "Tarumartani - A",
+    "lat": -7.790501,
+    "lon": 110.381988,
+    "name": "Tarumartani - A"
+  },
+  {
+    "stop_id": "HT_242",
+    "stop_name": "Tegal Gendu - A",
+    "lat": -7.826047,
+    "lon": 110.391763,
+    "name": "Tegal Gendu - A"
+  },
+  {
+    "stop_id": "HT_243",
+    "stop_name": "Tegal Turi - A",
+    "lat": -7.825394,
+    "lon": 110.387097,
+    "name": "Tegal Turi - A"
+  },
+  {
+    "stop_id": "HT_244",
+    "stop_name": "Teknik UGM - A",
+    "lat": -7.764241,
+    "lon": 110.374625,
+    "name": "Teknik UGM - A"
+  },
+  {
+    "stop_id": "HT_245",
+    "stop_name": "Terminal Condongcatur",
+    "lat": -7.756625,
+    "lon": 110.395875,
+    "name": "Terminal Condongcatur"
+  },
+  {
+    "stop_id": "HT_246",
+    "stop_name": "Terminal Giwangan",
+    "lat": -7.834176,
+    "lon": 110.391835,
+    "name": "Terminal Giwangan"
+  },
+  {
+    "stop_id": "HT_247",
+    "stop_name": "Terminal Jombor",
+    "lat": -7.747405,
+    "lon": 110.361238,
+    "name": "Terminal Jombor"
+  },
+  {
+    "stop_id": "HT_248",
+    "stop_name": "Terminal Pakem",
+    "lat": -7.666865,
+    "lon": 110.419988,
+    "name": "Terminal Pakem"
+  },
+  {
+    "stop_id": "HT_249",
+    "stop_name": "Terminal Palbapang",
+    "lat": -7.905322,
+    "lon": 110.318426,
+    "name": "Terminal Palbapang"
+  },
+  {
+    "stop_id": "HT_250",
+    "stop_name": "Terminal Prambanan",
+    "lat": -7.755659,
+    "lon": 110.489817,
+    "name": "Terminal Prambanan"
+  },
+  {
+    "stop_id": "HT_251",
+    "stop_name": "Timoho - A",
+    "lat": -7.795313,
+    "lon": 110.392821,
+    "name": "Timoho - A"
+  },
+  {
+    "stop_id": "HT_252",
+    "stop_name": "Timur Jembatan Yapah - A",
+    "lat": -7.705049,
+    "lon": 110.43919,
+    "name": "Timur Jembatan Yapah - A"
+  },
+  {
+    "stop_id": "HT_253",
+    "stop_name": "Toko Saerah - A",
+    "lat": -7.776179,
+    "lon": 110.327786,
+    "name": "Toko Saerah - A"
+  },
+  {
+    "stop_id": "HT_254",
+    "stop_name": "Tugu Adipura",
+    "lat": -7.889221,
+    "lon": 110.327038,
+    "name": "Tugu Adipura"
+  },
+  {
+    "stop_id": "HT_255",
+    "stop_name": "Tugu Batas Desa Yapah - A",
+    "lat": -7.703803,
+    "lon": 110.442614,
+    "name": "Tugu Batas Desa Yapah - A"
+  },
+  {
+    "stop_id": "HT_256",
+    "stop_name": "UIN Sunan Kalijaga - A",
+    "lat": -7.786192,
+    "lon": 110.394844,
+    "name": "UIN Sunan Kalijaga - A"
+  },
+  {
+    "stop_id": "HT_257",
+    "stop_name": "UKDW",
+    "lat": -7.785524,
+    "lon": 110.378843,
+    "name": "UKDW"
+  },
+  {
+    "stop_id": "HT_258",
+    "stop_name": "UMY - A",
+    "lat": -7.810704,
+    "lon": 110.324509,
+    "name": "UMY - A"
+  },
+  {
+    "stop_id": "HT_259",
+    "stop_name": "UNRIYO - A",
+    "lat": -7.74633,
+    "lon": 110.434167,
+    "name": "UNRIYO - A"
+  },
+  {
+    "stop_id": "HT_260",
+    "stop_name": "UNU",
+    "lat": -7.819767,
+    "lon": 110.376455,
+    "name": "UNU"
+  },
+  {
+    "stop_id": "HT_261",
+    "stop_name": "UNY Colombo",
+    "lat": -7.777757,
+    "lon": 110.386689,
+    "name": "UNY Colombo"
+  },
+  {
+    "stop_id": "HT_262",
+    "stop_name": "UTY Glagahsari - A",
+    "lat": -7.805533,
+    "lon": 110.388438,
+    "name": "UTY Glagahsari - A"
+  },
+  {
+    "stop_id": "HT_263",
+    "stop_name": "Universitas Aisyiyah",
+    "lat": -7.768221,
+    "lon": 110.334536,
+    "name": "Universitas Aisyiyah"
+  },
+  {
+    "stop_id": "HT_264",
+    "stop_name": "Universitas Alma Ata",
+    "lat": -7.818408,
+    "lon": 110.324131,
+    "name": "Universitas Alma Ata"
+  },
+  {
+    "stop_id": "HT_265",
+    "stop_name": "Veteran",
+    "lat": -7.815228,
+    "lon": 110.389139,
+    "name": "Veteran"
+  },
+  {
+    "stop_id": "HT_266",
+    "stop_name": "Vokasi UGM",
+    "lat": -7.774525,
+    "lon": 110.374977,
+    "name": "Vokasi UGM"
+  },
+  {
+    "stop_id": "HT_267",
+    "stop_name": "Wedangan Kampoeng - A",
+    "lat": -7.702736,
+    "lon": 110.413581,
+    "name": "Wedangan Kampoeng - A"
+  },
+  {
+    "stop_id": "HT_268",
+    "stop_name": "Westlake - A",
+    "lat": -7.749237,
+    "lon": 110.341112,
+    "name": "Westlake - A"
+  },
+  {
+    "stop_id": "HT_269",
+    "stop_name": "Widya Wiwaha - A",
+    "lat": -7.822717,
+    "lon": 110.377625,
+    "name": "Widya Wiwaha - A"
+  },
+  {
+    "stop_id": "HT_270",
+    "stop_name": "Wirosaban",
+    "lat": -7.824776,
+    "lon": 110.379247,
+    "name": "Wirosaban"
+  },
+  {
+    "stop_id": "HT_271",
+    "stop_name": "Wojo (Randubelang) - A",
+    "lat": -7.831416,
+    "lon": 110.373919,
+    "name": "Wojo (Randubelang) - A"
+  },
+  {
+    "stop_id": "HT_272",
+    "stop_name": "Wonocatur",
+    "lat": -7.798619,
+    "lon": 110.406405,
+    "name": "Wonocatur"
+  },
+  {
+    "stop_id": "HT_273",
+    "stop_name": "YAKKUM - A",
+    "lat": -7.695592,
+    "lon": 110.418017,
+    "name": "YAKKUM - A"
+  }
+]

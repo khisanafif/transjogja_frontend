@@ -1,0 +1,2672 @@
+[
+  {
+    "new_id": "TJ_0001",
+    "old_id": "S0001",
+    "name": "Terminal Condongcatur"
+  },
+  {
+    "new_id": "TJ_0002",
+    "old_id": "S0002",
+    "name": "SPBU Concat (Timur)"
+  },
+  {
+    "new_id": "TJ_0003",
+    "old_id": "S0003",
+    "name": "Prayan (Timur)"
+  },
+  {
+    "new_id": "TJ_0004",
+    "old_id": "S0004",
+    "name": "Susteran Novisiat (Timur)"
+  },
+  {
+    "new_id": "TJ_0005",
+    "old_id": "S0005",
+    "name": "Sanata Dharma (Timur)"
+  },
+  {
+    "new_id": "TJ_0006",
+    "old_id": "S0006",
+    "name": "Samirono (Selatan)"
+  },
+  {
+    "new_id": "TJ_0007",
+    "old_id": "S0007",
+    "name": "RS Panti Rapih (Selatan)"
+  },
+  {
+    "new_id": "TJ_0008",
+    "old_id": "S0008",
+    "name": "Vokasi UGM (Barat)"
+  },
+  {
+    "new_id": "TJ_0009",
+    "old_id": "S0009",
+    "name": "MGU FKG UGM (Selatan)"
+  },
+  {
+    "new_id": "TJ_0010",
+    "old_id": "S0010",
+    "name": "RS Sardjito (Barat)"
+  },
+  {
+    "new_id": "TJ_0011",
+    "old_id": "S0011",
+    "name": "MM UGM (Utara)"
+  },
+  {
+    "new_id": "TJ_0012",
+    "old_id": "S0012",
+    "name": "Hotel Vidi (Barat)"
+  },
+  {
+    "new_id": "TJ_0013",
+    "old_id": "S0013",
+    "name": "Hokben Jakal (Barat)"
+  },
+  {
+    "new_id": "TJ_0014",
+    "old_id": "S0014",
+    "name": "Superindo Jakal (Barat)"
+  },
+  {
+    "new_id": "TJ_0015",
+    "old_id": "S0015",
+    "name": "Pasar Kolombo (Barat)"
+  },
+  {
+    "new_id": "TJ_0016",
+    "old_id": "S0016",
+    "name": "Gardu PLN (Barat)"
+  },
+  {
+    "new_id": "TJ_0017",
+    "old_id": "S0017",
+    "name": "Simpang Palem Raya (Barat)"
+  },
+  {
+    "new_id": "TJ_0018",
+    "old_id": "S0018",
+    "name": "Kantor Kap. Ngaglik (Barat)"
+  },
+  {
+    "new_id": "TJ_0019",
+    "old_id": "S0019",
+    "name": "Puskesmas Ngaglik (Barat)"
+  },
+  {
+    "new_id": "TJ_0020",
+    "old_id": "S0020",
+    "name": "SMPN 2 Ngaglik (Barat)"
+  },
+  {
+    "new_id": "TJ_0021",
+    "old_id": "S0021",
+    "name": "SPBU Jakal (Barat)"
+  },
+  {
+    "new_id": "TJ_0022",
+    "old_id": "S0022",
+    "name": "Wedangan Kampoeng (Barat)"
+  },
+  {
+    "new_id": "TJ_0023",
+    "old_id": "S0023",
+    "name": "Simpang Besi Jakal (Barat)"
+  },
+  {
+    "new_id": "TJ_0024",
+    "old_id": "S0024",
+    "name": "YAKKUM (Barat)"
+  },
+  {
+    "new_id": "TJ_0025",
+    "old_id": "S0025",
+    "name": "UII Boulevard UII"
+  },
+  {
+    "new_id": "TJ_0026",
+    "old_id": "S0026",
+    "name": "UII (Barat)"
+  },
+  {
+    "new_id": "TJ_0027",
+    "old_id": "S0027",
+    "name": "Simpang Degolan (Barat)"
+  },
+  {
+    "new_id": "TJ_0028",
+    "old_id": "S0028",
+    "name": "Raminten (Barat)"
+  },
+  {
+    "new_id": "TJ_0029",
+    "old_id": "S0029",
+    "name": "Dusun Kledokan (Barat)"
+  },
+  {
+    "new_id": "TJ_0030",
+    "old_id": "S0030",
+    "name": "RS Panti Nugroho (Barat)"
+  },
+  {
+    "new_id": "TJ_0031",
+    "old_id": "S0031",
+    "name": "SDN Percobaan 3 Pakem"
+  },
+  {
+    "new_id": "TJ_0032",
+    "old_id": "S0032",
+    "name": "SMPN 4 Pakem (Timur)"
+  },
+  {
+    "new_id": "TJ_0033",
+    "old_id": "S0033",
+    "name": "Dusun Kledokan (Timur)"
+  },
+  {
+    "new_id": "TJ_0034",
+    "old_id": "S0034",
+    "name": "Raminten (Timur)"
+  },
+  {
+    "new_id": "TJ_0035",
+    "old_id": "S0035",
+    "name": "Simpang Degolan (Timur)"
+  },
+  {
+    "new_id": "TJ_0036",
+    "old_id": "S0036",
+    "name": "UII (Timur)"
+  },
+  {
+    "new_id": "TJ_0037",
+    "old_id": "S0037",
+    "name": "YAKKUM (Timur)"
+  },
+  {
+    "new_id": "TJ_0038",
+    "old_id": "S0038",
+    "name": "Simpang Besi Jakal (Timur)"
+  },
+  {
+    "new_id": "TJ_0039",
+    "old_id": "S0039",
+    "name": "Wedangan Kampoeng (Timur)"
+  },
+  {
+    "new_id": "TJ_0040",
+    "old_id": "S0040",
+    "name": "SPBU Jakal (Timur)"
+  },
+  {
+    "new_id": "TJ_0041",
+    "old_id": "S0041",
+    "name": "SMPN 2 Ngaglik (Timur)"
+  },
+  {
+    "new_id": "TJ_0042",
+    "old_id": "S0042",
+    "name": "Puskesmas Ngaglik (Timur)"
+  },
+  {
+    "new_id": "TJ_0043",
+    "old_id": "S0043",
+    "name": "TK BIAS (Timur)"
+  },
+  {
+    "new_id": "TJ_0044",
+    "old_id": "S0044",
+    "name": "Simpang Palem Raya (Timur)"
+  },
+  {
+    "new_id": "TJ_0045",
+    "old_id": "S0045",
+    "name": "Gardu PLN (Timur)"
+  },
+  {
+    "new_id": "TJ_0046",
+    "old_id": "S0046",
+    "name": "Pasar Kolombo (Timur)"
+  },
+  {
+    "new_id": "TJ_0047",
+    "old_id": "S0047",
+    "name": "Superindo Jakal (Timur)"
+  },
+  {
+    "new_id": "TJ_0048",
+    "old_id": "S0048",
+    "name": "Hokben Jakal (Timur)"
+  },
+  {
+    "new_id": "TJ_0049",
+    "old_id": "S0049",
+    "name": "McD Jakal (Timur)"
+  },
+  {
+    "new_id": "TJ_0050",
+    "old_id": "S0050",
+    "name": "Biologi UGM (Selatan)"
+  },
+  {
+    "new_id": "TJ_0051",
+    "old_id": "S0051",
+    "name": "MGU RS Sardjito (Timur)"
+  },
+  {
+    "new_id": "TJ_0052",
+    "old_id": "S0052",
+    "name": "FKG UGM (Utara)"
+  },
+  {
+    "new_id": "TJ_0053",
+    "old_id": "S0053",
+    "name": "Vokasi UGM (Timur)"
+  },
+  {
+    "new_id": "TJ_0054",
+    "old_id": "S0054",
+    "name": "Kosudgama (Utara)"
+  },
+  {
+    "new_id": "TJ_0055",
+    "old_id": "S0055",
+    "name": "UNY Colombo (Utara)"
+  },
+  {
+    "new_id": "TJ_0056",
+    "old_id": "S0056",
+    "name": "Plaza UNY (Barat)"
+  },
+  {
+    "new_id": "TJ_0057",
+    "old_id": "S0057",
+    "name": "Santren (Barat)"
+  },
+  {
+    "new_id": "TJ_0058",
+    "old_id": "S0058",
+    "name": "Prayan (Barat)"
+  },
+  {
+    "new_id": "TJ_0059",
+    "old_id": "S0059",
+    "name": "SPBU Concat (Barat)"
+  },
+  {
+    "new_id": "TJ_0060",
+    "old_id": "S0060",
+    "name": "Pusat Kuliner Belut Godean"
+  },
+  {
+    "new_id": "TJ_0061",
+    "old_id": "S0061",
+    "name": "Kantor Kap. Godean (Utara)"
+  },
+  {
+    "new_id": "TJ_0062",
+    "old_id": "S0062",
+    "name": "Simpang Mandungan (Utara)"
+  },
+  {
+    "new_id": "TJ_0063",
+    "old_id": "S0063",
+    "name": "Koramil Godean (Utara)"
+  },
+  {
+    "new_id": "TJ_0064",
+    "old_id": "S0064",
+    "name": "Polsek Godean (Utara)"
+  },
+  {
+    "new_id": "TJ_0065",
+    "old_id": "S0065",
+    "name": "Neutron Godean (Utara)"
+  },
+  {
+    "new_id": "TJ_0066",
+    "old_id": "S0066",
+    "name": "Indomaret Klajuran (Utara)"
+  },
+  {
+    "new_id": "TJ_0067",
+    "old_id": "S0067",
+    "name": "Simpang Gesikan (Utara)"
+  },
+  {
+    "new_id": "TJ_0068",
+    "old_id": "S0068",
+    "name": "Simpang Munggur (Utara)"
+  },
+  {
+    "new_id": "TJ_0069",
+    "old_id": "S0069",
+    "name": "Simpang Bantulan (Utara)"
+  },
+  {
+    "new_id": "TJ_0070",
+    "old_id": "S0070",
+    "name": "Kantor Kal. Sidoarum (Utara)"
+  },
+  {
+    "new_id": "TJ_0071",
+    "old_id": "S0071",
+    "name": "Toko Saerah (Utara)"
+  },
+  {
+    "new_id": "TJ_0072",
+    "old_id": "S0072",
+    "name": "Nogotirto Metro (Utara)"
+  },
+  {
+    "new_id": "TJ_0073",
+    "old_id": "S0073",
+    "name": "Kantor Pos Demak Ijo (Utara)"
+  },
+  {
+    "new_id": "TJ_0074",
+    "old_id": "S0074",
+    "name": "SDN 1 Demak Ijo (Utara)"
+  },
+  {
+    "new_id": "TJ_0075",
+    "old_id": "S0075",
+    "name": "Pasar Tlogorejo (Utara)"
+  },
+  {
+    "new_id": "TJ_0076",
+    "old_id": "S0076",
+    "name": "McD Godean"
+  },
+  {
+    "new_id": "TJ_0077",
+    "old_id": "S0077",
+    "name": "Mirota Godean (Utara)"
+  },
+  {
+    "new_id": "TJ_0078",
+    "old_id": "S0078",
+    "name": "BKD"
+  },
+  {
+    "new_id": "TJ_0079",
+    "old_id": "S0079",
+    "name": "Pasar Pingit (Utara)"
+  },
+  {
+    "new_id": "TJ_0080",
+    "old_id": "S0080",
+    "name": "Pasar Kranggan Selatan"
+  },
+  {
+    "new_id": "TJ_0081",
+    "old_id": "S0081",
+    "name": "Jend. Sudirman (Utara)"
+  },
+  {
+    "new_id": "TJ_0082",
+    "old_id": "S0082",
+    "name": "Bulog"
+  },
+  {
+    "new_id": "TJ_0083",
+    "old_id": "S0083",
+    "name": "KHA Dahlan (Selatan)"
+  },
+  {
+    "new_id": "TJ_0084",
+    "old_id": "S0084",
+    "name": "Ngabean"
+  },
+  {
+    "new_id": "TJ_0085",
+    "old_id": "S0085",
+    "name": "Pasar Serangan (Selatan)"
+  },
+  {
+    "new_id": "TJ_0086",
+    "old_id": "S0086",
+    "name": "SMAN 1 (Barat)"
+  },
+  {
+    "new_id": "TJ_0087",
+    "old_id": "S0087",
+    "name": "SMPN 11 (Barat)"
+  },
+  {
+    "new_id": "TJ_0088",
+    "old_id": "S0088",
+    "name": "Mirota Godean (Selatan)"
+  },
+  {
+    "new_id": "TJ_0089",
+    "old_id": "S0089",
+    "name": "Dentes Godean (Selatan)"
+  },
+  {
+    "new_id": "TJ_0090",
+    "old_id": "S0090",
+    "name": "Pasar Tlogorejo (Selatan)"
+  },
+  {
+    "new_id": "TJ_0091",
+    "old_id": "S0091",
+    "name": "SDN 1 Demak Ijo (Selatan)"
+  },
+  {
+    "new_id": "TJ_0092",
+    "old_id": "S0092",
+    "name": "Kantor Pos Demak Ijo (Selatan)"
+  },
+  {
+    "new_id": "TJ_0093",
+    "old_id": "S0093",
+    "name": "Nogotirto Metro (Selatan)"
+  },
+  {
+    "new_id": "TJ_0094",
+    "old_id": "S0094",
+    "name": "Toko Saerah (Selatan)"
+  },
+  {
+    "new_id": "TJ_0095",
+    "old_id": "S0095",
+    "name": "Kantor Kal. Sidoarum (Selatan)"
+  },
+  {
+    "new_id": "TJ_0096",
+    "old_id": "S0096",
+    "name": "Simpang Bantulan (Selatan)"
+  },
+  {
+    "new_id": "TJ_0097",
+    "old_id": "S0097",
+    "name": "Simpang Munggur (Selatan)"
+  },
+  {
+    "new_id": "TJ_0098",
+    "old_id": "S0098",
+    "name": "Simpang Gesikan (Selatan)"
+  },
+  {
+    "new_id": "TJ_0099",
+    "old_id": "S0099",
+    "name": "Indomaret Klajuran (Selatan)"
+  },
+  {
+    "new_id": "TJ_0100",
+    "old_id": "S0100",
+    "name": "Neutron Godean (Selatan)"
+  },
+  {
+    "new_id": "TJ_0101",
+    "old_id": "S0101",
+    "name": "Polsek Godean (Selatan)"
+  },
+  {
+    "new_id": "TJ_0102",
+    "old_id": "S0102",
+    "name": "Koramil Godean (Selatan)"
+  },
+  {
+    "new_id": "TJ_0103",
+    "old_id": "S0103",
+    "name": "Simpang Mandungan (Selatan)"
+  },
+  {
+    "new_id": "TJ_0104",
+    "old_id": "S0104",
+    "name": "Kantor Kap. Godean (Selatan)"
+  },
+  {
+    "new_id": "TJ_0105",
+    "old_id": "S0105",
+    "name": "Ringroad Bandara Adisutjipto"
+  },
+  {
+    "new_id": "TJ_0106",
+    "old_id": "S0106",
+    "name": "KKP Yogyakarta (Barat)"
+  },
+  {
+    "new_id": "TJ_0107",
+    "old_id": "S0107",
+    "name": "Disnakertrans (Barat)"
+  },
+  {
+    "new_id": "TJ_0108",
+    "old_id": "S0108",
+    "name": "SMKN 1 Depok (Barat)"
+  },
+  {
+    "new_id": "TJ_0109",
+    "old_id": "S0109",
+    "name": "SDN 1 Depok (Barat)"
+  },
+  {
+    "new_id": "TJ_0110",
+    "old_id": "S0110",
+    "name": "KUA Depok (Barat)"
+  },
+  {
+    "new_id": "TJ_0111",
+    "old_id": "S0111",
+    "name": "MAN 2 Sleman (Barat)"
+  },
+  {
+    "new_id": "TJ_0112",
+    "old_id": "S0112",
+    "name": "UNRIYO (Barat)"
+  },
+  {
+    "new_id": "TJ_0113",
+    "old_id": "S0113",
+    "name": "Budi Mulia Dua (Barat)"
+  },
+  {
+    "new_id": "TJ_0114",
+    "old_id": "S0114",
+    "name": "Indomaret Pokoh (Barat)"
+  },
+  {
+    "new_id": "TJ_0115",
+    "old_id": "S0115",
+    "name": "Kantor Kal. Wedomartani (Barat)"
+  },
+  {
+    "new_id": "TJ_0116",
+    "old_id": "S0116",
+    "name": "Simpang Babadan (Barat)"
+  },
+  {
+    "new_id": "TJ_0117",
+    "old_id": "S0117",
+    "name": "Simpang Selomartani (Utara)"
+  },
+  {
+    "new_id": "TJ_0118",
+    "old_id": "S0118",
+    "name": "Simpang Kabunan (Utara)"
+  },
+  {
+    "new_id": "TJ_0119",
+    "old_id": "S0119",
+    "name": "Jl. Raya Kabunan (Utara)"
+  },
+  {
+    "new_id": "TJ_0120",
+    "old_id": "S0120",
+    "name": "RS Kemasan (Barat)"
+  },
+  {
+    "new_id": "TJ_0121",
+    "old_id": "S0121",
+    "name": "Simpang Kenti (Barat)"
+  },
+  {
+    "new_id": "TJ_0122",
+    "old_id": "S0122",
+    "name": "Pasar Jangkang (Selatan)"
+  },
+  {
+    "new_id": "TJ_0123",
+    "old_id": "S0123",
+    "name": "Puskesmas Ngemplak (Selatan)"
+  },
+  {
+    "new_id": "TJ_0124",
+    "old_id": "S0124",
+    "name": "Tugu Batas Desa Yapah (Selatan)"
+  },
+  {
+    "new_id": "TJ_0125",
+    "old_id": "S0125",
+    "name": "Timur Jembatan Yapah (Selatan)"
+  },
+  {
+    "new_id": "TJ_0126",
+    "old_id": "S0126",
+    "name": "SMAN 2 Ngaglik (Selatan)"
+  },
+  {
+    "new_id": "TJ_0127",
+    "old_id": "S0127",
+    "name": "Simpang Losari (Selatan)"
+  },
+  {
+    "new_id": "TJ_0128",
+    "old_id": "S0128",
+    "name": "SPBU Mindi (Selatan)"
+  },
+  {
+    "new_id": "TJ_0129",
+    "old_id": "S0129",
+    "name": "Lap. Klidon (Selatan)"
+  },
+  {
+    "new_id": "TJ_0130",
+    "old_id": "S0130",
+    "name": "Kantor Kal. Sukoharjo (Selatan)"
+  },
+  {
+    "new_id": "TJ_0131",
+    "old_id": "S0131",
+    "name": "SDN Selomulyo (Selatan)"
+  },
+  {
+    "new_id": "TJ_0132",
+    "old_id": "S0132",
+    "name": "RSU Gramedika (Selatan)"
+  },
+  {
+    "new_id": "TJ_0133",
+    "old_id": "S0133",
+    "name": "SDN Percobaan 3 Pakem (Timur)"
+  },
+  {
+    "new_id": "TJ_0134",
+    "old_id": "S0134",
+    "name": "RSU Gramedika (Utara)"
+  },
+  {
+    "new_id": "TJ_0135",
+    "old_id": "S0135",
+    "name": "SDN Selomulyo (Utara)"
+  },
+  {
+    "new_id": "TJ_0136",
+    "old_id": "S0136",
+    "name": "Kantor Kal. Sukoharjo (Utara)"
+  },
+  {
+    "new_id": "TJ_0137",
+    "old_id": "S0137",
+    "name": "Lap. Klidon (Utara)"
+  },
+  {
+    "new_id": "TJ_0138",
+    "old_id": "S0138",
+    "name": "SPBU Mindi (Utara)"
+  },
+  {
+    "new_id": "TJ_0139",
+    "old_id": "S0139",
+    "name": "Simpang Losari (Utara)"
+  },
+  {
+    "new_id": "TJ_0140",
+    "old_id": "S0140",
+    "name": "SMAN 2 Ngaglik (Utara)"
+  },
+  {
+    "new_id": "TJ_0141",
+    "old_id": "S0141",
+    "name": "Timur Jembatan Yapah (Utara)"
+  },
+  {
+    "new_id": "TJ_0142",
+    "old_id": "S0142",
+    "name": "Tugu Batas Desa Yapah (Utara)"
+  },
+  {
+    "new_id": "TJ_0143",
+    "old_id": "S0143",
+    "name": "Puskesmas Ngemplak (Utara)"
+  },
+  {
+    "new_id": "TJ_0144",
+    "old_id": "S0144",
+    "name": "Pasar Jangkang (Utara)"
+  },
+  {
+    "new_id": "TJ_0145",
+    "old_id": "S0145",
+    "name": "Simpang Kenti (Timur)"
+  },
+  {
+    "new_id": "TJ_0146",
+    "old_id": "S0146",
+    "name": "RS Kemasan (Timur)"
+  },
+  {
+    "new_id": "TJ_0147",
+    "old_id": "S0147",
+    "name": "Simpang Babadan (Timur)"
+  },
+  {
+    "new_id": "TJ_0148",
+    "old_id": "S0148",
+    "name": "Kantor Kal. Wedomartani (Timur)"
+  },
+  {
+    "new_id": "TJ_0149",
+    "old_id": "S0149",
+    "name": "Alfamart Pokoh (Timur)"
+  },
+  {
+    "new_id": "TJ_0150",
+    "old_id": "S0150",
+    "name": "Budi Mulia Dua (Timur)"
+  },
+  {
+    "new_id": "TJ_0151",
+    "old_id": "S0151",
+    "name": "UNRIYO (Timur)"
+  },
+  {
+    "new_id": "TJ_0152",
+    "old_id": "S0152",
+    "name": "MAN 2 Sleman (Timur)"
+  },
+  {
+    "new_id": "TJ_0153",
+    "old_id": "S0153",
+    "name": "KUA Depok (Timur)"
+  },
+  {
+    "new_id": "TJ_0154",
+    "old_id": "S0154",
+    "name": "SDN 1 Depok (Timur)"
+  },
+  {
+    "new_id": "TJ_0155",
+    "old_id": "S0155",
+    "name": "SMKN 1 Depok (Timur)"
+  },
+  {
+    "new_id": "TJ_0156",
+    "old_id": "S0156",
+    "name": "Disnakertrans (Timur)"
+  },
+  {
+    "new_id": "TJ_0157",
+    "old_id": "S0157",
+    "name": "Selokan Mataram Maguwo"
+  },
+  {
+    "new_id": "TJ_0158",
+    "old_id": "S0158",
+    "name": "Binamarga (Timur)"
+  },
+  {
+    "new_id": "TJ_0159",
+    "old_id": "S0159",
+    "name": "Maguwo Sambilegi (Utara)"
+  },
+  {
+    "new_id": "TJ_0160",
+    "old_id": "S0160",
+    "name": "Bandara Adisutjipto"
+  },
+  {
+    "new_id": "TJ_0161",
+    "old_id": "S0161",
+    "name": "Terminal Jombor"
+  },
+  {
+    "new_id": "TJ_0162",
+    "old_id": "S0162",
+    "name": "Indogrosir"
+  },
+  {
+    "new_id": "TJ_0163",
+    "old_id": "S0163",
+    "name": "Jogja City Mall (Timur)"
+  },
+  {
+    "new_id": "TJ_0164",
+    "old_id": "S0164",
+    "name": "Atakrib Jl. Magelang"
+  },
+  {
+    "new_id": "TJ_0165",
+    "old_id": "S0165",
+    "name": "TVRI (Timur)"
+  },
+  {
+    "new_id": "TJ_0166",
+    "old_id": "S0166",
+    "name": "Karangwaru (Timur)"
+  },
+  {
+    "new_id": "TJ_0167",
+    "old_id": "S0167",
+    "name": "Hotel Utara (Timur)"
+  },
+  {
+    "new_id": "TJ_0168",
+    "old_id": "S0168",
+    "name": "Mangkubumi 1"
+  },
+  {
+    "new_id": "TJ_0169",
+    "old_id": "S0169",
+    "name": "Mangkubumi 2"
+  },
+  {
+    "new_id": "TJ_0170",
+    "old_id": "S0170",
+    "name": "Malioboro 1"
+  },
+  {
+    "new_id": "TJ_0171",
+    "old_id": "S0171",
+    "name": "Malioboro 2"
+  },
+  {
+    "new_id": "TJ_0172",
+    "old_id": "S0172",
+    "name": "Malioboro 3"
+  },
+  {
+    "new_id": "TJ_0173",
+    "old_id": "S0173",
+    "name": "Bhayangkara"
+  },
+  {
+    "new_id": "TJ_0174",
+    "old_id": "S0174",
+    "name": "Pasar Pathuk"
+  },
+  {
+    "new_id": "TJ_0175",
+    "old_id": "S0175",
+    "name": "Sosrowijayan"
+  },
+  {
+    "new_id": "TJ_0176",
+    "old_id": "S0176",
+    "name": "Stasiun Yogyakarta"
+  },
+  {
+    "new_id": "TJ_0177",
+    "old_id": "S0177",
+    "name": "Jlagran"
+  },
+  {
+    "new_id": "TJ_0178",
+    "old_id": "S0178",
+    "name": "Badran"
+  },
+  {
+    "new_id": "TJ_0179",
+    "old_id": "S0179",
+    "name": "SMPN 14"
+  },
+  {
+    "new_id": "TJ_0180",
+    "old_id": "S0180",
+    "name": "Hotel Utara (Barat)"
+  },
+  {
+    "new_id": "TJ_0181",
+    "old_id": "S0181",
+    "name": "Kricak"
+  },
+  {
+    "new_id": "TJ_0182",
+    "old_id": "S0182",
+    "name": "Karangwaru (Barat)"
+  },
+  {
+    "new_id": "TJ_0183",
+    "old_id": "S0183",
+    "name": "TVRI (Barat)"
+  },
+  {
+    "new_id": "TJ_0184",
+    "old_id": "S0184",
+    "name": "Daytrans Jl. Magelang"
+  },
+  {
+    "new_id": "TJ_0185",
+    "old_id": "S0185",
+    "name": "Jogja City Mall (Barat)"
+  },
+  {
+    "new_id": "TJ_0186",
+    "old_id": "S0186",
+    "name": "MMTC Yogyakarta"
+  },
+  {
+    "new_id": "TJ_0187",
+    "old_id": "S_apmd_timur",
+    "name": "APMD (Timur)"
+  },
+  {
+    "new_id": "TJ_0188",
+    "old_id": "S_bandara_adisutjipto",
+    "name": "Bandara Adisutjipto"
+  },
+  {
+    "new_id": "TJ_0189",
+    "old_id": "S_bpd_gamping_selatan",
+    "name": "BPD Gamping (Selatan)"
+  },
+  {
+    "new_id": "TJ_0190",
+    "old_id": "S_bri_cabang_bantul",
+    "name": "Bri Cabang Bantul"
+  },
+  {
+    "new_id": "TJ_0191",
+    "old_id": "S_eks_borobudur_plaza",
+    "name": "Eks Borobudur Plaza"
+  },
+  {
+    "new_id": "TJ_0192",
+    "old_id": "S_eks_stasiun_ka_bantul",
+    "name": "Eks Stasiun Ka Bantul"
+  },
+  {
+    "new_id": "TJ_0193",
+    "old_id": "S_fkg_ugm_selatan",
+    "name": "FKG UGM (Selatan)"
+  },
+  {
+    "new_id": "TJ_0194",
+    "old_id": "S_fkg_ugm_utara",
+    "name": "FKG UGM (Utara)"
+  },
+  {
+    "new_id": "TJ_0195",
+    "old_id": "S_gedong_kuning_banguntapan",
+    "name": "Gedong Kuning Banguntapan"
+  },
+  {
+    "new_id": "TJ_0196",
+    "old_id": "S_gereja_pugeran",
+    "name": "Gereja Pugeran"
+  },
+  {
+    "new_id": "TJ_0197",
+    "old_id": "S_hallte_jl_solo_gedung_wanita",
+    "name": "Halte Jl. Solo (Gedung Wanita)"
+  },
+  {
+    "new_id": "TJ_0198",
+    "old_id": "S_halte_a_m_sangaji_timur",
+    "name": "Halte A.M. Sangaji (Timur)"
+  },
+  {
+    "new_id": "TJ_0199",
+    "old_id": "S_halte_am_sangaji_1",
+    "name": "AM Sangaji 1"
+  },
+  {
+    "new_id": "TJ_0200",
+    "old_id": "S_halte_cik_di_tiro_1",
+    "name": "Halte Cik Di Tiro 1"
+  },
+  {
+    "new_id": "TJ_0201",
+    "old_id": "S_halte_cik_di_tiro_2_dr_yap",
+    "name": "Cik Di Tiro 2 (Dr. Yap)"
+  },
+  {
+    "new_id": "TJ_0202",
+    "old_id": "S_halte_cokroaminoto_sma_1",
+    "name": "Halte Cokroaminoto SMA 1"
+  },
+  {
+    "new_id": "TJ_0203",
+    "old_id": "S_halte_fk_ugm",
+    "name": "Fk Ugm"
+  },
+  {
+    "new_id": "TJ_0204",
+    "old_id": "S_halte_gedong_kuning",
+    "name": "Halte Gedong Kuning"
+  },
+  {
+    "new_id": "TJ_0205",
+    "old_id": "S_halte_gedong_kuning_jec",
+    "name": "Gedong Kuning (Jec)"
+  },
+  {
+    "new_id": "TJ_0206",
+    "old_id": "S_halte_gedung_keuangan",
+    "name": "Gedung Keuangan"
+  },
+  {
+    "new_id": "TJ_0207",
+    "old_id": "S_halte_gik_ugm",
+    "name": "Halte GIK UGM"
+  },
+  {
+    "new_id": "TJ_0208",
+    "old_id": "S_halte_janti_selatan_bawah_jembatan",
+    "name": "Janti Selatan (Bawah Jembatan)"
+  },
+  {
+    "new_id": "TJ_0209",
+    "old_id": "S_halte_janti_utara",
+    "name": "Halte Janti Utara"
+  },
+  {
+    "new_id": "TJ_0210",
+    "old_id": "S_halte_jl_colombo_kosudgama",
+    "name": "Jl. Colombo (Kosudgama)"
+  },
+  {
+    "new_id": "TJ_0211",
+    "old_id": "S_halte_jl_colombo_uny",
+    "name": "Jl. Colombo (Uny)"
+  },
+  {
+    "new_id": "TJ_0212",
+    "old_id": "S_halte_jl_kaliurang_kopma_ugm",
+    "name": "Jl. Kaliurang (Kopma Ugm)"
+  },
+  {
+    "new_id": "TJ_0213",
+    "old_id": "S_halte_jl_solo_alfa",
+    "name": "Jl. Solo (Alfa)"
+  },
+  {
+    "new_id": "TJ_0214",
+    "old_id": "S_halte_jl_solo_ambarukmo",
+    "name": "Jl. Solo (Ambarukmo)"
+  },
+  {
+    "new_id": "TJ_0215",
+    "old_id": "S_halte_jl_solo_de_brito",
+    "name": "Jl. Solo (De Brito)"
+  },
+  {
+    "new_id": "TJ_0216",
+    "old_id": "S_halte_jl_solo_jayakarta",
+    "name": "Halte Jl. Solo (Jayakarta)"
+  },
+  {
+    "new_id": "TJ_0217",
+    "old_id": "S_halte_jl_solo_jogja_bisnis",
+    "name": "Jl. Solo (Jogja Bisnis)"
+  },
+  {
+    "new_id": "TJ_0218",
+    "old_id": "S_halte_jl_solo_kr_2",
+    "name": "Halte Jl. Solo KR 2"
+  },
+  {
+    "new_id": "TJ_0219",
+    "old_id": "S_halte_jl_solo_maguwo",
+    "name": "Halte Jl. Solo Maguwo"
+  },
+  {
+    "new_id": "TJ_0220",
+    "old_id": "S_halte_kantor_cagar_budaya",
+    "name": "Halte Kantor Cagar Budaya"
+  },
+  {
+    "new_id": "TJ_0221",
+    "old_id": "S_halte_katamso_1_purawisata",
+    "name": "Katamso 1 (Purawisata)"
+  },
+  {
+    "new_id": "TJ_0222",
+    "old_id": "S_halte_katamso_2",
+    "name": "Halte Katamso 2"
+  },
+  {
+    "new_id": "TJ_0223",
+    "old_id": "S_halte_kenari_1_mandala_krida",
+    "name": "Kenari 1 (Mandala Krida)"
+  },
+  {
+    "new_id": "TJ_0224",
+    "old_id": "S_halte_kenari_2_mandala_krida",
+    "name": "Kenari 2 (Mandala Krida)"
+  },
+  {
+    "new_id": "TJ_0225",
+    "old_id": "S_halte_kha_dahlan_1_papmi",
+    "name": "Kha Dahlan 1 (Papmi)"
+  },
+  {
+    "new_id": "TJ_0226",
+    "old_id": "S_halte_kha_dahlan_2_ngadiwinatan",
+    "name": "Kha Dahlan 2 (Ngadiwinatan)"
+  },
+  {
+    "new_id": "TJ_0227",
+    "old_id": "S_halte_kha_dahlan_selatan",
+    "name": "Halte KHA Dahlan (Selatan)"
+  },
+  {
+    "new_id": "TJ_0228",
+    "old_id": "S_halte_kha_dahlan_utara",
+    "name": "Halte KHA Dahlan (Utara)"
+  },
+  {
+    "new_id": "TJ_0229",
+    "old_id": "S_halte_kol_sugiono_1_pujokusuman",
+    "name": "Halte Kol.Sugiono 1 (Pujokusuman)"
+  },
+  {
+    "new_id": "TJ_0230",
+    "old_id": "S_halte_kol_sugiono_2_museum_perjuangan",
+    "name": "Kol. Sugiono 2 (Museum Perjuangan)"
+  },
+  {
+    "new_id": "TJ_0231",
+    "old_id": "S_halte_krisdosono",
+    "name": "Halte Krisdosono"
+  },
+  {
+    "new_id": "TJ_0232",
+    "old_id": "S_halte_kusumanegara_1",
+    "name": "Kusumanegara 1"
+  },
+  {
+    "new_id": "TJ_0233",
+    "old_id": "S_halte_kusumanegara_3",
+    "name": "Kusumanegara 3"
+  },
+  {
+    "new_id": "TJ_0234",
+    "old_id": "S_halte_kusumanegara_4",
+    "name": "Kusumanegara 4"
+  },
+  {
+    "new_id": "TJ_0235",
+    "old_id": "S_halte_kusumanegara_gedung_juang",
+    "name": "Kusumanegara (Gedung Juang)"
+  },
+  {
+    "new_id": "TJ_0236",
+    "old_id": "S_halte_kusumanegara_gembira_loka",
+    "name": "Kusumanegara (Gembira Loka)"
+  },
+  {
+    "new_id": "TJ_0237",
+    "old_id": "S_halte_malioboro_1",
+    "name": "Halte Malioboro 1"
+  },
+  {
+    "new_id": "TJ_0238",
+    "old_id": "S_halte_malioboro_1_inna_garuda",
+    "name": "Malioboro 1 (Inna Garuda)"
+  },
+  {
+    "new_id": "TJ_0239",
+    "old_id": "S_halte_malioboro_2_kepatihan",
+    "name": "Halte Malioboro 2 (Kepatihan)"
+  },
+  {
+    "new_id": "TJ_0240",
+    "old_id": "S_halte_malioboro_3",
+    "name": "Halte Malioboro 3"
+  },
+  {
+    "new_id": "TJ_0241",
+    "old_id": "S_halte_malioboro_3_pasar_beringharjo",
+    "name": "Malioboro 3 (Pasar Beringharjo)"
+  },
+  {
+    "new_id": "TJ_0242",
+    "old_id": "S_halte_mall_sahid_j",
+    "name": "Halte Mall Sahid J"
+  },
+  {
+    "new_id": "TJ_0243",
+    "old_id": "S_halte_mall_sahid_j_walk",
+    "name": "Mall Sahid J-Walk"
+  },
+  {
+    "new_id": "TJ_0244",
+    "old_id": "S_halte_mangkubumi_1",
+    "name": "Halte Mangkubumi 1"
+  },
+  {
+    "new_id": "TJ_0245",
+    "old_id": "S_halte_mangkubumi_2_grand_zuri",
+    "name": "Mangkubumi 2 (Grand Zuri)"
+  },
+  {
+    "new_id": "TJ_0246",
+    "old_id": "S_halte_mt_haryono_2_sma_n_7",
+    "name": "Mt Haryono 2 (Sma N 7)"
+  },
+  {
+    "new_id": "TJ_0247",
+    "old_id": "S_halte_muhammadiyah_3",
+    "name": "Halte Muhammadiyah 3"
+  },
+  {
+    "new_id": "TJ_0248",
+    "old_id": "S_halte_ngabean",
+    "name": "Ngabean"
+  },
+  {
+    "new_id": "TJ_0249",
+    "old_id": "S_halte_ngeksigondo_basen",
+    "name": "Halte Ngeksigondo Basen"
+  },
+  {
+    "new_id": "TJ_0250",
+    "old_id": "S_halte_ngeksigondo_diklat_pu",
+    "name": "Halte Ngeksigondo Diklat Pu"
+  },
+  {
+    "new_id": "TJ_0251",
+    "old_id": "S_halte_nitikan",
+    "name": "Halte Nitikan"
+  },
+  {
+    "new_id": "TJ_0252",
+    "old_id": "S_halte_pakualaman",
+    "name": "Pakualaman"
+  },
+  {
+    "new_id": "TJ_0253",
+    "old_id": "S_halte_park_and_ride_gamping",
+    "name": "Park And Ride Gamping"
+  },
+  {
+    "new_id": "TJ_0254",
+    "old_id": "S_halte_pasty",
+    "name": "Pasty"
+  },
+  {
+    "new_id": "TJ_0255",
+    "old_id": "S_halte_prambanan",
+    "name": "Prambanan"
+  },
+  {
+    "new_id": "TJ_0256",
+    "old_id": "S_halte_psky",
+    "name": "Halte PSKY"
+  },
+  {
+    "new_id": "TJ_0257",
+    "old_id": "S_halte_rru_hartono_mall",
+    "name": "Rru Hartono Mall"
+  },
+  {
+    "new_id": "TJ_0258",
+    "old_id": "S_halte_rru_instiper_1",
+    "name": "Rru Instiper 1"
+  },
+  {
+    "new_id": "TJ_0259",
+    "old_id": "S_halte_rru_instiper_2",
+    "name": "Halte RRU Instiper 2"
+  },
+  {
+    "new_id": "TJ_0260",
+    "old_id": "S_halte_rru_jih",
+    "name": "Rru Jih"
+  },
+  {
+    "new_id": "TJ_0261",
+    "old_id": "S_halte_rru_manggung",
+    "name": "Rru Manggung"
+  },
+  {
+    "new_id": "TJ_0262",
+    "old_id": "S_halte_rru_monjali_1",
+    "name": "Rru Monjali 1"
+  },
+  {
+    "new_id": "TJ_0263",
+    "old_id": "S_halte_rru_monjali_2",
+    "name": "Rru Monjali 2"
+  },
+  {
+    "new_id": "TJ_0264",
+    "old_id": "S_halte_rru_upn",
+    "name": "Rru Upn"
+  },
+  {
+    "new_id": "TJ_0265",
+    "old_id": "S_halte_rs_bethesda",
+    "name": "Halte RS Bethesda"
+  },
+  {
+    "new_id": "TJ_0266",
+    "old_id": "S_halte_rs_dr_s_hardjolukito",
+    "name": "Halte RS dr.S.HARDJOLUKITO"
+  },
+  {
+    "new_id": "TJ_0267",
+    "old_id": "S_halte_rs_sardjito_barat",
+    "name": "Halte RS Sardjito (Barat)"
+  },
+  {
+    "new_id": "TJ_0268",
+    "old_id": "S_halte_rsi_hidayatullah",
+    "name": "Halte Rsi Hidayatullah"
+  },
+  {
+    "new_id": "TJ_0269",
+    "old_id": "S_halte_rspau_dr_s_hardjolukito",
+    "name": "Rspau Dr.S.Hardjolukito"
+  },
+  {
+    "new_id": "TJ_0270",
+    "old_id": "S_halte_rsup_dr_sardjito",
+    "name": "Rsup Dr. Sardjito"
+  },
+  {
+    "new_id": "TJ_0271",
+    "old_id": "S_halte_sanata_dharma",
+    "name": "Halte Sanata Dharma"
+  },
+  {
+    "new_id": "TJ_0272",
+    "old_id": "S_halte_sanata_dharma_gejayan",
+    "name": "Sanata Dharma Gejayan"
+  },
+  {
+    "new_id": "TJ_0273",
+    "old_id": "S_halte_senopati_1",
+    "name": "Senopati 1"
+  },
+  {
+    "new_id": "TJ_0274",
+    "old_id": "S_halte_senopati_2",
+    "name": "Senopati 2"
+  },
+  {
+    "new_id": "TJ_0275",
+    "old_id": "S_halte_smk_muhammadiyah_3",
+    "name": "Halte SMK Muhammadiyah 3"
+  },
+  {
+    "new_id": "TJ_0276",
+    "old_id": "S_halte_smkn_5",
+    "name": "Smkn 5"
+  },
+  {
+    "new_id": "TJ_0277",
+    "old_id": "S_halte_smp_n_14",
+    "name": "Halte SMP N 14"
+  },
+  {
+    "new_id": "TJ_0278",
+    "old_id": "S_halte_sorogenen_wirosaban",
+    "name": "Sorogenen (Wirosaban)"
+  },
+  {
+    "new_id": "TJ_0279",
+    "old_id": "S_halte_stikes_guna_bangsa",
+    "name": "Halte Stikes Guna Bangsa"
+  },
+  {
+    "new_id": "TJ_0280",
+    "old_id": "S_halte_sudirman_bumiputera",
+    "name": "Halte Sudirman Bumiputera"
+  },
+  {
+    "new_id": "TJ_0281",
+    "old_id": "S_halte_sudirman_santika",
+    "name": "Sudirman (Santika)"
+  },
+  {
+    "new_id": "TJ_0282",
+    "old_id": "S_halte_superindo_urip_sumoharjo",
+    "name": "Halte Superindo Urip Sumoharjo"
+  },
+  {
+    "new_id": "TJ_0283",
+    "old_id": "S_halte_taman_siswa_stsrd_visi",
+    "name": "Taman Siswa (Stsrd Visi)"
+  },
+  {
+    "new_id": "TJ_0284",
+    "old_id": "S_halte_tegal_gendu_1",
+    "name": "Halte Tegal Gendu 1"
+  },
+  {
+    "new_id": "TJ_0285",
+    "old_id": "S_halte_tegalturi_1",
+    "name": "Tegalturi 1"
+  },
+  {
+    "new_id": "TJ_0286",
+    "old_id": "S_halte_tegalturi_2",
+    "name": "Tegalturi 2"
+  },
+  {
+    "new_id": "TJ_0287",
+    "old_id": "S_halte_tejokusuman_taman_sari",
+    "name": "Tejokusuman (Taman Sari)"
+  },
+  {
+    "new_id": "TJ_0288",
+    "old_id": "S_halte_tentara_pelajar_1_smp_n_14",
+    "name": "Tentara Pelajar 1 (Smp N 14)"
+  },
+  {
+    "new_id": "TJ_0289",
+    "old_id": "S_halte_tentara_pelajar_2_samsat",
+    "name": "Tentara Pelajar 2 (Samsat)"
+  },
+  {
+    "new_id": "TJ_0290",
+    "old_id": "S_halte_term_condongcatur",
+    "name": "Term. Condongcatur"
+  },
+  {
+    "new_id": "TJ_0291",
+    "old_id": "S_halte_term_giwangan",
+    "name": "Term. Giwangan"
+  },
+  {
+    "new_id": "TJ_0292",
+    "old_id": "S_halte_term_jombor",
+    "name": "Term. Jombor"
+  },
+  {
+    "new_id": "TJ_0293",
+    "old_id": "S_halte_tj_cik_di_tiro_2",
+    "name": "Cik Di Tiro 2"
+  },
+  {
+    "new_id": "TJ_0294",
+    "old_id": "S_halte_tj_colombo_kosudgama",
+    "name": "Colombo (Kosudgama)"
+  },
+  {
+    "new_id": "TJ_0295",
+    "old_id": "S_halte_tj_diponegoro",
+    "name": "Diponegoro"
+  },
+  {
+    "new_id": "TJ_0296",
+    "old_id": "S_halte_tj_rru_binamarga",
+    "name": "RRU (Binamarga)"
+  },
+  {
+    "new_id": "TJ_0297",
+    "old_id": "S_halte_tj_rru_kentungan",
+    "name": "RRU Kentungan"
+  },
+  {
+    "new_id": "TJ_0298",
+    "old_id": "S_halte_tj_solo_sma_de_britto",
+    "name": "Solo (SMA De Britto)"
+  },
+  {
+    "new_id": "TJ_0299",
+    "old_id": "S_halte_tj_univeristas_ahmad_dahlan",
+    "name": "Univeristas Ahmad Dahlan"
+  },
+  {
+    "new_id": "TJ_0300",
+    "old_id": "S_halte_uny_gejayan",
+    "name": "Uny Gejayan"
+  },
+  {
+    "new_id": "TJ_0301",
+    "old_id": "S_halte_wonocatur_grhatama_pustaka",
+    "name": "Wonocatur (Grhatama Pustaka)"
+  },
+  {
+    "new_id": "TJ_0302",
+    "old_id": "S_halte_yos_sudarso_kridosono",
+    "name": "Yos Sudarso (Kridosono)"
+  },
+  {
+    "new_id": "TJ_0303",
+    "old_id": "S_hayam_wuruk_barat",
+    "name": "Hayam Wuruk (Barat)"
+  },
+  {
+    "new_id": "TJ_0304",
+    "old_id": "S_hokben_jakal_barat",
+    "name": "Hokben Jakal (Barat)"
+  },
+  {
+    "new_id": "TJ_0305",
+    "old_id": "S_jadan_1",
+    "name": "Jadan 1"
+  },
+  {
+    "new_id": "TJ_0306",
+    "old_id": "S_jadan_2",
+    "name": "Jadan 2"
+  },
+  {
+    "new_id": "TJ_0307",
+    "old_id": "S_jl_colombo_panti_rapih",
+    "name": "JL Colombo (Panti Rapih)"
+  },
+  {
+    "new_id": "TJ_0308",
+    "old_id": "S_jl_colombo_samirono",
+    "name": "JL Colombo (Samirono)"
+  },
+  {
+    "new_id": "TJ_0309",
+    "old_id": "S_jl_mataram_hotel_akur",
+    "name": "Jl. Mataram Hotel Akur"
+  },
+  {
+    "new_id": "TJ_0310",
+    "old_id": "S_jogja_city_mall_barat",
+    "name": "Jogja City Mall (Barat)"
+  },
+  {
+    "new_id": "TJ_0311",
+    "old_id": "S_jogja_city_mall_timur",
+    "name": "Jogja City Mall (Timur)"
+  },
+  {
+    "new_id": "TJ_0312",
+    "old_id": "S_kantor_badan_kesbangpol",
+    "name": "Kantor Badan Kesbangpol"
+  },
+  {
+    "new_id": "TJ_0313",
+    "old_id": "S_kantor_kapanewon_bantul",
+    "name": "Kantor Kapanewon Bantul"
+  },
+  {
+    "new_id": "TJ_0314",
+    "old_id": "S_karanggede",
+    "name": "Karanggede"
+  },
+  {
+    "new_id": "TJ_0315",
+    "old_id": "S_kha_dahlan_selatan",
+    "name": "KHA Dahlan (Selatan)"
+  },
+  {
+    "new_id": "TJ_0316",
+    "old_id": "S_kha_dahlan_utara",
+    "name": "KHA Dahlan (Utara)"
+  },
+  {
+    "new_id": "TJ_0317",
+    "old_id": "S_makam_prajurit_timur",
+    "name": "Makam Prajurit (Timur)"
+  },
+  {
+    "new_id": "TJ_0318",
+    "old_id": "S_mm_ugm",
+    "name": "MM UGM"
+  },
+  {
+    "new_id": "TJ_0319",
+    "old_id": "S_muallimin_selatan",
+    "name": "Muallimin (Selatan)"
+  },
+  {
+    "new_id": "TJ_0320",
+    "old_id": "S_muallimin_utara",
+    "name": "Muallimin (Utara)"
+  },
+  {
+    "new_id": "TJ_0321",
+    "old_id": "S_museum_biologi",
+    "name": "Museum Biologi"
+  },
+  {
+    "new_id": "TJ_0322",
+    "old_id": "S_nyutran_tamansiswa",
+    "name": "Nyutran Tamansiswa"
+  },
+  {
+    "new_id": "TJ_0323",
+    "old_id": "S_park_and_ride_gamping",
+    "name": "Park and Ride Gamping"
+  },
+  {
+    "new_id": "TJ_0324",
+    "old_id": "S_pasar_bantul",
+    "name": "Pasar Bantul"
+  },
+  {
+    "new_id": "TJ_0325",
+    "old_id": "S_pasar_bantul_timur",
+    "name": "Pasar Bantul Timur"
+  },
+  {
+    "new_id": "TJ_0326",
+    "old_id": "S_pasar_demangan",
+    "name": "Pasar Demangan"
+  },
+  {
+    "new_id": "TJ_0327",
+    "old_id": "S_pasar_gamping_selatan",
+    "name": "Pasar Gamping (Selatan)"
+  },
+  {
+    "new_id": "TJ_0328",
+    "old_id": "S_pasar_gamping_utara",
+    "name": "Pasar Gamping (Utara)"
+  },
+  {
+    "new_id": "TJ_0329",
+    "old_id": "S_pasar_kranggan_timur",
+    "name": "Pasar Kranggan (Timur)"
+  },
+  {
+    "new_id": "TJ_0330",
+    "old_id": "S_pasar_legi_yogyakarta",
+    "name": "Pasar Legi Yogyakarta"
+  },
+  {
+    "new_id": "TJ_0331",
+    "old_id": "S_pasar_niten",
+    "name": "Pasar Niten"
+  },
+  {
+    "new_id": "TJ_0332",
+    "old_id": "S_pasar_sentul_selatan",
+    "name": "Pasar Sentul (Selatan)"
+  },
+  {
+    "new_id": "TJ_0333",
+    "old_id": "S_pdam_monjali",
+    "name": "PDAM Monjali"
+  },
+  {
+    "new_id": "TJ_0334",
+    "old_id": "S_pku_gamping",
+    "name": "PKU Gamping"
+  },
+  {
+    "new_id": "TJ_0335",
+    "old_id": "S_portabel_bsi",
+    "name": "BSI"
+  },
+  {
+    "new_id": "TJ_0336",
+    "old_id": "S_portabel_dentes_ruko_godean",
+    "name": "Dentes (Ruko Godean)"
+  },
+  {
+    "new_id": "TJ_0337",
+    "old_id": "S_portabel_tejokusuman_tamansari",
+    "name": "Tejokusuman (Tamansari)"
+  },
+  {
+    "new_id": "TJ_0338",
+    "old_id": "S_portable_teras_malioboro_2",
+    "name": "Teras Malioboro 2"
+  },
+  {
+    "new_id": "TJ_0339",
+    "old_id": "S_prayan_timur",
+    "name": "Prayan (Timur)"
+  },
+  {
+    "new_id": "TJ_0340",
+    "old_id": "S_progo",
+    "name": "Progo"
+  },
+  {
+    "new_id": "TJ_0341",
+    "old_id": "S_rs_queen_latifa",
+    "name": "RS Queen Latifa"
+  },
+  {
+    "new_id": "TJ_0342",
+    "old_id": "S_sgm_kusumanegara_selatan",
+    "name": "SGM Kusumanegara (Selatan)"
+  },
+  {
+    "new_id": "TJ_0343",
+    "old_id": "S_simpang_cepit",
+    "name": "Simpang Cepit"
+  },
+  {
+    "new_id": "TJ_0344",
+    "old_id": "S_simpang_dongkelan",
+    "name": "Simpang Dongkelan"
+  },
+  {
+    "new_id": "TJ_0345",
+    "old_id": "S_simpang_kasongan",
+    "name": "Simpang Kasongan"
+  },
+  {
+    "new_id": "TJ_0346",
+    "old_id": "S_sma_muhammadiyah_3",
+    "name": "SMA Muhammadiyah 3"
+  },
+  {
+    "new_id": "TJ_0347",
+    "old_id": "S_sman_1_kasihan_barat",
+    "name": "SMAN 1 Kasihan (Barat)"
+  },
+  {
+    "new_id": "TJ_0348",
+    "old_id": "S_sman_1_kasihan_timur",
+    "name": "SMAN 1 Kasihan (Timur)"
+  },
+  {
+    "new_id": "TJ_0349",
+    "old_id": "S_smk_n_5_utara",
+    "name": "SMK N 5 (Utara)"
+  },
+  {
+    "new_id": "TJ_0350",
+    "old_id": "S_smp_muhammadiyah_3",
+    "name": "SMP Muhammadiyah 3"
+  },
+  {
+    "new_id": "TJ_0351",
+    "old_id": "S_smp_n_2_bantul",
+    "name": "Smp N 2 Bantul"
+  },
+  {
+    "new_id": "TJ_0352",
+    "old_id": "S_spbu_condongcatur_timur",
+    "name": "SPBU Condongcatur (Timur)"
+  },
+  {
+    "new_id": "TJ_0353",
+    "old_id": "S_stasiun_lempuyangan",
+    "name": "Stasiun Lempuyangan"
+  },
+  {
+    "new_id": "TJ_0354",
+    "old_id": "S_susteran_novisiat",
+    "name": "Susteran Novisiat"
+  },
+  {
+    "new_id": "TJ_0355",
+    "old_id": "S_taman_pintar",
+    "name": "Taman Pintar"
+  },
+  {
+    "new_id": "TJ_0356",
+    "old_id": "S_term_giwangan",
+    "name": "Term. Giwangan"
+  },
+  {
+    "new_id": "TJ_0357",
+    "old_id": "S_terminal_condong_catur",
+    "name": "Terminal Condong Catur"
+  },
+  {
+    "new_id": "TJ_0358",
+    "old_id": "S_terminal_giwangan",
+    "name": "Terminal Giwangan"
+  },
+  {
+    "new_id": "TJ_0359",
+    "old_id": "S_terminal_palbapang",
+    "name": "Terminal Palbapang"
+  },
+  {
+    "new_id": "TJ_0360",
+    "old_id": "S_timoho_timur",
+    "name": "Timoho (Timur)"
+  },
+  {
+    "new_id": "TJ_0361",
+    "old_id": "S_tpb_amik_bsi",
+    "name": "AMIK BSI"
+  },
+  {
+    "new_id": "TJ_0362",
+    "old_id": "S_tpb_among_rogo_barat_jalan",
+    "name": "Among Rogo (Barat Jalan)"
+  },
+  {
+    "new_id": "TJ_0363",
+    "old_id": "S_tpb_among_rogo_timur_jalan",
+    "name": "Among Rogo (Timur Jalan)"
+  },
+  {
+    "new_id": "TJ_0364",
+    "old_id": "S_tpb_apmd_barat_jalan",
+    "name": "Apmd (Barat Jalan)"
+  },
+  {
+    "new_id": "TJ_0365",
+    "old_id": "S_tpb_apotek_muji_sehat",
+    "name": "Apotek Muji Sehat"
+  },
+  {
+    "new_id": "TJ_0366",
+    "old_id": "S_tpb_atk_yogyakarta_selatan_jalan",
+    "name": "Atk Yogyakarta (Selatan Jalan)"
+  },
+  {
+    "new_id": "TJ_0367",
+    "old_id": "S_tpb_atk_yogyakarta_utara_jalan",
+    "name": "Atk Yogyakarta (Utara Jalan)"
+  },
+  {
+    "new_id": "TJ_0368",
+    "old_id": "S_tpb_banguntapan_1_gedong_kuning",
+    "name": "Banguntapan 1 Gedong Kuning"
+  },
+  {
+    "new_id": "TJ_0369",
+    "old_id": "S_tpb_bkpm_diy",
+    "name": "BKPM DIY"
+  },
+  {
+    "new_id": "TJ_0370",
+    "old_id": "S_tpb_blok_o",
+    "name": "Blok O"
+  },
+  {
+    "new_id": "TJ_0371",
+    "old_id": "S_tpb_bp3kp",
+    "name": "Bp3kp"
+  },
+  {
+    "new_id": "TJ_0372",
+    "old_id": "S_tpb_bri_umy",
+    "name": "BRI UMY"
+  },
+  {
+    "new_id": "TJ_0373",
+    "old_id": "S_tpb_demak_ijo_barat_jalan",
+    "name": "Demak Ijo (Barat Jalan)"
+  },
+  {
+    "new_id": "TJ_0374",
+    "old_id": "S_tpb_demak_ijo_timur_jalan",
+    "name": "Demak Ijo (Timur Jalan)"
+  },
+  {
+    "new_id": "TJ_0375",
+    "old_id": "S_tpb_demangan",
+    "name": "Demangan"
+  },
+  {
+    "new_id": "TJ_0376",
+    "old_id": "S_tpb_dinas_perhubungan_diy",
+    "name": "Dinas Perhubungan Diy"
+  },
+  {
+    "new_id": "TJ_0377",
+    "old_id": "S_tpb_dr_sutomo_kota",
+    "name": "Dr Sutomo Kota"
+  },
+  {
+    "new_id": "TJ_0378",
+    "old_id": "S_tpb_edotel_kalasan_2",
+    "name": "Edotel Kalasan 2"
+  },
+  {
+    "new_id": "TJ_0379",
+    "old_id": "S_tpb_eks_bioskop_mataram",
+    "name": "Eks Bioskop Mataram"
+  },
+  {
+    "new_id": "TJ_0380",
+    "old_id": "S_tpb_eks_borobudur_plaza_2",
+    "name": "Eks Borobudur Plaza 2"
+  },
+  {
+    "new_id": "TJ_0381",
+    "old_id": "S_tpb_eks_hotel_nataputra",
+    "name": "Eks Hotel Nataputra"
+  },
+  {
+    "new_id": "TJ_0382",
+    "old_id": "S_tpb_fak_biologi_ugm",
+    "name": "Fak. Biologi Ugm"
+  },
+  {
+    "new_id": "TJ_0383",
+    "old_id": "S_tpb_fujiro_rejowinangun",
+    "name": "Fujiro Rejowinangun"
+  },
+  {
+    "new_id": "TJ_0384",
+    "old_id": "S_tpb_gajah_makam_ksmn_kota",
+    "name": "Gajah Makam Ksmn Kota"
+  },
+  {
+    "new_id": "TJ_0385",
+    "old_id": "S_tpb_galeria_mall",
+    "name": "Galeria Mall"
+  },
+  {
+    "new_id": "TJ_0386",
+    "old_id": "S_tpb_gambiran_1_barat_jalan",
+    "name": "Gambiran 1 (Barat Jalan)"
+  },
+  {
+    "new_id": "TJ_0387",
+    "old_id": "S_tpb_gambiran_2_timur_jalan",
+    "name": "Gambiran 2 (Timur Jalan)"
+  },
+  {
+    "new_id": "TJ_0388",
+    "old_id": "S_tpb_gedung_madu_candhya_1",
+    "name": "Gedung Madu Candhya 1"
+  },
+  {
+    "new_id": "TJ_0389",
+    "old_id": "S_tpb_gedung_madu_candhya_2",
+    "name": "Gedung Madu Candhya 2"
+  },
+  {
+    "new_id": "TJ_0390",
+    "old_id": "S_tpb_gereja_pugeran",
+    "name": "Gereja Pugeran"
+  },
+  {
+    "new_id": "TJ_0391",
+    "old_id": "S_tpb_giant_jl_godean",
+    "name": "Giant Jl. Godean"
+  },
+  {
+    "new_id": "TJ_0392",
+    "old_id": "S_tpb_gose",
+    "name": "Gose"
+  },
+  {
+    "new_id": "TJ_0393",
+    "old_id": "S_tpb_grand_pasific_restoran",
+    "name": "Grand Pasific Restoran"
+  },
+  {
+    "new_id": "TJ_0394",
+    "old_id": "S_tpb_gudang_sgm",
+    "name": "Gudang SGM"
+  },
+  {
+    "new_id": "TJ_0395",
+    "old_id": "S_tpb_gudang_sgm_2",
+    "name": "Gudang SGM 2"
+  },
+  {
+    "new_id": "TJ_0396",
+    "old_id": "S_tpb_hayam_wuruk_2",
+    "name": "Hayam Wuruk 2"
+  },
+  {
+    "new_id": "TJ_0397",
+    "old_id": "S_tpb_hotel_pramesthi",
+    "name": "Hotel Pramesthi"
+  },
+  {
+    "new_id": "TJ_0398",
+    "old_id": "S_tpb_hotel_utara_kota",
+    "name": "Hotel Utara Kota"
+  },
+  {
+    "new_id": "TJ_0399",
+    "old_id": "S_tpb_hotel_vidi_jakal",
+    "name": "Hotel Vidi Jakal"
+  },
+  {
+    "new_id": "TJ_0400",
+    "old_id": "S_tpb_hyundai_jl_laksda_adisucipto",
+    "name": "Hyundai Jl. Laksda Adisucipto"
+  },
+  {
+    "new_id": "TJ_0401",
+    "old_id": "S_tpb_jl_bhayangkara",
+    "name": "Jl. Bhayangkara"
+  },
+  {
+    "new_id": "TJ_0402",
+    "old_id": "S_tpb_jl_gandekan_dagen",
+    "name": "Jl. Gandekan (Dagen)"
+  },
+  {
+    "new_id": "TJ_0403",
+    "old_id": "S_tpb_jl_letjen_s_parman",
+    "name": "Jl. Letjen S. Parman"
+  },
+  {
+    "new_id": "TJ_0404",
+    "old_id": "S_tpb_jl_letjen_suprapto_2",
+    "name": "Jl. Letjen Suprapto 2"
+  },
+  {
+    "new_id": "TJ_0405",
+    "old_id": "S_tpb_jl_mayjen_sutoyo_plengkung_gading",
+    "name": "Jl. Mayjen Sutoyo (Plengkung Gading)"
+  },
+  {
+    "new_id": "TJ_0406",
+    "old_id": "S_tpb_jl_mayjend_sutoyo_jokteng_wetan",
+    "name": "Jl. Mayjend Sutoyo (Jokteng Wetan)"
+  },
+  {
+    "new_id": "TJ_0407",
+    "old_id": "S_tpb_jl_mayjend_sutoyo_pasar_gading",
+    "name": "Jl. Mayjend Sutoyo (Pasar Gading)"
+  },
+  {
+    "new_id": "TJ_0408",
+    "old_id": "S_tpb_jl_mayor_suryotomo",
+    "name": "Jl. Mayor Suryotomo"
+  },
+  {
+    "new_id": "TJ_0409",
+    "old_id": "S_tpb_jl_pramuka",
+    "name": "Jl. Pramuka"
+  },
+  {
+    "new_id": "TJ_0410",
+    "old_id": "S_tpb_jl_solo_kalasan",
+    "name": "Jl. Solo Kalasan"
+  },
+  {
+    "new_id": "TJ_0411",
+    "old_id": "S_tpb_jl_veteran",
+    "name": "Jl. Veteran"
+  },
+  {
+    "new_id": "TJ_0412",
+    "old_id": "S_tpb_jlagran",
+    "name": "Jlagran"
+  },
+  {
+    "new_id": "TJ_0413",
+    "old_id": "S_tpb_jogokariyan_barat_jalan",
+    "name": "Jogokariyan (Barat Jalan)"
+  },
+  {
+    "new_id": "TJ_0414",
+    "old_id": "S_tpb_jogokariyan_timur_jalan",
+    "name": "Jogokariyan (Timur Jalan)"
+  },
+  {
+    "new_id": "TJ_0415",
+    "old_id": "S_tpb_karangjati_barat_jalan",
+    "name": "Karangjati (Barat Jalan)"
+  },
+  {
+    "new_id": "TJ_0416",
+    "old_id": "S_tpb_karangjati_timur_jalan",
+    "name": "Karangjati (Timur Jalan)"
+  },
+  {
+    "new_id": "TJ_0417",
+    "old_id": "S_tpb_karangwaru_barat_jalan",
+    "name": "Karangwaru (Barat Jalan)"
+  },
+  {
+    "new_id": "TJ_0418",
+    "old_id": "S_tpb_karangwaru_timur_jalan",
+    "name": "Karangwaru (Timur Jalan)"
+  },
+  {
+    "new_id": "TJ_0419",
+    "old_id": "S_tpb_kasihan",
+    "name": "Kasihan"
+  },
+  {
+    "new_id": "TJ_0420",
+    "old_id": "S_tpb_ketandan_1",
+    "name": "Ketandan 1"
+  },
+  {
+    "new_id": "TJ_0421",
+    "old_id": "S_tpb_ki_penjawi_1",
+    "name": "Ki Penjawi 1"
+  },
+  {
+    "new_id": "TJ_0422",
+    "old_id": "S_tpb_ki_penjawi_2",
+    "name": "Ki Penjawi 2"
+  },
+  {
+    "new_id": "TJ_0423",
+    "old_id": "S_tpb_kledokan_babarsari",
+    "name": "Kledokan Babarsari"
+  },
+  {
+    "new_id": "TJ_0424",
+    "old_id": "S_tpb_kotabaru",
+    "name": "Kotabaru"
+  },
+  {
+    "new_id": "TJ_0425",
+    "old_id": "S_tpb_lap_karang_kotagede",
+    "name": "Lap. Karang Kotagede"
+  },
+  {
+    "new_id": "TJ_0426",
+    "old_id": "S_tpb_lap_kasihan",
+    "name": "Lap. Kasihan"
+  },
+  {
+    "new_id": "TJ_0427",
+    "old_id": "S_tpb_lapangan_kasihan",
+    "name": "Lapangan Kasihan"
+  },
+  {
+    "new_id": "TJ_0428",
+    "old_id": "S_tpb_lapangan_kasihan_2",
+    "name": "Lapangan Kasihan 2"
+  },
+  {
+    "new_id": "TJ_0429",
+    "old_id": "S_tpb_lembah_ugm_1",
+    "name": "Lembah Ugm 1"
+  },
+  {
+    "new_id": "TJ_0430",
+    "old_id": "S_tpb_lempuyangan",
+    "name": "Lempuyangan"
+  },
+  {
+    "new_id": "TJ_0431",
+    "old_id": "S_tpb_lowanu_barat_jalan",
+    "name": "Lowanu (Barat Jalan)"
+  },
+  {
+    "new_id": "TJ_0432",
+    "old_id": "S_tpb_lowanu_timur_jalan",
+    "name": "Lowanu (Timur Jalan)"
+  },
+  {
+    "new_id": "TJ_0433",
+    "old_id": "S_tpb_masjid_panembahan",
+    "name": "Masjid Panembahan"
+  },
+  {
+    "new_id": "TJ_0434",
+    "old_id": "S_tpb_mcd_jakal",
+    "name": "McD Jakal"
+  },
+  {
+    "new_id": "TJ_0435",
+    "old_id": "S_tpb_mirota_godean_1",
+    "name": "Mirota Godean 1"
+  },
+  {
+    "new_id": "TJ_0436",
+    "old_id": "S_tpb_mirota_godean_2",
+    "name": "Mirota Godean 2"
+  },
+  {
+    "new_id": "TJ_0437",
+    "old_id": "S_tpb_mm_ep_ugm",
+    "name": "Mm Ep Ugm"
+  },
+  {
+    "new_id": "TJ_0438",
+    "old_id": "S_tpb_mt_haryono_1_jokteng_kulon",
+    "name": "MT Haryono 1 (Jokteng Kulon)"
+  },
+  {
+    "new_id": "TJ_0439",
+    "old_id": "S_tpb_muallimin",
+    "name": "Muallimin"
+  },
+  {
+    "new_id": "TJ_0440",
+    "old_id": "S_tpb_museum_bahari_2",
+    "name": "Museum Bahari 2"
+  },
+  {
+    "new_id": "TJ_0441",
+    "old_id": "S_tpb_neutron_seturan_ykpn",
+    "name": "Neutron Seturan (Ykpn)"
+  },
+  {
+    "new_id": "TJ_0442",
+    "old_id": "S_tpb_olive_kentucky",
+    "name": "Olive Kentucky"
+  },
+  {
+    "new_id": "TJ_0443",
+    "old_id": "S_tpb_pandeyan",
+    "name": "Pandeyan"
+  },
+  {
+    "new_id": "TJ_0444",
+    "old_id": "S_tpb_pasar_demangan",
+    "name": "Pasar Demangan"
+  },
+  {
+    "new_id": "TJ_0445",
+    "old_id": "S_tpb_pasar_gamping",
+    "name": "Pasar Gamping"
+  },
+  {
+    "new_id": "TJ_0446",
+    "old_id": "S_tpb_pasar_giwangan_1",
+    "name": "Pasar Giwangan 1"
+  },
+  {
+    "new_id": "TJ_0447",
+    "old_id": "S_tpb_pasar_giwangan_2",
+    "name": "Pasar Giwangan 2"
+  },
+  {
+    "new_id": "TJ_0448",
+    "old_id": "S_tpb_pasar_kalasan",
+    "name": "Pasar Kalasan"
+  },
+  {
+    "new_id": "TJ_0449",
+    "old_id": "S_tpb_pasar_legi",
+    "name": "Pasar Legi"
+  },
+  {
+    "new_id": "TJ_0450",
+    "old_id": "S_tpb_pasar_lempuyangan",
+    "name": "Pasar Lempuyangan"
+  },
+  {
+    "new_id": "TJ_0451",
+    "old_id": "S_tpb_pasar_pathuk_yogyakarta",
+    "name": "Pasar Pathuk Yogyakarta"
+  },
+  {
+    "new_id": "TJ_0452",
+    "old_id": "S_tpb_pasar_sepeda_tunjungsari",
+    "name": "Pasar Sepeda Tunjungsari"
+  },
+  {
+    "new_id": "TJ_0453",
+    "old_id": "S_tpb_pasar_serangan",
+    "name": "Pasar Serangan"
+  },
+  {
+    "new_id": "TJ_0454",
+    "old_id": "S_tpb_pasar_telo_1",
+    "name": "Pasar Telo 1"
+  },
+  {
+    "new_id": "TJ_0455",
+    "old_id": "S_tpb_pasty_1",
+    "name": "Pasty 1"
+  },
+  {
+    "new_id": "TJ_0456",
+    "old_id": "S_tpb_pegadaian",
+    "name": "Pegadaian"
+  },
+  {
+    "new_id": "TJ_0457",
+    "old_id": "S_tpb_pelem_gurih",
+    "name": "Pelem Gurih"
+  },
+  {
+    "new_id": "TJ_0458",
+    "old_id": "S_tpb_perpusda_samsat_kota_yogya",
+    "name": "Perpusda Samsat Kota Yogya"
+  },
+  {
+    "new_id": "TJ_0459",
+    "old_id": "S_tpb_pilar_1_gedong_kuning_kota",
+    "name": "Pilar 1 Gedong Kuning Kota"
+  },
+  {
+    "new_id": "TJ_0460",
+    "old_id": "S_tpb_pilar_2_banguntapan_bantul",
+    "name": "Pilar 2 Banguntapan Bantul"
+  },
+  {
+    "new_id": "TJ_0461",
+    "old_id": "S_tpb_polsek_banguntapan",
+    "name": "Polsek Banguntapan"
+  },
+  {
+    "new_id": "TJ_0462",
+    "old_id": "S_tpb_polsek_bulaksumur_1",
+    "name": "Polsek Bulaksumur 1"
+  },
+  {
+    "new_id": "TJ_0463",
+    "old_id": "S_tpb_polsek_depok_ringroad_utara",
+    "name": "Polsek Depok Ringroad Utara"
+  },
+  {
+    "new_id": "TJ_0464",
+    "old_id": "S_tpb_polsek_depok_timur",
+    "name": "Polsek Depok Timur"
+  },
+  {
+    "new_id": "TJ_0465",
+    "old_id": "S_tpb_ponpes_hamalatul_quran",
+    "name": "Ponpes Hamalatul Quran"
+  },
+  {
+    "new_id": "TJ_0466",
+    "old_id": "S_tpb_ponpes_hamatul_quran",
+    "name": "Ponpes Hamatul Quran"
+  },
+  {
+    "new_id": "TJ_0467",
+    "old_id": "S_tpb_purawisata",
+    "name": "Purawisata"
+  },
+  {
+    "new_id": "TJ_0468",
+    "old_id": "S_tpb_purnomo_mebel",
+    "name": "Purnomo Mebel"
+  },
+  {
+    "new_id": "TJ_0469",
+    "old_id": "S_tpb_rm_setia_rasa",
+    "name": "Rm Setia Rasa"
+  },
+  {
+    "new_id": "TJ_0470",
+    "old_id": "S_tpb_rru_btn",
+    "name": "Rru Btn"
+  },
+  {
+    "new_id": "TJ_0471",
+    "old_id": "S_tpb_rs_bersalin_fajar",
+    "name": "Rs Bersalin Fajar"
+  },
+  {
+    "new_id": "TJ_0472",
+    "old_id": "S_tpb_rs_bhayangkara",
+    "name": "Rs. Bhayangkara"
+  },
+  {
+    "new_id": "TJ_0473",
+    "old_id": "S_tpb_ruba_graha_1",
+    "name": "Ruba Graha 1"
+  },
+  {
+    "new_id": "TJ_0474",
+    "old_id": "S_tpb_ruko_babarsari",
+    "name": "Ruko Babarsari"
+  },
+  {
+    "new_id": "TJ_0475",
+    "old_id": "S_tpb_ruko_bayeman_1",
+    "name": "Ruko Bayeman 1"
+  },
+  {
+    "new_id": "TJ_0476",
+    "old_id": "S_tpb_ruko_bayeman_2",
+    "name": "Ruko Bayeman 2"
+  },
+  {
+    "new_id": "TJ_0477",
+    "old_id": "S_tpb_salakan_baru",
+    "name": "Salakan Baru"
+  },
+  {
+    "new_id": "TJ_0478",
+    "old_id": "S_tpb_santren_barat_jalan",
+    "name": "Santren (Barat Jalan)"
+  },
+  {
+    "new_id": "TJ_0479",
+    "old_id": "S_tpb_santren_timur_jalan",
+    "name": "Santren (Timur Jalan)"
+  },
+  {
+    "new_id": "TJ_0480",
+    "old_id": "S_tpb_sd_rejowinangun",
+    "name": "SD Rejowinangun"
+  },
+  {
+    "new_id": "TJ_0481",
+    "old_id": "S_tpb_sgm_kenari",
+    "name": "Sgm (Kenari)"
+  },
+  {
+    "new_id": "TJ_0482",
+    "old_id": "S_tpb_simpang_diklat_diy",
+    "name": "Simpang Diklat Diy"
+  },
+  {
+    "new_id": "TJ_0483",
+    "old_id": "S_tpb_simpang_kronggahan_1",
+    "name": "Simpang Kronggahan 1"
+  },
+  {
+    "new_id": "TJ_0484",
+    "old_id": "S_tpb_simpang_kronggahan_2",
+    "name": "Simpang Kronggahan 2"
+  },
+  {
+    "new_id": "TJ_0485",
+    "old_id": "S_tpb_simpang_wojo_1",
+    "name": "Simpang Wojo 1"
+  },
+  {
+    "new_id": "TJ_0486",
+    "old_id": "S_tpb_sma_5",
+    "name": "SMA 5"
+  },
+  {
+    "new_id": "TJ_0487",
+    "old_id": "S_tpb_smk_seni_1",
+    "name": "Smk Seni 1"
+  },
+  {
+    "new_id": "TJ_0488",
+    "old_id": "S_tpb_smk_seni_2",
+    "name": "Smk Seni 2"
+  },
+  {
+    "new_id": "TJ_0489",
+    "old_id": "S_tpb_smkn_1_depok_ringroad_utara",
+    "name": "Smkn 1 Depok (Ringroad Utara)"
+  },
+  {
+    "new_id": "TJ_0490",
+    "old_id": "S_tpb_smp_9_basen",
+    "name": "SMP 9 Basen"
+  },
+  {
+    "new_id": "TJ_0491",
+    "old_id": "S_tpb_smp_kanisius_kota",
+    "name": "Smp Kanisius Kota"
+  },
+  {
+    "new_id": "TJ_0492",
+    "old_id": "S_tpb_smp_n_4_depok_babarsari",
+    "name": "Smp N 4 Depok Babarsari"
+  },
+  {
+    "new_id": "TJ_0493",
+    "old_id": "S_tpb_smp_n_6_yogyakarta",
+    "name": "Smp N 6 Yogyakarta"
+  },
+  {
+    "new_id": "TJ_0494",
+    "old_id": "S_tpb_smpn_1_yogyakarta",
+    "name": "SMPN 1 Yogyakarta"
+  },
+  {
+    "new_id": "TJ_0495",
+    "old_id": "S_tpb_smpn_1_yogyakarta_barat_jalan",
+    "name": "Smpn 1 Yogyakarta (Barat Jalan)"
+  },
+  {
+    "new_id": "TJ_0496",
+    "old_id": "S_tpb_smpn_1_yogyakarta_timur_jalan",
+    "name": "Smpn 1 Yogyakarta (Timur Jalan)"
+  },
+  {
+    "new_id": "TJ_0497",
+    "old_id": "S_tpb_smpn_9_utara_jalan",
+    "name": "Smpn 9 (Utara Jalan)"
+  },
+  {
+    "new_id": "TJ_0498",
+    "old_id": "S_tpb_spbu_dukuh_1",
+    "name": "Spbu Dukuh 1"
+  },
+  {
+    "new_id": "TJ_0499",
+    "old_id": "S_tpb_spbu_dukuh_2",
+    "name": "Spbu Dukuh 2"
+  },
+  {
+    "new_id": "TJ_0500",
+    "old_id": "S_tpb_stie_kerjasama_jl_supeno_kota",
+    "name": "Stie Kerjasama Jl Supeno Kota"
+  },
+  {
+    "new_id": "TJ_0501",
+    "old_id": "S_tpb_stie_ykpn",
+    "name": "Stie Ykpn"
+  },
+  {
+    "new_id": "TJ_0502",
+    "old_id": "S_tpb_super_dazzle_gejayan",
+    "name": "Super Dazzle Gejayan"
+  },
+  {
+    "new_id": "TJ_0503",
+    "old_id": "S_tpb_superindo_sonosewu",
+    "name": "Superindo Sonosewu"
+  },
+  {
+    "new_id": "TJ_0504",
+    "old_id": "S_tpb_suryotomo_barat",
+    "name": "Suryotomo Barat"
+  },
+  {
+    "new_id": "TJ_0505",
+    "old_id": "S_tpb_tamantirto_barat_jalan",
+    "name": "Tamantirto (Barat Jalan)"
+  },
+  {
+    "new_id": "TJ_0506",
+    "old_id": "S_tpb_tamantirto_timur_jalan",
+    "name": "Tamantirto (Timur Jalan)"
+  },
+  {
+    "new_id": "TJ_0507",
+    "old_id": "S_tpb_tarumartani",
+    "name": "Tarumartani"
+  },
+  {
+    "new_id": "TJ_0508",
+    "old_id": "S_tpb_tegal_gendu_2",
+    "name": "Tegal Gendu 2"
+  },
+  {
+    "new_id": "TJ_0509",
+    "old_id": "S_tpb_teknik_ugm_1",
+    "name": "Teknik Ugm 1"
+  },
+  {
+    "new_id": "TJ_0510",
+    "old_id": "S_tpb_teknik_ugm_2",
+    "name": "Teknik Ugm 2"
+  },
+  {
+    "new_id": "TJ_0511",
+    "old_id": "S_tpb_teras_malioboro",
+    "name": "Teras Malioboro"
+  },
+  {
+    "new_id": "TJ_0512",
+    "old_id": "S_tpb_tni_al_1",
+    "name": "TNI AL 1"
+  },
+  {
+    "new_id": "TJ_0513",
+    "old_id": "S_tpb_tvri",
+    "name": "Tvri"
+  },
+  {
+    "new_id": "TJ_0514",
+    "old_id": "S_tpb_tvri_timur",
+    "name": "TVRI (Timur)"
+  },
+  {
+    "new_id": "TJ_0515",
+    "old_id": "S_tpb_uad_jl_pramuka",
+    "name": "UAD Jl. Pramuka"
+  },
+  {
+    "new_id": "TJ_0516",
+    "old_id": "S_tpb_umy_1",
+    "name": "Umy 1"
+  },
+  {
+    "new_id": "TJ_0517",
+    "old_id": "S_tpb_umy_2",
+    "name": "Umy 2"
+  },
+  {
+    "new_id": "TJ_0518",
+    "old_id": "S_tpb_universitas_aisyiyah",
+    "name": "Universitas Aisyiyah"
+  },
+  {
+    "new_id": "TJ_0519",
+    "old_id": "S_tpb_universitas_alma_ata",
+    "name": "Universitas Alma Ata"
+  },
+  {
+    "new_id": "TJ_0520",
+    "old_id": "S_tpb_unu_yogyakarta",
+    "name": "UNU Yogyakarta"
+  },
+  {
+    "new_id": "TJ_0521",
+    "old_id": "S_tpb_upy",
+    "name": "Upy"
+  },
+  {
+    "new_id": "TJ_0522",
+    "old_id": "S_tpb_westlake_1",
+    "name": "Westlake 1"
+  },
+  {
+    "new_id": "TJ_0523",
+    "old_id": "S_tpb_westlake_2",
+    "name": "Westlake 2"
+  },
+  {
+    "new_id": "TJ_0524",
+    "old_id": "S_tpb_widya_wiwaha_1",
+    "name": "Widya Wiwaha 1"
+  },
+  {
+    "new_id": "TJ_0525",
+    "old_id": "S_tpb_widya_wiwaha_2",
+    "name": "Widya Wiwaha 2"
+  },
+  {
+    "new_id": "TJ_0526",
+    "old_id": "S_tpb_wirogunan_2_tamsis",
+    "name": "Wirogunan 2 Tamsis"
+  },
+  {
+    "new_id": "TJ_0527",
+    "old_id": "S_tpb_wisma_martha",
+    "name": "Wisma Martha"
+  },
+  {
+    "new_id": "TJ_0528",
+    "old_id": "S_tpb_wolter_monginsidi_sleman",
+    "name": "Wolter Monginsidi, Sleman"
+  },
+  {
+    "new_id": "TJ_0529",
+    "old_id": "S_tugu_adipura_bantul",
+    "name": "Tugu Adipura Bantul"
+  },
+  {
+    "new_id": "TJ_0530",
+    "old_id": "S_uin_sunan_kalijaga_barat",
+    "name": "UIN Sunan Kalijaga (Barat)"
+  },
+  {
+    "new_id": "TJ_0531",
+    "old_id": "S_ukdw",
+    "name": "UKDW"
+  },
+  {
+    "new_id": "TJ_0532",
+    "old_id": "S_uty_glagahsari_timur",
+    "name": "UTY Glagahsari (Timur)"
+  },
+  {
+    "new_id": "TJ_0533",
+    "old_id": "S_vokasi_ugm",
+    "name": "Vokasi UGM"
+  },
+  {
+    "new_id": "TJ_0534",
+    "old_id": "S_wirogunan_barat",
+    "name": "Wirogunan (Barat)"
+  }
+]

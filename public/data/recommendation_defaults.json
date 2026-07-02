@@ -1,0 +1,47 @@
+{
+  "max_transfers": 3,
+  "transfer_penalty_min": 5.0,
+  "min_stay_min": 120.0,
+  "default_types": [
+    "Budaya dan Sejarah",
+    "Alam",
+    "Agrowisata",
+    "Buatan",
+    "Pantai",
+    "Wisata Air",
+    "Museum",
+    "Desa Wisata",
+    "Pusat Oleh-Oleh"
+  ],
+  "exclude_patterns": [
+    "\\bmeeting point\\b",
+    "\\binformation center\\b",
+    "\\btour planner\\b",
+    "\\btransport service\\b",
+    "\\btravel\\b",
+    "\\bport\\b",
+    "\\bhotel\\b",
+    "\\bguest ?house\\b",
+    "\\bhomestay\\b",
+    "\\bresort\\b",
+    "\\bapartment\\b",
+    "\\bhostel\\b",
+    "\\brental\\b",
+    "\\bticket\\b",
+    "\\boffice\\b",
+    "\\btattoo\\b",
+    "\\bguide\\b",
+    "\\bchauffeur\\b",
+    "\\bruang perawatan\\b"
+  ],
+  "score_weights": {
+    "eta_total": 0.35,
+    "walk_distance": 0.2,
+    "transfers": 0.2,
+    "operating_margin": 0.1,
+    "rating": 0.1,
+    "popularity": 0.05,
+    "needs_review_penalty": -0.03,
+    "low_vote_penalty": -0.05
+  }
+}
