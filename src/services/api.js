@@ -86,7 +86,24 @@ export const api = {
   }),
 
   getSchedule: (stop_id, day_type) => engineApi(() => {
-    return db.stop_schedule[stop_id] || {};
+    const raw = db.stop_schedule[stop_id] || {};
+    const stop = db.stops_by_id[stop_id];
+    if (!stop) throw new Error("Stop not found");
+    
+    const routes = Object.keys(raw).map(rid => {
+      return {
+        route_id: rid,
+        departures: raw[rid].map(t => {
+          const parts = t.split(':');
+          return `${parts[0].padStart(2, '0')}:${parts[1].padStart(2, '0')}`;
+        }).sort()
+      };
+    });
+
+    return {
+      stop_name: stop.name,
+      routes: routes
+    };
   }),
 
   getRoutesList: () => engineApi(() => {
