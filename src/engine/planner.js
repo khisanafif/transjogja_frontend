@@ -5,7 +5,7 @@ import {
   min_to_hhmm,
   is_open_with_margin
 } from './eta.js';
-import { recommend } from './recommender.js';
+import { recommend, routeTo } from './recommender.js';
 
 export function plan_day(
   origin_stop_id,
@@ -112,6 +112,83 @@ export function plan_day(
 
   return {
     feasible: itinerary.length > 0,
+    total_destinations: itinerary.length,
+    total_travel_min: Math.round(total_travel * 10) / 10,
+    total_visit_min: total_visit,
+    return_hhmm: min_to_hhmm(current_min),
+    itinerary: itinerary,
+  };
+}
+
+export function custom_plan(
+  origin_stop_id,
+  origin_walk_min,
+  depart_hhmm,
+  targets, // array of { poi_id, stay_min }
+  db
+) {
+  const depart_min = hhmm_to_min(depart_hhmm);
+
+  let current_stop = origin_stop_id;
+  let current_walk = origin_walk_min;
+  let current_min = depart_min;
+  
+  const itinerary = [];
+
+  for (const target of targets) {
+    const current_hhmm = min_to_hhmm(current_min);
+    
+    // Route from current_stop to target.poi_id
+    const route_res = routeTo(
+      current_stop,
+      current_walk,
+      current_hhmm,
+      target.poi_id,
+      db
+    );
+
+    if (!route_res.found) {
+      break; // cannot reach next target, stop here
+    }
+
+    const arrive_min = current_min + route_res.eta_total_min;
+    const depart_from_poi = arrive_min + target.stay_min;
+    
+    const poi = db.poi_by_id[target.poi_id];
+
+    itinerary.push({
+      order: itinerary.length + 1,
+      poi_id: poi.poi_id,
+      name: poi.name,
+      type: poi.type,
+      lat: poi.lat,
+      lon: poi.lon,
+      rating: poi.rating,
+      open_hhmm: poi.open_hhmm,
+      close_hhmm: poi.close_hhmm,
+      needs_review: poi.needs_review,
+      arrive_hhmm: min_to_hhmm(arrive_min),
+      depart_hhmm: min_to_hhmm(depart_from_poi),
+      stay_min: target.stay_min,
+      eta_from_prev_min: Math.round(route_res.eta_total_min * 100) / 100,
+      transfers: route_res.transfers,
+      route_legs: route_res.route_legs,
+      description: poi.description,
+      htm_weekday: poi.htm_weekday,
+      htm_weekend: poi.htm_weekend,
+      image: poi.image,
+    });
+
+    current_stop = poi.nearest_stop_id || current_stop;
+    current_walk = parseFloat(poi.walk_time_min || 0);
+    current_min = depart_from_poi;
+  }
+
+  const total_travel = itinerary.reduce((sum, i) => sum + i.eta_from_prev_min, 0);
+  const total_visit = itinerary.reduce((sum, i) => sum + i.stay_min, 0);
+
+  return {
+    feasible: itinerary.length === targets.length,
     total_destinations: itinerary.length,
     total_travel_min: Math.round(total_travel * 10) / 10,
     total_visit_min: total_visit,

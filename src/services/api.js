@@ -2,7 +2,7 @@
 
 import { initEngine, db } from '../engine/dataLoader.js';
 import { recommend, routeTo } from '../engine/recommender.js';
-import { plan_day } from '../engine/planner.js';
+import { plan_day, custom_plan } from '../engine/planner.js';
 
 async function engineApi(handler) {
   await initEngine();
@@ -85,23 +85,51 @@ export const api = {
     );
   }),
 
+  customItinerary: (body) => engineApi(() => {
+    return custom_plan(
+      body.origin_stop_id,
+      body.origin_walk_min,
+      body.depart_hhmm,
+      body.targets,
+      db
+    );
+  }),
+
   getSchedule: (stop_id, day_type) => engineApi(() => {
     const raw = db.stop_schedule[stop_id] || {};
     const stop = db.stops_by_id[stop_id];
     if (!stop) throw new Error("Stop not found");
     
     const routes = Object.keys(raw).map(rid => {
+      let times = raw[rid].map(t => {
+        const parts = t.split(':');
+        return `${parts[0].padStart(2, '0')}:${parts[1].padStart(2, '0')}`;
+      }).sort();
+      
+      let headway_avg = null;
+      if (times.length > 1) {
+        let mins = times.map(t => {
+          const parts = t.split(':');
+          return parseInt(parts[0], 10) * 60 + parseInt(parts[1], 10);
+        });
+        let gaps = [];
+        for (let i = 0; i < mins.length - 1; i++) {
+          if (mins[i+1] > mins[i]) gaps.push(mins[i+1] - mins[i]);
+        }
+        if (gaps.length > 0) {
+          headway_avg = Math.round(gaps.reduce((a, b) => a + b, 0) / gaps.length);
+        }
+      }
+
       return {
         route_id: rid,
-        departures: raw[rid].map(t => {
-          const parts = t.split(':');
-          return `${parts[0].padStart(2, '0')}:${parts[1].padStart(2, '0')}`;
-        }).sort()
+        departures: times,
+        headway_avg_min: headway_avg
       };
     });
 
     return {
-      stop_name: stop.name,
+      stop_name: stop.name || stop.stop_name,
       routes: routes
     };
   }),

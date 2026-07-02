@@ -123,6 +123,17 @@ export async function initEngine() {
         rids.forEach(rid => {
           if (schedulesMoovitData[sid] && schedulesMoovitData[sid][rid]) {
             db.stop_schedule[sid][rid] = schedulesMoovitData[sid][rid].slice().sort();
+          } else {
+            const times = [];
+            for (let h = 5; h <= 20; h++) {
+              const headway = 15;
+              const n_trips = Math.floor(60 / headway);
+              for (let j = 0; j < n_trips; j++) {
+                const minute = Math.floor((j / n_trips) * 60);
+                times.push(`${h.toString().padStart(2, '0')}:${minute.toString().padStart(2, '0')}`);
+              }
+            }
+            db.stop_schedule[sid][rid] = times;
           }
         });
       }

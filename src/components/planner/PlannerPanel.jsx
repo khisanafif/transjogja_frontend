@@ -1,10 +1,61 @@
-import { useState } from 'react'
+import { useState, useEffect } from 'react'
 import { useNavigate } from 'react-router-dom'
 import { useAppStore } from '../../store/appStore'
 import { api } from '../../services/api'
 import { TypeBadge, OpenBadge, RatingStars, Spinner, ErrorBox, EmptyState, LegStep } from '../shared'
 
 const WEEKDAYS = ['Senin','Selasa','Rabu','Kamis','Jumat','Sabtu','Minggu']
+
+function SearchableSelect({ options, value, onChange, placeholder }) {
+  const [query, setQuery] = useState('')
+  const [open, setOpen] = useState(false)
+  
+  useEffect(() => {
+    if (value) {
+      const selected = options.find(o => o.value === value)
+      if (selected) setQuery(selected.label)
+    } else {
+      setQuery('')
+    }
+  }, [value, options])
+
+  const filtered = options.filter(o => o.label.toLowerCase().includes(query.toLowerCase()))
+
+  return (
+    <div className="relative w-full">
+      <input 
+        type="text"
+        className="input w-full"
+        placeholder={placeholder}
+        value={query}
+        onChange={e => {
+          setQuery(e.target.value)
+          setOpen(true)
+          if (value) onChange('')
+        }}
+        onFocus={() => setOpen(true)}
+        onBlur={() => setTimeout(() => setOpen(false), 200)}
+      />
+      {open && filtered.length > 0 && (
+        <div className="absolute z-50 w-full mt-1 bg-white border border-slate-200 rounded-lg shadow-lg max-h-60 overflow-y-auto">
+          {filtered.map(o => (
+            <div 
+              key={o.value}
+              className="px-3 py-2 text-sm cursor-pointer hover:bg-brand-50"
+              onClick={() => {
+                setQuery(o.label)
+                onChange(o.value)
+                setOpen(false)
+              }}
+            >
+              {o.label}
+            </div>
+          ))}
+        </div>
+      )}
+    </div>
+  )
+}
 
 function TimelineItem({ item, isLast }) {
   const [showLegs, setShowLegs] = useState(false)
@@ -88,7 +139,7 @@ function TimelineItem({ item, isLast }) {
 }
 
 export default function PlannerPanel() {
-  const { originStop, weekday } = useAppStore()
+  const { originStop, setOrigin, weekday } = useAppStore()
   const [departHhmm, setDepartHhmm] = useState('09:00')
   const [endHhmm, setEndHhmm] = useState('17:00')
   const [minStayMin, setMinStayMin] = useState(60)
@@ -96,21 +147,67 @@ export default function PlannerPanel() {
   const [result, setResult] = useState(null)
   const [loading, setLoading] = useState(false)
   const [error, setError] = useState(null)
+  
+  const [mode, setMode] = useState('auto') // 'auto' or 'manual'
+  const [pois, setPois] = useState([])
+  const [stops, setStops] = useState([])
+  const [manualTargets, setManualTargets] = useState([])
+  const [selectedPoiId, setSelectedPoiId] = useState('')
+  const [manualStayMin, setManualStayMin] = useState(60)
+
+  useEffect(() => {
+    api.getPoi().then(res => {
+      // sort by name
+      setPois(res.sort((a,b) => (a.name || '').localeCompare(b.name || '')))
+    }).catch(console.error)
+    api.getStops().then(res => {
+      setStops(res.sort((a,b) => (a.name || a.stop_name || '').localeCompare(b.name || b.stop_name || '')))
+    }).catch(console.error)
+  }, [])
 
   async function plan() {
-    if (!originStop) { setError('Pilih halte asal di halaman Map terlebih dahulu'); return }
+    if (!originStop) { setError('Pilih halte asal terlebih dahulu'); return }
+    if (mode === 'manual' && manualTargets.length === 0) { setError('Tambahkan minimal 1 tempat wisata'); return }
     setLoading(true); setError(null); setResult(null)
     try {
-      const r = await api.itinerary({
-        origin_stop_id: originStop.stop_id,
-        origin_walk_min: originStop.walk_time_min || 0,
-        depart_hhmm: departHhmm, end_hhmm: endHhmm, weekday,
-        min_stay_min: minStayMin, max_destinations: maxDest, filters: {},
-      })
+      let r;
+      if (mode === 'auto') {
+        r = await api.itinerary({
+          origin_stop_id: originStop.stop_id,
+          origin_walk_min: originStop.walk_time_min || 0,
+          depart_hhmm: departHhmm, end_hhmm: endHhmm, weekday,
+          min_stay_min: minStayMin, max_destinations: maxDest, filters: {},
+        })
+      } else {
+        r = await api.customItinerary({
+          origin_stop_id: originStop.stop_id,
+          origin_walk_min: originStop.walk_time_min || 0,
+          depart_hhmm: departHhmm,
+          targets: manualTargets
+        })
+      }
       setResult(r)
     } catch (e) { setError(e.message) }
     finally { setLoading(false) }
   }
+
+  function addTarget() {
+    if (!selectedPoiId) return;
+    const poi = pois.find(p => p.poi_id == selectedPoiId)
+    if (poi) {
+      setManualTargets([...manualTargets, { poi_id: poi.poi_id, name: poi.name, stay_min: manualStayMin }])
+      setSelectedPoiId('')
+    }
+  }
+
+  function removeTarget(index) {
+    const newTargets = [...manualTargets]
+    newTargets.splice(index, 1)
+    setManualTargets(newTargets)
+  }
+
+  const stopOptions = stops.map(s => ({ value: s.stop_id, label: s.name || s.stop_name }));
+  const poiOptions = pois.map(p => ({ value: p.poi_id, label: p.name }));
 
   return (
     <div className="space-y-5 animate-fade-in">
@@ -118,54 +215,116 @@ export default function PlannerPanel() {
       <div className="card p-5 space-y-4">
         <h2 className="text-sm font-bold text-slate-800">⚙ Konfigurasi Rencana</h2>
 
-        {originStop ? (
-          <div className="flex items-center gap-2.5 bg-brand-50 border border-brand-200 rounded-xl px-3.5 py-2.5">
-            <span className="text-base">📍</span>
-            <div>
-              <p className="text-xs font-bold text-brand-700">Halte Asal</p>
-              <p className="text-xs text-brand-600">{originStop.name || originStop.stop_name}</p>
-            </div>
-          </div>
-        ) : (
-          <div className="flex items-center gap-2.5 bg-amber-50 border border-amber-200 rounded-xl px-3.5 py-2.5">
-            <span className="text-base">⚠</span>
-            <p className="text-xs text-amber-700">Pilih halte asal di halaman <strong>Cari Wisata</strong> terlebih dahulu</p>
-          </div>
-        )}
+        <div>
+          <label className="label flex gap-1.5 items-center">
+            <span>📍</span> Halte Asal
+          </label>
+          <SearchableSelect 
+            options={stopOptions}
+            value={originStop ? originStop.stop_id : ''}
+            onChange={(val) => {
+              const s = stops.find(x => x.stop_id === val)
+              setOrigin(s || null, 0)
+            }}
+            placeholder="Cari atau ketik nama halte..."
+          />
+        </div>
+
+        <div className="flex bg-slate-100 p-1 rounded-lg">
+          <button 
+            className={`flex-1 py-1.5 text-xs font-bold rounded-md transition-colors ${mode === 'auto' ? 'bg-white text-brand-700 shadow-sm' : 'text-slate-500 hover:text-slate-700'}`}
+            onClick={() => setMode('auto')}
+          >
+            Rekomendasi Otomatis
+          </button>
+          <button 
+            className={`flex-1 py-1.5 text-xs font-bold rounded-md transition-colors ${mode === 'manual' ? 'bg-white text-brand-700 shadow-sm' : 'text-slate-500 hover:text-slate-700'}`}
+            onClick={() => setMode('manual')}
+          >
+            Pilih Wisata Sendiri
+          </button>
+        </div>
 
         <div className="grid grid-cols-2 gap-3">
-          {[['Mulai', departHhmm, setDepartHhmm], ['Selesai', endHhmm, setEndHhmm]].map(([l, v, fn]) => (
+          {[['Mulai', departHhmm, setDepartHhmm]].map(([l, v, fn]) => (
             <div key={l}>
               <label className="label">{l}</label>
               <input type="time" value={v} onChange={e => fn(e.target.value)}
                 min="05:30" max="20:30" className="input" />
             </div>
           ))}
+          {mode === 'auto' && (
+            <div>
+              <label className="label">Selesai</label>
+              <input type="time" value={endHhmm} onChange={e => setEndHhmm(e.target.value)}
+                min="05:30" max="20:30" className="input" />
+            </div>
+          )}
         </div>
 
-        <div>
-          <label className="label flex justify-between">
-            <span>Durasi kunjungan per tempat</span>
-            <span className="font-bold text-brand-600 normal-case">{minStayMin} menit</span>
-          </label>
-          <input type="range" min={30} max={180} step={15} value={minStayMin}
-            onChange={e => setMinStayMin(+e.target.value)}
-            className="w-full accent-brand-600" />
-        </div>
+        {mode === 'auto' ? (
+          <>
+            <div>
+              <label className="label flex justify-between">
+                <span>Durasi kunjungan per tempat</span>
+                <span className="font-bold text-brand-600 normal-case">{minStayMin} menit</span>
+              </label>
+              <input type="range" min={30} max={180} step={15} value={minStayMin}
+                onChange={e => setMinStayMin(+e.target.value)}
+                className="w-full accent-brand-600" />
+            </div>
 
-        <div>
-          <label className="label flex justify-between">
-            <span>Maks. destinasi</span>
-            <span className="font-bold text-brand-600 normal-case">{maxDest} tempat</span>
-          </label>
-          <input type="range" min={1} max={6} step={1} value={maxDest}
-            onChange={e => setMaxDest(+e.target.value)}
-            className="w-full accent-brand-600" />
-        </div>
+            <div>
+              <label className="label flex justify-between">
+                <span>Maks. destinasi</span>
+                <span className="font-bold text-brand-600 normal-case">{maxDest} tempat</span>
+              </label>
+              <input type="range" min={1} max={6} step={1} value={maxDest}
+                onChange={e => setMaxDest(+e.target.value)}
+                className="w-full accent-brand-600" />
+            </div>
+          </>
+        ) : (
+          <div className="space-y-3 pt-3 border-t border-slate-100">
+            <h3 className="text-xs font-bold text-slate-800">Daftar Kunjungan</h3>
+            {manualTargets.map((t, idx) => (
+              <div key={idx} className="flex items-center justify-between bg-slate-50 border border-slate-100 p-2 rounded-lg">
+                <div>
+                  <div className="text-xs font-bold text-slate-800">{idx+1}. {t.name}</div>
+                  <div className="text-2xs text-slate-500">Durasi: {t.stay_min} menit</div>
+                </div>
+                <button onClick={() => removeTarget(idx)} className="text-red-500 hover:bg-red-50 p-1.5 rounded-md">
+                  <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2"><path d="M18 6L6 18M6 6l12 12"/></svg>
+                </button>
+              </div>
+            ))}
+            
+            <div className="bg-brand-50/50 p-3 rounded-lg space-y-3 border border-brand-100/50">
+              <div>
+                <label className="label">Pilih Wisata</label>
+                <SearchableSelect 
+                  options={poiOptions}
+                  value={selectedPoiId}
+                  onChange={setSelectedPoiId}
+                  placeholder="Cari wisata yang ingin dituju..."
+                />
+              </div>
+              <div className="flex gap-2 items-end">
+                <div className="flex-1">
+                  <label className="label">Durasi (menit)</label>
+                  <input type="number" className="input" value={manualStayMin} onChange={e => setManualStayMin(+e.target.value)} min="15" step="15" />
+                </div>
+                <button onClick={addTarget} disabled={!selectedPoiId} className="btn-primary py-2 px-4 whitespace-nowrap bg-brand-600 hover:bg-brand-700 disabled:opacity-50">
+                  Tambah
+                </button>
+              </div>
+            </div>
+          </div>
+        )}
 
         <button onClick={plan} disabled={loading}
           className="btn-primary w-full py-3">
-          {loading ? <><Spinner size="sm" /> Merencanakan...</> : '📅 Rencanakan Otomatis'}
+          {loading ? <><Spinner size="sm" /> Merencanakan...</> : mode === 'auto' ? '📅 Rencanakan Otomatis' : '📅 Buat Rencana'}
         </button>
       </div>
 
