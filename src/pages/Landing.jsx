@@ -94,12 +94,12 @@ export default function Landing() {
       {/* ── Navbar ── */}
       <nav className="fixed top-0 left-0 right-0 z-50 bg-white/80 backdrop-blur-xl border-b border-slate-100">
         <div className="max-w-6xl mx-auto px-4 sm:px-6 h-16 flex items-center gap-4">
-          <a href="/" className="flex items-center gap-2.5 flex-shrink-0">
+          <div onClick={() => nav('/')} className="flex items-center gap-2.5 flex-shrink-0 cursor-pointer">
             <div className="w-8 h-8 bg-brand-600 rounded-xl flex items-center justify-center">
               <span className="text-white text-sm">🚌</span>
             </div>
             <span className="text-sm font-bold text-slate-900 hidden sm:block">TransJogja Tourism</span>
-          </a>
+          </div>
           <div className="flex-1" />
           <div className="hidden md:flex items-center gap-1">
             {NAV_LINKS.map(l => (
