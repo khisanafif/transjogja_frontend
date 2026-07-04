@@ -64,9 +64,11 @@ export async function initEngine() {
         p.original_type = p.type;
         p.type = mapPoiType(p);
         db.poi_list_all.push(p);
-        if (parseInt(p.needs_review || 0) === 0) {
+        db.poi_by_id[parseInt(p.poi_id)] = p;
+        
+        const hasImage = p.image && p.image.trim() !== '';
+        if (parseInt(p.needs_review || 0) === 0 && hasImage) {
           db.poi_list.push(p);
-          db.poi_by_id[parseInt(p.poi_id)] = p;
         }
       });
 

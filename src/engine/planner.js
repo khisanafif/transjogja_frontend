@@ -125,7 +125,8 @@ export function custom_plan(
   origin_walk_min,
   depart_hhmm,
   targets, // array of { poi_id, stay_min }
-  db
+  db,
+  optimize_order = true
 ) {
   const depart_min = hhmm_to_min(depart_hhmm);
 
@@ -134,24 +135,37 @@ export function custom_plan(
   let current_min = depart_min;
   
   const itinerary = [];
+  
+  let unvisited = [...targets];
 
-  for (const target of targets) {
+  while (unvisited.length > 0) {
     const current_hhmm = min_to_hhmm(current_min);
     
-    // Route from current_stop to target.poi_id
-    const route_res = routeTo(
-      current_stop,
-      current_walk,
-      current_hhmm,
-      target.poi_id,
-      db
-    );
+    let best_idx = -1;
+    let best_route = null;
+    
+    if (optimize_order) {
+      let best_eta = Infinity;
+      for (let i = 0; i < unvisited.length; i++) {
+        const route_res = routeTo(current_stop, current_walk, current_hhmm, unvisited[i].poi_id, db);
+        if (route_res.found && route_res.eta_total_min < best_eta) {
+          best_eta = route_res.eta_total_min;
+          best_route = route_res;
+          best_idx = i;
+        }
+      }
+    } else {
+      best_idx = 0;
+      best_route = routeTo(current_stop, current_walk, current_hhmm, unvisited[0].poi_id, db);
+      if (!best_route.found) best_idx = -1;
+    }
 
-    if (!route_res.found) {
+    if (best_idx === -1) {
       break; // cannot reach next target, stop here
     }
 
-    const arrive_min = current_min + route_res.eta_total_min;
+    const target = unvisited[best_idx];
+    const arrive_min = current_min + best_route.eta_total_min;
     const depart_from_poi = arrive_min + target.stay_min;
     
     const poi = db.poi_by_id[target.poi_id];
@@ -170,9 +184,9 @@ export function custom_plan(
       arrive_hhmm: min_to_hhmm(arrive_min),
       depart_hhmm: min_to_hhmm(depart_from_poi),
       stay_min: target.stay_min,
-      eta_from_prev_min: Math.round(route_res.eta_total_min * 100) / 100,
-      transfers: route_res.transfers,
-      route_legs: route_res.route_legs,
+      eta_from_prev_min: Math.round(best_route.eta_total_min * 100) / 100,
+      transfers: best_route.transfers,
+      route_legs: best_route.route_legs,
       description: poi.description,
       htm_weekday: poi.htm_weekday,
       htm_weekend: poi.htm_weekend,
@@ -182,6 +196,8 @@ export function custom_plan(
     current_stop = poi.nearest_stop_id || current_stop;
     current_walk = parseFloat(poi.walk_time_min || 0);
     current_min = depart_from_poi;
+    
+    unvisited.splice(best_idx, 1);
   }
 
   const total_travel = itinerary.reduce((sum, i) => sum + i.eta_from_prev_min, 0);
