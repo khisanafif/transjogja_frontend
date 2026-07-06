@@ -2,7 +2,7 @@
 
 import { seg_eta, get_wait, TRANSFER_PENALTY } from './eta.js';
 
-export const MAX_COST_MIN = 90.0;
+export const MAX_COST_MIN = 180.0;
 
 class MinHeap {
   constructor() {
@@ -60,7 +60,8 @@ export function sssp_from_origin(
   stop_to_route_dirs,
   eta_exact,
   route_avg_eta,
-  wait_lookup
+  wait_lookup,
+  max_cost = MAX_COST_MIN
 ) {
   const dist = {};
   const pred = {};
@@ -83,7 +84,7 @@ export function sssp_from_origin(
     dist[key] = cost;
     pred[key] = legs;
 
-    if (cost > MAX_COST_MIN) continue;
+    if (cost > max_cost) continue;
 
     const cur_hour = Math.min(Math.floor(depart_hour + cost / 60), 20);
 
@@ -94,7 +95,7 @@ export function sssp_from_origin(
         const route_id = next_rd.substring(0, next_rd.lastIndexOf('_'));
         const wait = get_wait(stop, route_id, cur_hour, wait_lookup);
         const new_cost = cost + wait;
-        if (new_cost > MAX_COST_MIN) continue;
+        if (new_cost > max_cost) continue;
         
         const new_key = `${stop}|${next_rd}`;
         if (dist[new_key] !== undefined) continue;
@@ -127,7 +128,7 @@ export function sssp_from_origin(
         accum += seg_t;
         const new_cost = cost + accum;
 
-        if (new_cost > MAX_COST_MIN) break;
+        if (new_cost > max_cost) break;
 
         const ride_leg = {
           type: "BUS",

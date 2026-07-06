@@ -67,6 +67,12 @@ export function min_to_hhmm(total_min) {
 export function is_open_with_margin(arrive_hhmm, close_hhmm, min_margin_min = 120) {
   const arrive = hhmm_to_min(arrive_hhmm);
   const close = hhmm_to_min(close_hhmm);
+  
+  // Jika jam tutup adalah 23:59 atau 24:00, artinya tempat ini buka 24 jam / sampai larut malam tanpa batas margin ketat
+  if (close_hhmm === "23:59" || close_hhmm === "24:00") {
+    return [true, 9999];
+  }
+  
   const remaining = close - arrive;
   return [remaining >= min_margin_min, remaining];
 }

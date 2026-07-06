@@ -36,7 +36,7 @@ export default function RouteDetail({ poi, onClose, onAddToPlanner, onCariRute, 
               <RatingStars rating={poi.rating} />
             </div>
             <h2 className="text-xl font-extrabold text-slate-900 leading-tight mb-2">{poi.name}</h2>
-            <OpenBadge needs_review={poi.needs_review} />
+            <OpenBadge needs_review={poi.needs_review} remaining_open_min={poi.remaining_open_min} />
           </div>
 
           {legs.length > 0 ? (

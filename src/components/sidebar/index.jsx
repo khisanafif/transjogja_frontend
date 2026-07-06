@@ -145,11 +145,11 @@ export function FilterPanel() {
           <span>Maks. ETA</span>
           <span className="font-bold text-brand-600 normal-case">{filters.max_eta_min} menit</span>
         </label>
-        <input type="range" min={15} max={90} step={5} value={filters.max_eta_min}
+        <input type="range" min={15} max={120} step={5} value={filters.max_eta_min}
           onChange={e => setFilters({ max_eta_min: +e.target.value })}
           className="w-full accent-brand-600 cursor-pointer" />
         <div className="flex justify-between text-2xs text-slate-400 mt-1">
-          <span>15 mnt</span><span>90 mnt</span>
+          <span>15 mnt</span><span>120 mnt</span>
         </div>
       </div>
 

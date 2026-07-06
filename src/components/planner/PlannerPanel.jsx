@@ -108,7 +108,7 @@ function TimelineItem({ item, isLast }) {
             </div>
 
             <div className="flex items-center justify-between mt-3 pt-3 border-t border-slate-100">
-            <OpenBadge needs_review={item.needs_review} />
+            <OpenBadge needs_review={item.needs_review} remaining_open_min={item.remaining_open_min} />
             <button onClick={() => setShowLegs(v => !v)}
               className="text-xs font-semibold text-brand-600 hover:text-brand-700 flex items-center gap-1">
               {showLegs ? 'Sembunyikan' : 'Detail rute'}

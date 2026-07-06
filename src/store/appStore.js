@@ -13,7 +13,7 @@ export const useAppStore = create((set, get) => ({
   setWeekday: (v) => set({ weekday: v }),
 
   // Filters
-  filters: { types: [], max_eta_min: 90, max_transfers: 3, min_stay_hours: 2 },
+  filters: { types: [], max_eta_min: 120, max_transfers: 3, min_stay_hours: 2 },
   setFilters: (f) => set({ filters: { ...get().filters, ...f } }),
 
   // Recommendations

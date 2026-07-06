@@ -181,7 +181,8 @@ export function routeTo(
   origin_walk_min,
   depart_hhmm,
   dest_poi_id,
-  db
+  db,
+  weekday
 ) {
   const depart_hour = parseInt(depart_hhmm.split(":")[0], 10);
   
@@ -194,7 +195,8 @@ export function routeTo(
     db.stop_to_route_dirs,
     db.eta_exact,
     db.route_avg_eta,
-    db.wait_lookup
+    db.wait_lookup,
+    9999
   );
 
   const poi = db.poi_by_id[dest_poi_id];
@@ -207,11 +209,22 @@ export function routeTo(
   const eta = route_result.eta_total_min;
   const arrive_hhmm = min_to_hhmm(depart_min_of_day + eta);
 
+  let open_margin_ok = true;
+  let remaining_open_min = null;
+  if (weekday) {
+    const close_today = get_close_hhmm_for_day(poi, weekday);
+    const [ok, remaining] = is_open_with_margin(arrive_hhmm, close_today, 0);
+    open_margin_ok = ok;
+    remaining_open_min = remaining;
+  }
+
   return {
     found: true,
     eta_total_min: eta,
     transfers: route_result.transfers,
     arrive_hhmm: arrive_hhmm,
+    open_margin_ok: open_margin_ok,
+    remaining_open_min: remaining_open_min,
     route_legs: _enrich_legs(route_result.route_legs, db.stops_by_id)
   };
 }

@@ -70,7 +70,8 @@ export default function MapPage() {
           origin_stop_id:  originStop.stop_id,
           origin_walk_min: originWalkMin || 0,
           depart_hhmm:     departHhmm,
-          dest_poi_id:     targetDestination.poi_id
+          dest_poi_id:     targetDestination.poi_id,
+          weekday:         weekday
         })
         if (res.found) {
           const resultPoi = { ...targetDestination, ...res }

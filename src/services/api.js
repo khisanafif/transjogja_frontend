@@ -68,7 +68,8 @@ export const api = {
       body.origin_walk_min,
       body.depart_hhmm,
       body.dest_poi_id,
-      db
+      db,
+      body.weekday
     );
   }),
 
