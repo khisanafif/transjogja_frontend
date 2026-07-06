@@ -263,6 +263,36 @@ export default function MapPage() {
               Panel
             </button>
           )}
+
+          {/* GPS Locate Me Button */}
+          <button 
+            onClick={async () => {
+              try {
+                const pos = await new Promise((res, rej) =>
+                  navigator.geolocation.getCurrentPosition(res, rej, { timeout: 8000 }))
+                const lat = pos.coords.latitude; const lon = pos.coords.longitude;
+                handleOriginSet(originStop, originWalkMin, [lat, lon])
+                // Update originStop as well to nearest
+                const nearest = await api.getNearestStops(lat, lon)
+                if (nearest?.length) {
+                  const s = { ...nearest[0], name: nearest[0].stop_name, stop_id: nearest[0].stop_id }
+                  handleOriginSet(s, s.walk_time_min || 0, [lat, lon])
+                }
+              } catch (e) {
+                console.error("GPS Error", e)
+              }
+            }}
+            className="absolute bottom-6 right-4 z-10 w-12 h-12 bg-white rounded-full shadow-card-hover flex items-center justify-center text-brand-600 hover:bg-slate-50 border border-slate-100 transition-colors"
+            title="Lokasi Saya"
+          >
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+              <circle cx="12" cy="12" r="10"></circle>
+              <line x1="12" y1="2" x2="12" y2="6"></line>
+              <line x1="12" y1="18" x2="12" y2="22"></line>
+              <line x1="4" y1="12" x2="8" y2="12"></line>
+              <line x1="16" y1="12" x2="20" y2="12"></line>
+            </svg>
+          </button>
         </div>
       </div>
 

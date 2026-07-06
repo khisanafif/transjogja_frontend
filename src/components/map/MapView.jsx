@@ -70,6 +70,8 @@ export default function MapView({
   userPos = null,
   routesGeoJSON = null,
   selectedPoi = null,
+  isolatedRouteId = null,
+  isolatedStops = null,
   onStopClick,
   onPoiClick,
 }) {
@@ -78,13 +80,17 @@ export default function MapView({
     : userPos || null
 
   // Only show stops with valid coords
-  const validStops = stops.filter(s => s.lat != null && s.lon != null)
+  // If isolatedStops is provided, ONLY show those stops
+  const validStops = stops.filter(s => s.lat != null && s.lon != null && (!isolatedStops || isolatedStops.includes(s.stop_id)))
   const poiSource = recommendations.length > 0 ? recommendations : allPois
-  const validPoi  = poiSource.filter(p => p.lat != null && p.lon != null)
+  // If isolatedRouteId is provided, don't show POIs
+  const validPoi  = isolatedRouteId ? [] : poiSource.filter(p => p.lat != null && p.lon != null)
 
   const activeRouteIds = selectedPoi?.route_legs
     ?.filter(l => l.type === 'BUS')
     .map(l => l.route_id) || []
+  
+  if (isolatedRouteId) activeRouteIds.push(isolatedRouteId)
 
   let activeGeoJSON = null
   if (routesGeoJSON && activeRouteIds.length > 0) {
@@ -99,8 +105,8 @@ export default function MapView({
     const legs = selectedPoi.route_legs
     const lastLeg = legs[legs.length - 1]
     if (lastLeg?.type === 'WALK_END') {
-      const fromStop = stops.find(s => s.stop_id === lastLeg.from_stop_id) || validStops.find(s => s.name === lastLeg.from_stop_name)
-      if (fromStop) {
+      const fromStop = stops.find(s => s.stop_id === lastLeg.from_stop_id) || stops.find(s => s.name === lastLeg.from_stop_name)
+      if (fromStop && fromStop.lat) {
         walkLines.push([[fromStop.lat, fromStop.lon], [selectedPoi.lat, selectedPoi.lon]])
       }
     }
@@ -128,7 +134,7 @@ export default function MapView({
       {flyTarget && <FlyTo pos={flyTarget} />}
 
       {/* Routes (subtle background) */}
-      {routesGeoJSON && (
+      {routesGeoJSON && !isolatedRouteId && (
         <GeoJSON
           key="all-routes"
           data={routesGeoJSON}
@@ -144,7 +150,7 @@ export default function MapView({
       {/* Active Route Highlight */}
       {activeGeoJSON && (
         <GeoJSON
-          key={`active-routes-${selectedPoi.poi_id}-${activeRouteIds.join('-')}`}
+          key={`active-routes-${selectedPoi?.poi_id || 'iso'}-${activeRouteIds.join('-')}`}
           data={activeGeoJSON}
           style={(feature) => ({
             color: getRouteColor(feature.properties.route_id),

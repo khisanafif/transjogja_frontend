@@ -138,6 +138,7 @@ export const api = {
     return Object.keys(db.route_to_stop_list).map(rd => ({
       route_dir: rd,
       route_id: rd.split('_')[0],
+      direction_id: rd.split('_')[1],
       n_stops: db.route_to_stop_list[rd].length
     }));
   }),
@@ -147,7 +148,17 @@ export const api = {
     if (!stops) return null;
     return {
       route_dir: rd,
-      stops: stops.map(sid => db.stops_by_id[sid])
+      stops: stops.map(sid => {
+        const s = db.stops_by_id[sid] || {};
+        const passing_rds = db.stop_to_route_dirs[sid] || [];
+        const passing_rids = [...new Set(passing_rds.map(r => r.split('_')[0]))];
+        return {
+          ...s,
+          stop_id: sid,
+          stop_name: s.name || sid,
+          passing_routes: passing_rids
+        };
+      })
     };
   }),
 

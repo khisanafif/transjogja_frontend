@@ -4,6 +4,7 @@ import Landing from './pages/Landing'
 import { Spinner } from './components/shared'
 
 const MapPage    = lazy(() => import('./pages/MapPage'))
+const RoutesMapPage = lazy(() => import('./pages/RoutesMapPage'))
 const OtherPages = lazy(() => import('./pages/OtherPages'))
 
 function PageLoader() {
@@ -31,7 +32,7 @@ export default function App() {
         <Route path="/map"     element={<Suspense fallback={<PageLoader />}><MapPage /></Suspense>} />
         <Route path="/planner" element={<Lazy page="planner" />} />
         <Route path="/jadwal"  element={<Lazy page="jadwal" />} />
-        <Route path="/rute"    element={<Lazy page="rute" />} />
+        <Route path="/rute"    element={<Suspense fallback={<PageLoader />}><RoutesMapPage /></Suspense>} />
         <Route path="/tentang" element={<Lazy page="tentang" />} />
         <Route path="*"        element={<Navigate to="/" replace />} />
       </Routes>
