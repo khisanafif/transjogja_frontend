@@ -218,8 +218,8 @@ export default function MapView({
     if (firstLeg?.type === 'WALK_START') {
       const toStop = stops.find(s => s.stop_id === firstLeg.to_stop_id || s.name === firstLeg.to_stop_name)
       if (toStop && toStop.lat) {
-        const startLat = originStop?.lat || userPos?.[0]
-        const startLon = originStop?.lon || userPos?.[1]
+        const startLat = userPos?.[0] || originStop?.lat
+        const startLon = userPos?.[1] || originStop?.lon
         if (startLat && startLon) {
           walkLines.push([[startLat, startLon], [toStop.lat, toStop.lon]])
         }
