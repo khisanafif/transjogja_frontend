@@ -62,6 +62,69 @@ function FlyTo({ pos }) {
   return null
 }
 
+function distanceSq(lat1, lon1, lat2, lon2) {
+  return (lat1 - lat2) ** 2 + (lon1 - lon2) ** 2;
+}
+
+function findClosestIndex(coords, lat, lon) {
+  let minD = Infinity;
+  let idx = 0;
+  for (let i = 0; i < coords.length; i++) {
+    const c = coords[i];
+    const d = distanceSq(lat, lon, c[1], c[0]);
+    if (d < minD) { minD = d; idx = i; }
+  }
+  return idx;
+}
+
+function getSegmentGeoJSON(selectedPoi, stops, routesGeoJSON) {
+  if (!selectedPoi || !selectedPoi.route_legs || !routesGeoJSON) return null;
+  
+  const busLegs = selectedPoi.route_legs.filter(l => l.type === 'BUS');
+  if (busLegs.length === 0) return null;
+  
+  const features = [];
+  
+  for (const leg of busLegs) {
+    const routeFeature = routesGeoJSON.features.find(f => f.properties.route_id === leg.route_id);
+    if (!routeFeature) continue;
+    
+    const boardStop = stops.find(s => s.stop_id === leg.board_stop_id || s.name === leg.board_stop_name);
+    const alightStop = stops.find(s => s.stop_id === leg.alight_stop_id || s.name === leg.alight_stop_name);
+    
+    if (!boardStop || !alightStop) {
+      features.push(routeFeature);
+      continue;
+    }
+    
+    if (routeFeature.geometry.type === 'LineString') {
+      const coords = routeFeature.geometry.coordinates;
+      const startIdx = findClosestIndex(coords, boardStop.lat, boardStop.lon);
+      const endIdx = findClosestIndex(coords, alightStop.lat, alightStop.lon);
+      
+      let segmentCoords = [];
+      if (startIdx <= endIdx) {
+        segmentCoords = coords.slice(startIdx, endIdx + 1);
+      } else {
+        segmentCoords = [...coords.slice(startIdx), ...coords.slice(0, endIdx + 1)];
+      }
+      
+      features.push({
+        type: 'Feature',
+        properties: routeFeature.properties,
+        geometry: { type: 'LineString', coordinates: segmentCoords }
+      });
+    } else {
+       features.push(routeFeature);
+    }
+  }
+  
+  return {
+    type: 'FeatureCollection',
+    features: features
+  };
+}
+
 function FitRouteBounds({ origin, dest, activeGeoJSON, walkLines }) {
   const map = useMap()
   const prevRef = useRef(null)
@@ -137,7 +200,9 @@ export default function MapView({
   if (isolatedRouteId) activeRouteIds.push(isolatedRouteId)
 
   let activeGeoJSON = null
-  if (routesGeoJSON && activeRouteIds.length > 0) {
+  if (routesGeoJSON && selectedPoi?.route_legs) {
+    activeGeoJSON = getSegmentGeoJSON(selectedPoi, stops, routesGeoJSON)
+  } else if (routesGeoJSON && activeRouteIds.length > 0) {
     activeGeoJSON = {
       ...routesGeoJSON,
       features: routesGeoJSON.features.filter(f => activeRouteIds.includes(f.properties.route_id))
@@ -147,9 +212,24 @@ export default function MapView({
   const walkLines = []
   if (selectedPoi?.route_legs) {
     const legs = selectedPoi.route_legs
+    
+    // Add WALK_START line if present
+    const firstLeg = legs[0]
+    if (firstLeg?.type === 'WALK_START') {
+      const toStop = stops.find(s => s.stop_id === firstLeg.to_stop_id || s.name === firstLeg.to_stop_name)
+      if (toStop && toStop.lat) {
+        const startLat = originStop?.lat || userPos?.[0]
+        const startLon = originStop?.lon || userPos?.[1]
+        if (startLat && startLon) {
+          walkLines.push([[startLat, startLon], [toStop.lat, toStop.lon]])
+        }
+      }
+    }
+
+    // Add WALK_END line
     const lastLeg = legs[legs.length - 1]
     if (lastLeg?.type === 'WALK_END') {
-      const fromStop = stops.find(s => s.stop_id === lastLeg.from_stop_id) || stops.find(s => s.name === lastLeg.from_stop_name)
+      const fromStop = stops.find(s => s.stop_id === lastLeg.from_stop_id || s.name === lastLeg.from_stop_name)
       if (fromStop && fromStop.lat) {
         walkLines.push([[fromStop.lat, fromStop.lon], [selectedPoi.lat, selectedPoi.lon]])
       }
