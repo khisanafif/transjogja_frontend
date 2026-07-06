@@ -95,6 +95,19 @@ export function OriginPanel({ allStops = [], onOriginSet }) {
           </select>
         </div>
       </div>
+      <button 
+        onClick={() => {
+          const now = new Date();
+          const hh = String(now.getHours()).padStart(2, '0');
+          const mm = String(now.getMinutes()).padStart(2, '0');
+          setDepartHhmm(`${hh}:${mm}`);
+          const dayIndex = now.getDay();
+          const mappedIndex = dayIndex === 0 ? 6 : dayIndex - 1;
+          setWeekday(WEEKDAYS[mappedIndex]);
+        }}
+        className="mt-2 w-full flex items-center justify-center gap-2 text-xs font-semibold text-slate-600 bg-slate-50 hover:bg-slate-100 border border-slate-200 rounded-xl py-2 transition-colors">
+        🕒 Gunakan Waktu Saat Ini
+      </button>
     </div>
   )
 }
