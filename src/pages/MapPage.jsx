@@ -146,80 +146,93 @@ export default function MapPage() {
         </div>
       </header>
 
-      <div className="flex-1 flex overflow-hidden">
+      <div className="flex-1 flex flex-col-reverse md:flex-row overflow-hidden">
         {/* Sidebar */}
         {sidebarOpen && (
-          <div className="w-80 xl:w-96 flex-shrink-0 flex flex-col bg-white border-r border-slate-100 overflow-hidden shadow-sm">
-            {/* Tab switcher */}
-            <div className="flex border-b border-slate-100 flex-shrink-0 px-1 pt-1">
-              <button onClick={() => setSidebarTab('recs')}
-                className={`flex-1 py-2.5 text-xs font-semibold rounded-t-lg transition-all ${
-                  sidebarTab === 'recs' ? 'bg-brand-600 text-white' : 'text-slate-500 hover:text-slate-700 hover:bg-slate-50'
-                }`}>
-                {targetDestination ? 'Hasil Rute' : 'Rekomendasi'}
-              </button>
-              <button onClick={() => setSidebarTab('search')}
-                className={`flex-1 py-2.5 text-xs font-semibold rounded-t-lg transition-all ${
-                  sidebarTab === 'search' ? 'bg-brand-600 text-white' : 'text-slate-500 hover:text-slate-700 hover:bg-slate-50'
-                }`}>
-                Pengaturan
-              </button>
-            </div>
-
-            <div className="flex-1 overflow-y-auto p-4 space-y-4">
-              {targetDestination && (
-                <div className="bg-brand-50 border border-brand-200 rounded-xl p-3 flex items-start gap-3 relative">
-                  <div className="text-xl">🎯</div>
-                  <div className="flex-1 min-w-0 pr-6">
-                    <p className="text-2xs font-bold text-brand-600 uppercase tracking-wider mb-0.5">Tujuan Spesifik</p>
-                    <p className="text-sm font-semibold text-slate-800 line-clamp-1">{targetDestination.name}</p>
-                  </div>
-                  <button onClick={() => { setTargetDestination(null); setRecommendations([]); setSelectedPoi(null) }}
-                    className="absolute top-3 right-3 text-brand-400 hover:text-brand-600 transition-colors">
-                    ✕
+          <div className="w-full h-1/2 md:h-auto md:w-80 xl:w-96 flex-shrink-0 flex flex-col bg-white border-r border-slate-100 overflow-hidden shadow-sm">
+            {selectedPoi ? (
+              <Suspense fallback={<div className="p-8 flex justify-center"><Spinner size="md" /></div>}>
+                <RouteDetail
+                  poi={selectedPoi}
+                  isModal={false}
+                  onClose={() => { setSelectedPoi(null) }}
+                  onAddToPlanner={() => { nav('/planner'); setSelectedPoi(null) }}
+                />
+              </Suspense>
+            ) : (
+              <>
+                {/* Tab switcher */}
+                <div className="flex border-b border-slate-100 flex-shrink-0 px-1 pt-1">
+                  <button onClick={() => setSidebarTab('recs')}
+                    className={`flex-1 py-2.5 text-xs font-semibold rounded-t-lg transition-all ${
+                      sidebarTab === 'recs' ? 'bg-brand-600 text-white' : 'text-slate-500 hover:text-slate-700 hover:bg-slate-50'
+                    }`}>
+                    {targetDestination ? 'Hasil Rute' : 'Rekomendasi'}
+                  </button>
+                  <button onClick={() => setSidebarTab('search')}
+                    className={`flex-1 py-2.5 text-xs font-semibold rounded-t-lg transition-all ${
+                      sidebarTab === 'search' ? 'bg-brand-600 text-white' : 'text-slate-500 hover:text-slate-700 hover:bg-slate-50'
+                    }`}>
+                    Pengaturan
                   </button>
                 </div>
-              )}
 
-              {sidebarTab === 'search' ? (
-                <>
-                  <OriginPanel allStops={allStops} onOriginSet={handleOriginSet} />
-                  {!targetDestination && (
+                <div className="flex-1 overflow-y-auto p-4 space-y-4">
+                  {targetDestination && (
+                    <div className="bg-brand-50 border border-brand-200 rounded-xl p-3 flex items-start gap-3 relative">
+                      <div className="text-xl">🎯</div>
+                      <div className="flex-1 min-w-0 pr-6">
+                        <p className="text-2xs font-bold text-brand-600 uppercase tracking-wider mb-0.5">Tujuan Spesifik</p>
+                        <p className="text-sm font-semibold text-slate-800 line-clamp-1">{targetDestination.name}</p>
+                      </div>
+                      <button onClick={() => { setTargetDestination(null); setRecommendations([]); setSelectedPoi(null) }}
+                        className="absolute top-3 right-3 text-brand-400 hover:text-brand-600 transition-colors">
+                        ✕
+                      </button>
+                    </div>
+                  )}
+
+                  {sidebarTab === 'search' ? (
                     <>
-                      <hr className="divider" />
-                      <FilterPanel />
+                      <OriginPanel allStops={allStops} onOriginSet={handleOriginSet} />
+                      {!targetDestination && (
+                        <>
+                          <hr className="divider" />
+                          <FilterPanel />
+                        </>
+                      )}
+                      <button onClick={handleSearch} disabled={loadingRec}
+                        className="btn-primary w-full py-3">
+                        {loadingRec ? <><Spinner size="sm" /> Mencari...</> : (targetDestination ? '🗺 Cari Rute' : '🔍 Cari Wisata')}
+                      </button>
+                    </>
+                  ) : (
+                    <>
+                      {!originStop ? (
+                        <button onClick={() => setSidebarTab('search')}
+                          className="btn-primary w-full py-3">
+                          📍 Pilih Titik Asal →
+                        </button>
+                      ) : !loadingRec && recommendations.length === 0 && !recError ? (
+                        <button onClick={handleSearch} className="btn-primary w-full py-3">
+                          {targetDestination ? '🗺 Cari Rute' : '🔍 Cari Wisata'}
+                        </button>
+                      ) : null}
+                      <RecommendList
+                        recs={recommendations}
+                        loading={loadingRec}
+                        error={recError}
+                        onCardClick={(poi) => {
+                          setSelectedPoi(poi)
+                          setSidebarOpen(true) // Ensure sidebar stays open to show detail
+                        }}
+                        onRetry={handleSearch}
+                      />
                     </>
                   )}
-                  <button onClick={handleSearch} disabled={loadingRec}
-                    className="btn-primary w-full py-3">
-                    {loadingRec ? <><Spinner size="sm" /> Mencari...</> : (targetDestination ? '🗺 Cari Rute' : '🔍 Cari Wisata')}
-                  </button>
-                </>
-              ) : (
-                <>
-                  {!originStop ? (
-                    <button onClick={() => setSidebarTab('search')}
-                      className="btn-primary w-full py-3">
-                      📍 Pilih Titik Asal →
-                    </button>
-                  ) : !loadingRec && recommendations.length === 0 && !recError ? (
-                    <button onClick={handleSearch} className="btn-primary w-full py-3">
-                      {targetDestination ? '🗺 Cari Rute' : '🔍 Cari Wisata'}
-                    </button>
-                  ) : null}
-                  <RecommendList
-                    recs={recommendations}
-                    loading={loadingRec}
-                    error={recError}
-                    onCardClick={(poi) => {
-                      setSelectedPoi(poi)
-                      if (window.innerWidth < 768) setSidebarOpen(false)
-                    }}
-                    onRetry={handleSearch}
-                  />
-                </>
-              )}
-            </div>
+                </div>
+              </>
+            )}
           </div>
         )}
 
@@ -296,16 +309,7 @@ export default function MapPage() {
         </div>
       </div>
 
-      {/* Route detail drawer */}
-      {selectedPoi && (
-        <Suspense fallback={null}>
-          <RouteDetail
-            poi={selectedPoi}
-            onClose={() => { setSelectedPoi(null); setSidebarOpen(window.innerWidth >= 768) }}
-            onAddToPlanner={() => { nav('/planner'); setSelectedPoi(null) }}
-          />
-        </Suspense>
-      )}
+      {/* Route detail drawer removed from here (now in sidebar) */}
     </div>
   )
 }

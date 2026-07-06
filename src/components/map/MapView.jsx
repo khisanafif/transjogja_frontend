@@ -62,6 +62,47 @@ function FlyTo({ pos }) {
   return null
 }
 
+function FitRouteBounds({ origin, dest, activeGeoJSON, walkLines }) {
+  const map = useMap()
+  const prevRef = useRef(null)
+  
+  useEffect(() => {
+    if (!origin && !dest && !activeGeoJSON) return
+    
+    // Create a key to avoid refitting continuously if nothing changes
+    const key = `${origin?.lat},${dest?.lat},${activeGeoJSON?.features?.length}`
+    if (key === prevRef.current) return
+    prevRef.current = key
+
+    const bounds = L.latLngBounds([])
+    if (origin?.lat) bounds.extend([origin.lat, origin.lon])
+    if (dest?.lat) bounds.extend([dest.lat, dest.lon])
+    
+    if (activeGeoJSON && activeGeoJSON.features && activeGeoJSON.features.length > 0) {
+      try {
+        const layer = L.geoJSON(activeGeoJSON)
+        if (layer.getBounds().isValid()) {
+          bounds.extend(layer.getBounds())
+        }
+      } catch (e) {
+        console.error("Failed to parse geoJSON bounds", e)
+      }
+    }
+    
+    if (walkLines && walkLines.length > 0) {
+      walkLines.forEach(line => {
+        line.forEach(coord => bounds.extend(coord))
+      })
+    }
+    
+    if (bounds.isValid()) {
+      map.flyToBounds(bounds, { padding: [50, 50], duration: 1.2 })
+    }
+  }, [map, origin, dest, activeGeoJSON, walkLines])
+  
+  return null
+}
+
 export default function MapView({
   stops = [],
   allPois = [],
@@ -81,10 +122,13 @@ export default function MapView({
 
   // Only show stops with valid coords
   // If isolatedStops is provided, ONLY show those stops
-  const validStops = stops.filter(s => s.lat != null && s.lon != null && (!isolatedStops || isolatedStops.includes(s.stop_id)))
+  // If selectedPoi is provided, hide all stops (origin is handled separately)
+  const validStops = selectedPoi ? [] : stops.filter(s => s.lat != null && s.lon != null && (!isolatedStops || isolatedStops.includes(s.stop_id)))
+  
   const poiSource = recommendations.length > 0 ? recommendations : allPois
   // If isolatedRouteId is provided, don't show POIs
-  const validPoi  = isolatedRouteId ? [] : poiSource.filter(p => p.lat != null && p.lon != null)
+  // If selectedPoi is provided, ONLY show the selected POI
+  const validPoi  = isolatedRouteId ? [] : (selectedPoi ? [selectedPoi] : poiSource.filter(p => p.lat != null && p.lon != null))
 
   const activeRouteIds = selectedPoi?.route_legs
     ?.filter(l => l.type === 'BUS')
@@ -131,17 +175,21 @@ export default function MapView({
         maxZoom={19}
       />
 
-      {flyTarget && <FlyTo pos={flyTarget} />}
+      {selectedPoi ? (
+        <FitRouteBounds origin={originStop} dest={selectedPoi} activeGeoJSON={activeGeoJSON} walkLines={walkLines} />
+      ) : (
+        flyTarget && <FlyTo pos={flyTarget} />
+      )}
 
       {/* Routes (subtle background) */}
-      {routesGeoJSON && !isolatedRouteId && (
+      {routesGeoJSON && !isolatedRouteId && !selectedPoi && (
         <GeoJSON
           key="all-routes"
           data={routesGeoJSON}
           style={(feature) => ({
-            color: selectedPoi ? '#cbd5e1' : getRouteColor(feature.properties.route_id),
-            weight: selectedPoi ? 2 : 3,
-            opacity: selectedPoi ? 0.3 : 0.6,
+            color: getRouteColor(feature.properties.route_id),
+            weight: 3,
+            opacity: 0.6,
             interactive: false
           })}
         />
