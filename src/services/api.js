@@ -28,7 +28,8 @@ export const api = {
       .filter(s => s.lat != null && s.lon != null)
       .map(s => {
         const dist = haversine(latF, lonF, s.lat, s.lon);
-        return { ...s, distance_m: Math.round(dist * 10) / 10 };
+        const walk_min = dist / (1.2 * 60);
+        return { ...s, distance_m: Math.round(dist * 10) / 10, walk_time_min: Math.round(walk_min * 10) / 10 };
       });
     return withDist.sort((a, b) => a.distance_m - b.distance_m).slice(0, 5);
   }),
