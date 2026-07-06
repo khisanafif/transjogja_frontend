@@ -124,7 +124,9 @@ export async function initEngine() {
         const rids = [...new Set(rds.map(rd => rd.split('_')[0]))];
         rids.forEach(rid => {
           if (schedulesMoovitData[sid] && schedulesMoovitData[sid][rid]) {
-            db.stop_schedule[sid][rid] = schedulesMoovitData[sid][rid].slice().sort();
+            db.stop_schedule[sid][rid] = schedulesMoovitData[sid][rid]
+              .filter(t => t <= '20:30')
+              .slice().sort();
           } else {
             const times = [];
             for (let h = 5; h <= 20; h++) {
@@ -132,7 +134,10 @@ export async function initEngine() {
               const n_trips = Math.floor(60 / headway);
               for (let j = 0; j < n_trips; j++) {
                 const minute = Math.floor((j / n_trips) * 60);
-                times.push(`${h.toString().padStart(2, '0')}:${minute.toString().padStart(2, '0')}`);
+                const tStr = `${h.toString().padStart(2, '0')}:${minute.toString().padStart(2, '0')}`;
+                if (tStr <= '20:30') {
+                  times.push(tStr);
+                }
               }
             }
             db.stop_schedule[sid][rid] = times;

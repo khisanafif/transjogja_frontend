@@ -170,8 +170,8 @@ export default function MapView({
         />
       ))}
 
-      {/* Stop markers – only when zoomed in enough */}
-      <ZoomedMarkers stops={validStops} onStopClick={onStopClick} />
+      {/* Stop markers – only when zoomed in enough or forced */}
+      <ZoomedMarkers stops={validStops} onStopClick={onStopClick} forceShow={!!isolatedStops} />
 
       {/* User location */}
       {userPos && (
@@ -225,7 +225,7 @@ export default function MapView({
 }
 
 // Separate component so it can call useMap()
-function ZoomedMarkers({ stops, onStopClick }) {
+function ZoomedMarkers({ stops, onStopClick, forceShow }) {
   const map = useMap()
   const [zoom, setZoom] = L.version ? [13, () => {}] : [13, () => {}]
 
@@ -236,9 +236,9 @@ function ZoomedMarkers({ stops, onStopClick }) {
     return () => map.off('zoomend', onZoom)
   }, [map])
 
-  // Only render stops at zoom >= 14 to avoid lag
+  // Only render stops at zoom >= 14 to avoid lag, unless forced
   const currentZoom = map.getZoom?.() ?? 13
-  if (currentZoom < 14) return null
+  if (!forceShow && currentZoom < 14) return null
 
   return stops.slice(0, 400).map(s => (
     <Marker
