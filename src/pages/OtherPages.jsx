@@ -343,12 +343,18 @@ function AboutPage() {
     { icon: '📊', name: 'CRISP-DM Pipeline', desc: 'Business Understanding → Data Prep → Modeling → Evaluation → Deployment' },
     { icon: '⏱', name: 'ETA Historis 3-Level', desc: 'Exact segment → Route average → Global default 3.0 menit fallback' },
   ]
+  const FEATURES = [
+    { icon: '🗺', name: 'Peta Interaktif & Rekomendasi', desc: 'Cari wisata populer sesuai selera, dilengkapi dengan filter kategori dan urutan terbaik.' },
+    { icon: '🎯', name: 'Cari Rute Spesifik', desc: 'Cari rute bus Trans Jogja tercepat untuk mengantar Anda ke destinasi dari posisi Anda saat ini.' },
+    { icon: '📅', name: 'Rencana Perjalanan (Day Planner)', desc: 'Sistem otomatis menyusun jadwal itinerary seharian penuh yang mencocokkan jam buka wisata dan jadwal bus.' },
+    { icon: '🕐', name: 'Informasi Jadwal & Rute', desc: 'Lihat perkiraan kedatangan bus dan peta jalur koridor secara detail.' },
+  ]
   const DATA = [
-    ['204', 'Destinasi wisata eligible (dalam 1.2km halte)'],
+    ['152', 'Destinasi wisata eligible (dalam 1.2km halte)'],
     ['53', 'POI dengan jam operasional terverifikasi web'],
     ['273', 'Halte berkoordinat (62 invalid difilter)'],
-    ['651', 'Segmen ETA historis (MAE 0.17 menit)'],
-    ['24', 'Route-direction koridor Trans Jogja'],
+    ['519', 'Segmen ETA historis (MAE 0.12 menit)'],
+    ['20', 'Route-direction koridor Trans Jogja'],
     ['164', 'Halte transfer-eligible (multi-rute)'],
   ]
 
@@ -387,6 +393,22 @@ function AboutPage() {
               <div key={k} className="flex gap-4">
                 <span className="w-28 text-xs text-slate-400 flex-shrink-0 pt-0.5">{k}</span>
                 <span className="text-xs font-semibold text-slate-800">{v}</span>
+              </div>
+            ))}
+          </div>
+        </div>
+
+        {/* Features info */}
+        <div>
+          <p className="label mb-3">Panduan Fitur Utama</p>
+          <div className="grid sm:grid-cols-2 gap-3">
+            {FEATURES.map(t => (
+              <div key={t.name} className="card p-4 flex gap-3">
+                <div className="w-9 h-9 bg-brand-50 rounded-xl flex items-center justify-center text-lg flex-shrink-0">{t.icon}</div>
+                <div>
+                  <p className="text-xs font-bold text-slate-800">{t.name}</p>
+                  <p className="text-2xs text-slate-500 mt-0.5 leading-relaxed">{t.desc}</p>
+                </div>
               </div>
             ))}
           </div>

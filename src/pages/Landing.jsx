@@ -7,6 +7,7 @@ import { TypeBadge, RatingStars, POI_META } from '../components/shared'
 const RouteDetail = lazy(() => import('../components/route_detail/RouteDetail'))
 
 const NAV_LINKS = [
+  { label: 'Wisata Populer', path: '#wisata' },
   { label: 'Cek Jadwal', path: '/jadwal' },
   { label: 'Lihat Rute',  path: '/rute' },
   { label: 'Tentang',     path: '/tentang' },
@@ -103,7 +104,14 @@ export default function Landing() {
           <div className="flex-1" />
           <div className="hidden md:flex items-center gap-1">
             {NAV_LINKS.map(l => (
-              <button key={l.path} onClick={() => nav(l.path)}
+              <button key={l.path} onClick={() => {
+                if (l.path.startsWith('#')) {
+                  const el = document.getElementById(l.path.substring(1));
+                  if (el) el.scrollIntoView({ behavior: 'smooth' });
+                } else {
+                  nav(l.path);
+                }
+              }}
                 className="btn-ghost text-xs px-3 py-2">{l.label}</button>
             ))}
           </div>
@@ -179,7 +187,7 @@ export default function Landing() {
       </section>
 
       {/* ── Popular Destinations ── */}
-      <section className="py-24 px-4 sm:px-6 bg-slate-50">
+      <section id="wisata" className="py-24 px-4 sm:px-6 bg-slate-50">
         <div className="max-w-6xl mx-auto">
           <div className="flex flex-col md:flex-row md:items-end justify-between gap-4 mb-10">
             <div>

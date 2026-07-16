@@ -43,5 +43,11 @@
     "popularity": 0.05,
     "needs_review_penalty": -0.03,
     "low_vote_penalty": -0.05
+  },
+  "model_params": {
+    "winsorize_lower_q": 0.05,
+    "winsorize_upper_q": 0.95,
+    "winsorize_min_obs": 10,
+    "cv_folds": 5
   }
 }
