@@ -55,6 +55,8 @@ export default function MapPage() {
     return () => abortRef.current?.abort()
   }, [])
 
+    // LOGIKA PENCARIAN RUTE & REKOMENDASI
+  // Berkomunikasi dengan backend (API) untuk mendapatkan rute terdekat ke destinasi (POI)
   async function search() {
     if (!originStop) {
       setRecError('Pilih halte asal terlebih dahulu')
@@ -108,7 +110,10 @@ export default function MapPage() {
 
   return (
     <div className="h-screen flex flex-col overflow-hidden bg-slate-100">
-      {/* Top navbar */}
+      {/* ==========================================
+      TOP NAVBAR
+      Tombol kembali dan pencarian di halaman peta
+      ========================================== */}
       <header className="sticky top-0 z-30 bg-white/90 backdrop-blur-xl border-b border-slate-100 flex items-center gap-3 px-4 h-14 flex-shrink-0 shadow-nav">
         <button onClick={() => nav('/')}
           className="w-8 h-8 flex items-center justify-center rounded-xl hover:bg-slate-100 text-slate-500 transition-colors flex-shrink-0">
@@ -148,7 +153,11 @@ export default function MapPage() {
       </header>
 
       <div className="flex-1 flex flex-col-reverse md:flex-row overflow-hidden">
-        {/* Sidebar */}
+        {/* ==========================================
+      SIDEBAR PETA
+      Menampilkan panel asal (OriginPanel), Filter, dan Hasil Rekomendasi/Rute
+      Di versi mobile, ini akan muncul di bagian bawah peta
+      ========================================== */}
         {sidebarOpen && (
           <div className="w-full h-1/2 md:h-auto md:w-80 xl:w-96 flex-shrink-0 flex flex-col bg-white border-r border-slate-100 overflow-hidden shadow-sm">
             {selectedPoi ? (
@@ -237,7 +246,10 @@ export default function MapPage() {
           </div>
         )}
 
-        {/* Map */}
+        {/* ==========================================
+      KOMPONEN PETA UTAMA
+      Menampilkan peta interaktif (Leaflet), rute jalan, dan posisi halte/wisata
+      ========================================== */}
         <div className="flex-1 relative">
           <MapErrorBoundary>
             <Suspense fallback={

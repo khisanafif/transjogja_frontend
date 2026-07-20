@@ -73,6 +73,7 @@ export default function Landing() {
   const [searchQuery, setSearchQuery] = useState('')
   const [displayLimit, setDisplayLimit] = useState(8)
   const [selectedPoi, setSelectedPoi] = useState(null)
+  const [menuOpen, setMenuOpen] = useState(false)
 
   useEffect(() => {
     api.getPoi().then(res => {
@@ -85,6 +86,7 @@ export default function Landing() {
     setDisplayLimit(8)
   }, [searchQuery])
 
+  // LOGIKA POI: Memfilter data destinasi wisata berdasarkan input pencarian
   const filteredPois = pois.filter(p => 
     p.name?.toLowerCase().includes(searchQuery.toLowerCase())
   )
@@ -92,7 +94,10 @@ export default function Landing() {
 
   return (
     <div className="min-h-screen bg-white text-slate-900">
-      {/* ── Navbar ── */}
+      {/* ==========================================
+      NAVBAR & HEADER
+      Bagian navigasi atas, termasuk logika hamburger menu untuk versi mobile
+      ========================================== */}
       <nav className="fixed top-0 left-0 right-0 z-50 bg-white/80 backdrop-blur-xl border-b border-slate-100">
         <div className="max-w-6xl mx-auto px-4 sm:px-6 h-16 flex items-center gap-4">
           <div onClick={() => nav('/')} className="flex items-center gap-2.5 flex-shrink-0 cursor-pointer">
@@ -115,13 +120,47 @@ export default function Landing() {
                 className="btn-ghost text-xs px-3 py-2">{l.label}</button>
             ))}
           </div>
-          <button onClick={() => nav('/map')} className="btn-primary text-xs px-4 py-2">
+          <button onClick={() => nav('/map')} className="btn-primary text-xs px-4 py-2 hidden md:flex">
             Mulai Sekarang
           </button>
+
+          {/* Mobile Hamburger Button */}
+          <button 
+            className="md:hidden flex flex-col justify-center items-center w-8 h-8 space-y-1.5 focus:outline-none"
+            onClick={() => setMenuOpen(!menuOpen)}
+          >
+            <span className={`block w-5 h-0.5 bg-slate-600 rounded-full transition-transform duration-300 ${menuOpen ? 'translate-y-2 rotate-45' : ''}`}></span>
+            <span className={`block w-5 h-0.5 bg-slate-600 rounded-full transition-opacity duration-300 ${menuOpen ? 'opacity-0' : 'opacity-100'}`}></span>
+            <span className={`block w-5 h-0.5 bg-slate-600 rounded-full transition-transform duration-300 ${menuOpen ? '-translate-y-2 -rotate-45' : ''}`}></span>
+          </button>
+        </div>
+
+        {/* Mobile Menu */}
+        <div className={`md:hidden absolute top-16 left-0 right-0 bg-white border-b border-slate-100 shadow-xl transition-all duration-300 overflow-hidden ${menuOpen ? 'max-h-72 opacity-100' : 'max-h-0 opacity-0'}`}>
+          <div className="px-4 py-4 flex flex-col gap-1">
+            {NAV_LINKS.map(l => (
+              <button key={l.path} onClick={() => {
+                setMenuOpen(false);
+                if (l.path.startsWith('#')) {
+                  const el = document.getElementById(l.path.substring(1));
+                  if (el) el.scrollIntoView({ behavior: 'smooth' });
+                } else {
+                  nav(l.path);
+                }
+              }}
+                className="text-left text-sm font-semibold text-slate-700 p-3 hover:bg-slate-50 rounded-xl">{l.label}</button>
+            ))}
+            <button onClick={() => { setMenuOpen(false); nav('/map'); }} className="btn-primary w-full py-3 mt-2 text-sm">
+              Mulai Sekarang
+            </button>
+          </div>
         </div>
       </nav>
 
-      {/* ── Hero ── */}
+      {/* ==========================================
+      HERO SECTION
+      Bagian banner utama di halaman depan
+      ========================================== */}
       <section className="relative min-h-screen flex items-center overflow-hidden bg-gradient-to-br from-slate-950 via-slate-900 to-brand-900 pt-16">
         {/* Background texture */}
         <div className="absolute inset-0 bg-[url('data:image/svg+xml,%3Csvg%20width%3D%2260%22%20height%3D%2260%22%20viewBox%3D%220%200%2060%2060%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%3Cg%20fill%3D%22none%22%20fill-rule%3D%22evenodd%22%3E%3Cg%20fill%3D%22%23ffffff%22%20fill-opacity%3D%220.03%22%3E%3Ccircle%20cx%3D%221.5%22%20cy%3D%221.5%22%20r%3D%221.5%22%2F%3E%3C%2Fg%3E%3C%2Fg%3E%3C%2Fsvg%3E')] opacity-60" />
@@ -186,7 +225,10 @@ export default function Landing() {
         </div>
       </section>
 
-      {/* ── Popular Destinations ── */}
+      {/* ==========================================
+      DESTINASI POPULER (POI)
+      Menampilkan daftar wisata dengan sistem limit dan pencarian
+      ========================================== */}
       <section id="wisata" className="py-24 px-4 sm:px-6 bg-slate-50">
         <div className="max-w-6xl mx-auto">
           <div className="flex flex-col md:flex-row md:items-end justify-between gap-4 mb-10">
@@ -245,7 +287,10 @@ export default function Landing() {
         </div>
       </section>
 
-      {/* ── Features ── */}
+      {/* ==========================================
+      FITUR UTAMA
+      Menampilkan layanan utama dari sistem (Rekomendasi, Planner, Jadwal, Rute)
+      ========================================== */}
       <section className="py-24 px-4 sm:px-6 bg-surface-2">
         <div className="max-w-6xl mx-auto">
           <div className="text-center mb-14">

@@ -5,7 +5,8 @@ import { Spinner, ErrorBox, EmptyState, NavBar, getRouteColor } from '../compone
 import PlannerPanel from '../components/planner/PlannerPanel'
 
 // ─────────────────────────────────────────────────────────────
-// Schedule Page
+// HALAMAN JADWAL (Schedule Page)
+// Menampilkan jadwal keberangkatan bus di halte tertentu
 // ─────────────────────────────────────────────────────────────
 function SchedulePage() {
   const nav = useNavigate()
@@ -193,7 +194,8 @@ function SchedulePage() {
 }
 
 // ─────────────────────────────────────────────────────────────
-// Route Page
+// HALAMAN RUTE KORIDOR (Route Page)
+// Menampilkan detail semua rute dan halte yang dilewati
 // ─────────────────────────────────────────────────────────────
 function RoutePage() {
   const nav = useNavigate()
@@ -313,7 +315,8 @@ function RoutePage() {
 }
 
 // ─────────────────────────────────────────────────────────────
-// Planner Page
+// HALAMAN PLANNER ITINERARY (Planner Page)
+// Untuk menyusun rencana perjalanan seharian otomatis
 // ─────────────────────────────────────────────────────────────
 function PlannerPage() {
   const nav = useNavigate()
@@ -331,7 +334,8 @@ function PlannerPage() {
 }
 
 // ─────────────────────────────────────────────────────────────
-// About Page
+// HALAMAN TENTANG (About Page)
+// Berisi profil dan penjelasan metode sistem
 // ─────────────────────────────────────────────────────────────
 function AboutPage() {
   const nav = useNavigate()
@@ -482,7 +486,8 @@ function AboutPage() {
 }
 
 // ─────────────────────────────────────────────────────────────
-// Dispatcher
+// MAIN ROUTER / DISPATCHER
+// Merender komponen yang sesuai berdasarkan properti (props) page
 // ─────────────────────────────────────────────────────────────
 const PAGES = {
   planner: PlannerPage,
