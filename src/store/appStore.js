@@ -13,7 +13,7 @@ export const useAppStore = create((set, get) => ({
   setWeekday: (v) => set({ weekday: v }),
 
   // Filters
-  filters: { types: [], max_eta_min: 120, max_transfers: 3, min_stay_hours: 2 },
+  filters: { types: [], max_eta_min: 90, max_transfers: 3, min_stay_hours: 2 },
   setFilters: (f) => set({ filters: { ...get().filters, ...f } }),
 
   // Recommendations
@@ -41,4 +41,20 @@ export const useAppStore = create((set, get) => ({
   loadingPlan: false,
   setItinerary: (it) => set({ itinerary: it }),
   setLoadingPlan: (v) => set({ loadingPlan: v }),
+  
+  // Planner manual targets
+  plannerMode: 'auto',
+  setPlannerMode: (m) => set({ plannerMode: m }),
+  manualTargets: [],
+  addManualTarget: (poi, stayMin = 60) => set(state => {
+    // Avoid duplicates
+    if (state.manualTargets.some(t => t.poi_id === poi.poi_id)) return state;
+    return { manualTargets: [...state.manualTargets, { poi_id: poi.poi_id, name: poi.name, stay_min: stayMin }] }
+  }),
+  removeManualTarget: (index) => set(state => {
+    const newTargets = [...state.manualTargets]
+    newTargets.splice(index, 1)
+    return { manualTargets: newTargets }
+  }),
+  setManualTargets: (targets) => set({ manualTargets: targets }),
 }))

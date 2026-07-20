@@ -36,7 +36,14 @@ export default function RouteDetail({ poi, onClose, onAddToPlanner, onCariRute, 
               <RatingStars rating={poi.rating} />
             </div>
             <h2 className="text-xl font-extrabold text-slate-900 leading-tight mb-2">{poi.name}</h2>
-            <OpenBadge needs_review={poi.needs_review} remaining_open_min={poi.remaining_open_min} />
+            <div className="flex flex-wrap items-center gap-2">
+              <OpenBadge needs_review={poi.needs_review} remaining_open_min={poi.remaining_open_min} />
+              {(poi.htm_weekday || poi.htm_weekend) && (
+                <span className="text-xs font-bold text-slate-600 bg-slate-100 px-2 py-1 rounded-md border border-slate-200 flex items-center gap-1">
+                  🎟️ Rp {parseInt(poi.htm_weekday || poi.htm_weekend || 0).toLocaleString('id-ID')}
+                </span>
+              )}
+            </div>
           </div>
 
           {legs.length > 0 ? (

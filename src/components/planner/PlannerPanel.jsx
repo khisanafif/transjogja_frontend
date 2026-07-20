@@ -42,7 +42,8 @@ function SearchableSelect({ options, value, onChange, placeholder }) {
             <div 
               key={o.value}
               className="px-3 py-2 text-sm cursor-pointer hover:bg-brand-50"
-              onClick={() => {
+              onMouseDown={(e) => {
+                e.preventDefault()
                 setQuery(o.label)
                 onChange(o.value)
                 setOpen(false)
@@ -139,7 +140,7 @@ function TimelineItem({ item, isLast }) {
 }
 
 export default function PlannerPanel() {
-  const { originStop, originWalkMin, setOrigin, weekday } = useAppStore()
+  const { originStop, originWalkMin, setOrigin, weekday, plannerMode: mode, setPlannerMode: setMode, manualTargets, addManualTarget, removeManualTarget } = useAppStore()
   const [departHhmm, setDepartHhmm] = useState('09:00')
   const [endHhmm, setEndHhmm] = useState('17:00')
   const [minStayMin, setMinStayMin] = useState(60)
@@ -148,10 +149,8 @@ export default function PlannerPanel() {
   const [loading, setLoading] = useState(false)
   const [error, setError] = useState(null)
   
-  const [mode, setMode] = useState('auto') // 'auto' or 'manual'
   const [pois, setPois] = useState([])
   const [stops, setStops] = useState([])
-  const [manualTargets, setManualTargets] = useState([])
   const [selectedPoiId, setSelectedPoiId] = useState('')
   const [manualStayMin, setManualStayMin] = useState(60)
 
@@ -195,15 +194,13 @@ export default function PlannerPanel() {
     if (!selectedPoiId) return;
     const poi = pois.find(p => p.poi_id == selectedPoiId)
     if (poi) {
-      setManualTargets([...manualTargets, { poi_id: poi.poi_id, name: poi.name, stay_min: manualStayMin }])
+      addManualTarget(poi, manualStayMin)
       setSelectedPoiId('')
     }
   }
 
   function removeTarget(index) {
-    const newTargets = [...manualTargets]
-    newTargets.splice(index, 1)
-    setManualTargets(newTargets)
+    removeManualTarget(index)
   }
 
   const stopOptions = stops.map(s => ({ value: s.stop_id, label: s.name || s.stop_name }));

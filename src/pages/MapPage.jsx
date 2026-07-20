@@ -166,7 +166,12 @@ export default function MapPage() {
                   poi={selectedPoi}
                   isModal={false}
                   onClose={() => { setSelectedPoi(null) }}
-                  onAddToPlanner={() => { nav('/planner'); setSelectedPoi(null) }}
+                  onAddToPlanner={() => { 
+                    useAppStore.getState().addManualTarget(selectedPoi)
+                    useAppStore.getState().setPlannerMode('manual')
+                    nav('/planner')
+                    setSelectedPoi(null)
+                  }}
                 />
               </Suspense>
             ) : (
