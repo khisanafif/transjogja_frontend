@@ -16,7 +16,7 @@ export function OriginPanel({ allStops = [], onOriginSet }) {
   const ref = useRef(null)
 
   const filtered = query.length > 1
-    ? allStops.filter(s => s.name?.toLowerCase().includes(query.toLowerCase())).slice(0, 7)
+    ? allStops.filter(s => (s.name || s.stop_name || '').toLowerCase().includes(query.toLowerCase())).slice(0, 7)
     : []
 
   useEffect(() => {
@@ -59,9 +59,9 @@ export function OriginPanel({ allStops = [], onOriginSet }) {
             <div className="absolute top-full mt-1.5 left-0 right-0 bg-white border border-slate-200 rounded-2xl shadow-card-hover z-20 max-h-52 overflow-y-auto animate-fade-in">
               {filtered.map(s => (
                 <button key={s.stop_id}
-                  onClick={() => { onOriginSet(s, 0, null); setQuery(s.name); setOpen(false) }}
+                  onClick={() => { onOriginSet(s, 0, null); setQuery(s.name || s.stop_name); setOpen(false) }}
                   className="w-full text-left px-4 py-2.5 text-sm hover:bg-slate-50 transition-colors border-b border-slate-50 last:border-0 first:rounded-t-2xl last:rounded-b-2xl">
-                  <span className="font-medium text-slate-800 text-xs">{s.name}</span>
+                  <span className="font-medium text-slate-800 text-xs">{s.name || s.stop_name}</span>
                 </button>
               ))}
             </div>
