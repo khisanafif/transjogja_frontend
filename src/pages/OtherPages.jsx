@@ -339,7 +339,7 @@ function AboutPage() {
     { icon: '⚡', name: 'FastAPI + Python', desc: 'Backend REST API, startup data loading, CORS, global error handling' },
     { icon: '🗺', name: 'React 18 + Vite', desc: 'Frontend SPA dengan lazy loading per route, code splitting otomatis' },
     { icon: '🌍', name: 'Leaflet + OpenStreetMap', desc: 'Peta interaktif dengan marker POI, jalur rute, dan animasi fly-to' },
-    { icon: '🔄', name: 'SSSP Dijkstra', desc: 'Routing engine: 1 run covers 204 POI dalam <50ms, same-stop transit' },
+    { icon: '🔄', name: 'SSSP Dijkstra', desc: 'Routing engine: 1 run covers 144 POI dalam <50ms, same-stop transit' },
     { icon: '📊', name: 'CRISP-DM Pipeline', desc: 'Business Understanding → Data Prep → Modeling → Evaluation → Deployment' },
     { icon: '⏱', name: 'ETA Historis 3-Level', desc: 'Exact segment → Route average → Global default 3.0 menit fallback' },
   ]
@@ -350,7 +350,7 @@ function AboutPage() {
     { icon: '🕐', name: 'Informasi Jadwal & Rute', desc: 'Lihat perkiraan kedatangan bus dan peta jalur koridor secara detail.' },
   ]
   const DATA = [
-    ['152', 'Destinasi wisata eligible (dalam 1.2km halte)'],
+    ['144', 'Destinasi wisata eligible (dalam 1.2km halte)'],
     ['53', 'POI dengan jam operasional terverifikasi web'],
     ['273', 'Halte berkoordinat (62 invalid difilter)'],
     ['519', 'Segmen ETA historis (MAE 0.12 menit)'],

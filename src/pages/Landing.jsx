@@ -14,7 +14,7 @@ const NAV_LINKS = [
 ]
 
 const STATS = [
-  { value: '204', label: 'Destinasi Wisata', icon: '🏛' },
+  { value: '144', label: 'Destinasi Wisata', icon: '🏛' },
   { value: '273', label: 'Halte Tercakup',   icon: '🚏' },
   { value: '20',  label: 'Koridor Rute',     icon: '🗺' },
   { value: '156', label: 'Titik Transfer',   icon: '🔄' },
@@ -51,7 +51,7 @@ const FEATURES = [
 
 const HOW_STEPS = [
   { step: '01', icon: '📍', title: 'Pilih Titik Kumpul / Asal', desc: 'Sistem menggunakan halte Trans Jogja sebagai titik simulasi perjalanan Anda.' },
-  { step: '02', icon: '⚡', title: 'Hitung Rute Otomatis', desc: 'Algoritma SSSP mencari jalur optimal ke semua 204 destinasi wisata dalam <50ms.' },
+  { step: '02', icon: '⚡', title: 'Hitung Rute Otomatis', desc: 'Algoritma SSSP mencari jalur optimal ke semua 144 destinasi wisata dalam <50ms.' },
   { step: '03', icon: '🎯', title: 'Rekomendasi Terbaik', desc: 'Destinasi diurutkan berdasarkan ETA, rating, dan jam buka operasional hari ini.' },
 ]
 
@@ -367,7 +367,7 @@ export default function Landing() {
             <div className="space-y-3">
               {[
                 { icon: '🏗', title: 'CRISP-DM Methodology', desc: 'Business Understanding → Data Understanding → Data Preparation → Modeling → Evaluation → Deployment' },
-                { icon: '⚡', title: 'SSSP Dijkstra Routing', desc: '1 run Dijkstra mencakup 204 POI dalam <50ms. Transit same-stop only.' },
+                { icon: '⚡', title: 'SSSP Dijkstra Routing', desc: '1 run Dijkstra mencakup 144 POI dalam <50ms. Transit same-stop only.' },
                 { icon: '📊', title: 'ETA 3-Level Fallback', desc: 'Exact segment → Route average → Global default 3.0 menit' },
                 { icon: '🔒', title: 'Data Transparan', desc: 'ETA berbasis data historis jadwal Trans Jogja dari Moovit, bukan real-time GPS.' },
               ].map(t => (
