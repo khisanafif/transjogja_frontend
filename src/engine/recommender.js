@@ -163,7 +163,7 @@ function _enrich_legs(legs, stops_by_id) {
     for (const key of keys) {
       const sid = l[key];
       if (sid && stops_by_id[sid]) {
-        l[key.replace("_id", "_name")] = stops_by_id[sid].name || sid;
+        l[key.replace("_id", "_name")] = stops_by_id[sid].stop_name || stops_by_id[sid].name || sid;
       }
     }
     return l;

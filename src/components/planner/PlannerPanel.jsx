@@ -139,7 +139,7 @@ function TimelineItem({ item, isLast }) {
 }
 
 export default function PlannerPanel() {
-  const { originStop, setOrigin, weekday } = useAppStore()
+  const { originStop, originWalkMin, setOrigin, weekday } = useAppStore()
   const [departHhmm, setDepartHhmm] = useState('09:00')
   const [endHhmm, setEndHhmm] = useState('17:00')
   const [minStayMin, setMinStayMin] = useState(60)
@@ -174,14 +174,14 @@ export default function PlannerPanel() {
       if (mode === 'auto') {
         r = await api.itinerary({
           origin_stop_id: originStop.stop_id,
-          origin_walk_min: originStop.walk_time_min || 0,
+          origin_walk_min: originWalkMin,
           depart_hhmm: departHhmm, end_hhmm: endHhmm, weekday,
           min_stay_min: minStayMin, max_destinations: maxDest, filters: {},
         })
       } else {
         r = await api.customItinerary({
           origin_stop_id: originStop.stop_id,
-          origin_walk_min: originStop.walk_time_min || 0,
+          origin_walk_min: originWalkMin,
           depart_hhmm: departHhmm,
           targets: manualTargets
         })

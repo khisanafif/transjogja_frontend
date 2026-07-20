@@ -22,7 +22,7 @@ function SchedulePage() {
   useEffect(() => { api.getStops().then(setAllStops).catch(() => {}) }, [])
 
   const filtered = query.length > 1
-    ? allStops.filter(s => s.name?.toLowerCase().includes(query.toLowerCase())).slice(0, 8)
+    ? allStops.filter(s => (s.stop_name || s.name || '').toLowerCase().includes(query.toLowerCase())).slice(0, 8)
     : []
 
   async function load(stop, dt) {
@@ -33,7 +33,7 @@ function SchedulePage() {
   }
 
   function pickStop(s) {
-    setSelectedStop(s); setQuery(s.name); setDropOpen(false); load(s, dayType)
+    setSelectedStop(s); setQuery(s.stop_name || s.name || ''); setDropOpen(false); load(s, dayType)
   }
 
   function changeDayType(dt) {
@@ -65,7 +65,7 @@ function SchedulePage() {
                 {filtered.map(s => (
                   <button key={s.stop_id} onClick={() => pickStop(s)}
                     className="w-full text-left px-4 py-2.5 text-xs font-medium text-slate-800 hover:bg-slate-50 border-b border-slate-50 last:border-0 first:rounded-t-2xl last:rounded-b-2xl">
-                    {s.name}
+                    {s.stop_name || s.name}
                   </button>
                 ))}
               </div>
